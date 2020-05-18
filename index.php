@@ -65,7 +65,7 @@
                         <li>
                             <a id="menu-pages" class="mdl-button mdl-js-button mdl-js-ripple-effect">Despre <i class="fa fa-chevron-down"></i></a>
                             <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-pages">
-                                <li class="mdl-menu__item"><a href="contact.php">Contacte</a></li>
+                                <li class="mdl-menu__item"><a href="contact.php">Contact</a></li>
                                 <li class="mdl-menu__item"><a href="service.php">Serviciile noastre</a></li>
                            
                             </ul>
