@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2d550c67-55db-4070-ba62-851c40f322f1" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/appointment/date.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/appointment/date.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1TWXklwUIW2LD2z6v14LGnX0Yc1" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Doctors_Appointment" />
+      <recent name="C:\xampp\htdocs\Doctors_Appointment\include\appointment" />
+      <recent name="C:\xampp\htdocs\Doctors_Appointment\admin" />
+      <recent name="C:\xampp\htdocs\Doctors_Appointment\class" />
+      <recent name="C:\xampp\htdocs\Doctors_Appointment\admin\public\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Doctors_Appointment\needed" />
+      <recent name="C:\xampp\htdocs\Doctors_Appointment\admin" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d550c67-55db-4070-ba62-851c40f322f1" name="Default" comment="" />
+      <created>1536090898484</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536090898484</updated>
+      <workItem from="1536090901277" duration="1598000" />
+      <workItem from="1536094068386" duration="3472000" />
+      <workItem from="1536175470676" duration="1574000" />
+      <workItem from="1536209179160" duration="1707000" />
+      <workItem from="1536261611473" duration="9936000" />
+      <workItem from="1536308635497" duration="4997000" />
+      <workItem from="1536343767237" duration="6729000" />
+      <workItem from="1536435442650" duration="3029000" />
+      <workItem from="1536606688371" duration="973000" />
+      <workItem from="1536696120618" duration="4945000" />
+      <workItem from="1536771089200" duration="1761000" />
+      <workItem from="1536781428693" duration="21603000" />
+      <workItem from="1536914203620" duration="11777000" />
+      <workItem from="1536992430643" duration="5403000" />
+      <workItem from="1537080249604" duration="19310000" />
+      <workItem from="1537182925530" duration="15658000" />
+      <workItem from="1537253213746" duration="23000000" />
+      <workItem from="1537300961089" duration="7414000" />
+      <workItem from="1537377902154" duration="11812000" />
+      <workItem from="1537426445709" duration="17436000" />
+      <workItem from="1537544318213" duration="11041000" />
+      <workItem from="1537603520265" duration="19425000" />
+      <workItem from="1537717816993" duration="10747000" />
+      <workItem from="1537776783427" duration="25389000" />
+      <workItem from="1537853483874" duration="8127000" />
+      <workItem from="1537895872377" duration="11840000" />
+      <workItem from="1537940650551" duration="10899000" />
+      <workItem from="1537984357645" duration="75000" />
+      <workItem from="1537985218053" duration="15925000" />
+      <workItem from="1538065122919" duration="12491000" />
+      <workItem from="1538127163403" duration="19528000" />
+      <workItem from="1538207182238" duration="27900000" />
+      <workItem from="1538299377316" duration="30596000" />
+      <workItem from="1538375130622" duration="23836000" />
+      <workItem from="1538415022442" duration="14704000" />
+      <workItem from="1538471354263" duration="10401000" />
+      <workItem from="1538538972773" duration="457000" />
+      <workItem from="1538592152153" duration="51021000" />
+      <workItem from="1538722135008" duration="10214000" />
+      <workItem from="1538733894723" duration="135000" />
+      <workItem from="1538735159364" duration="37352000" />
+      <workItem from="1538801551883" duration="8337000" />
+      <workItem from="1539624600984" duration="2098000" />
+      <workItem from="1539664102773" duration="1031000" />
+      <workItem from="1539665238560" duration="210000" />
+      <workItem from="1541237249710" duration="1723000" />
+      <workItem from="1541242906703" duration="802000" />
+      <workItem from="1541304805163" duration="381000" />
+      <workItem from="1541312769342" duration="1424000" />
+      <workItem from="1541319165192" duration="720000" />
+      <workItem from="1542023989004" duration="4634000" />
+      <workItem from="1542083559125" duration="2225000" />
+      <workItem from="1542171221452" duration="1164000" />
+      <workItem from="1542180656261" duration="257000" />
+      <workItem from="1542277883456" duration="2847000" />
+      <workItem from="1544516995261" duration="2034000" />
+      <workItem from="1549774373008" duration="3663000" />
+      <workItem from="1549826433710" duration="4414000" />
+      <workItem from="1549944956147" duration="849000" />
+      <workItem from="1573576973811" duration="400000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/admin/patient.php</url>
+          <line>156</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/admin/class/departments.php</url>
+          <line>31</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
