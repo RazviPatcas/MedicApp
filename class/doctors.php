@@ -89,7 +89,7 @@ class doctors
             $username   = trim($_REQUEST['username']);
             $password   = trim($_REQUEST['password']);
 
-//            $password   = password_hash($password,PASSWORD_BCRYPT,array('cost'=>12));
+            $password   = password_hash($password,PASSWORD_BCRYPT,array('cost'=>12));
 
             $img        =   $_FILES['photo']['name'];
             $img_temp   =   $_FILES['photo']['tmp_name'];

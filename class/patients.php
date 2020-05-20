@@ -62,7 +62,7 @@ class patients
             $blood_group = trim($_REQUEST['blood']) ;
             $location    = trim($_REQUEST['location']) ;
 
-//            $password   = password_hash($password,PASSWORD_BCRYPT,array('cost'=>12));
+          $password   = password_hash($password,PASSWORD_BCRYPT,array('cost'=>12));
 
             if ($this->username_exist($username)){
                 echo "<h2 class='text-center text-danger text-capitalize'>Please Try Another username this is already Registered</h2>";
