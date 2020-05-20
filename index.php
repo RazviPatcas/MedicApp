@@ -142,7 +142,7 @@
 <!--                                                <a href="my_request.php?id=--><?php //echo $_SESSION['patient_id'];?><!--"><i class="fa fa-qrcode color-green"> </i> My Request</a>-->
 <!--                                            </li>-->
                                             <li class="mdl-menu__item">
-                                                <a href="my_medical_history.php"><i class="fa fa-hospital-o color-green"> </i> Istoric medical</a>
+                                                <a href="my_invoice.php"><i class="fa fa-hospital-o color-green"> </i> Istoric medical</a>
                                             </li>
                                             <li class="mdl-menu__item">
                                                 <a href="include/logout.php"><i class="fa fa-sign-out color-green"> </i> Ieșire</a>

@@ -570,7 +570,7 @@
                                                 <span class="badge badge-default badge-sm">New</span>
                                             </div>
                                             <div class="card-action">
-                                                <a href="index.php?route=invoice/add&amp;id=1023"
+                                                <a href="invoice.php"
                                                    class="btn btn-outline btn-warning btn-outline-1x btn-circle"
                                                    data-toggle="tooltip" title="" target="_blank"
                                                    data-original-title="Create Invoice"><i

@@ -4,20 +4,6 @@ $page_name = "<i class=\"fa fa-medkit\"></i> Services  <span style='font-size: 1
 ?>
 <?php include('include/nav.php');?>
 
-<!--<div class="page-ttl">-->
-<!--	<div class="layer-stretch">-->
-<!--		<div class="page-ttl-container">-->
-<!--			<div class="page-ttl-icon">-->
-<!--				<i class="fa fa-certificate"></i>-->
-<!--			</div>-->
-<!--			<div class="page-ttl-name">-->
-<!--				<h1>Mammography</h1>-->
-<!--				<p><a href="index2378.html?route=home">Home</a> / <a href="index115b.html?route=services">Services</a> / Mammography</p>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</div>-->
-<!--</div><!-- End Page Title Section -->-->
-
 <!-- Start Service List Section -->
 <div class="layer-stretch">
 	<div class="row layer-wrapper">
