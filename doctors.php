@@ -247,11 +247,11 @@
 <!-- End Doctor List Section -->
 
 <!-- Start Department div -->
-<div class="colored-background">
+<div class="colored-background" style="background:#229AA5;">
 	<div class="layer-stretch">
 		<div class="layer-wrapper layer-bottom-0 animated-wrapper">
 			<div class="layer-ttl layer-ttl-white">
-				<h3 class="animated animated-down"> Department </h3>
+				<h3 class="animated animated-down" style="background-color: #00263b;"> Department </h3>
 			</div>
 			<div class="layer-container">
                 <?php
@@ -264,7 +264,7 @@
 
                             ?>
                     <div class="department-block animated animated-up">
-                        <div class="tbl-cell department-icon"><i class="fa fa-female"></i></div>
+                        <div class="tbl-cell department-icon"><i class="fa fa-male"></i></div>
                         <div class="tbl-cell department-detail">
                             <a><?php echo $department->name;?></a>
                             <p class="paragraph-small paragraph-white">

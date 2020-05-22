@@ -25,10 +25,10 @@
             <div class="page-hdr scroll-to-fixed-fixed" style="z-index: 9; position: fixed; top: 0px; margin-left: 0px; width: 920px; left: 60px;">
                 <div class="row col-sm-12">
                     <div class="col-sm-6 page-name">
-                        <h1><i class="fa fa-users"></i>Add Patient</h1>
+                        <h1><i class="fa fa-users"></i>Adaugă pacient</h1>
                     </div>
                     <div class="col-sm-4 page-menu" >
-                        <a id="cancel" href="patient_add.php" data-toggle="tooltip" data-placement="left" title="" data-original-title="Back to List"><i class="fa fa-reply"></i></a>
+                        <a id="cancel" href="patient.php" data-toggle="tooltip" data-placement="left" title="" data-original-title="Back to List"><i class="fa fa-reply"></i></a>
                         <button type="submit" name="patient_submit" data-toggle="" data-placement="left" title="" data-original-title="Save Page"><i class="fa fa-floppy-o"></i></button>
                     </div>
                 </div>
@@ -43,46 +43,46 @@
                         ?>
 
                         <div class="content-block content-block-horizantal">
-                            <div class="content-block-ttl">Basic details</div>
+                            <div class="content-block-ttl">Detalii de bază</div>
                             <div class="content-block-main">
                                 <div class="row content-input">
                                     <div class="col-sm-6">
-                                        <label><text>*</text>First Name : </label>
-                                        <input type="text" class="input-text" name="firstname" value="" placeholder="Enter your First Name" required="">
-                                        <p class="content-input-error-name">Please enter name!</p>
+                                        <label><text>*</text>Nume : </label>
+                                        <input type="text" class="input-text" name="firstname" value="" placeholder="" required="">
+                                        <p class="content-input-error-name">Te rog introdu un nume !</p>
                                     </div>
                                     <div class="col-sm-6">
-                                        <label><text>*</text>Last Name : </label>
-                                        <input type="text" class="input-text" name="lastname" value="" placeholder="Enter your Last Name" required="">
-                                        <p class="content-input-error-name">Please enter last name!</p>
+                                        <label><text>*</text>Prenume : </label>
+                                        <input type="text" class="input-text" name="lastname" value="" placeholder="" required="">
+                                        <p class="content-input-error-name">Te rog introdu un prenume !</p>
                                     </div>
                                 </div>
                                 <div class="row content-input">
                                     <div class="col-sm-6">
-                                        <label><text>*</text>Email Address : </label>
-                                        <input type="email" class="input-email" name="email" value="" placeholder="Enter your Email Address" required="">
-                                        <p class="content-input-error-name">Please enter email!</p>
+                                        <label><text>*</text>Email : </label>
+                                        <input type="email" class="input-email" name="email" value="" placeholder="" required="">
+                                        <p class="content-input-error-name">Te rog introdu o adresă de email !</p>
                                     </div>
                                     <div class="col-sm-6">
-                                        <label><text>*</text>Mobile : </label>
-                                        <input type="number" class="input-mobile" name="mobile" value="" placeholder="Enter your Mobile number" min="1" required="">
-                                        <p class="content-input-error-name">Please enter phone number!</p>
+                                        <label><text>*</text>Telefon : </label>
+                                        <input type="number" class="input-mobile" name="mobile" value="" placeholder="" min="1" required="">
+                                        <p class="content-input-error-name">Te rog introdu un număr de telefon !</p>
                                     </div>
                                 </div>
                                 <div class="content-input">
-                                    <label><text>*</text>Password (min 6 words) :</label>
-                                    <input type="password" class="input-password" pattern=".{6,}" title="Minimum 6 word required!" name="password" placeholder="Enter your Password" required="">
-                                    <p class="content-input-error-name">Please enter password (minimum 6 words)!</p>
+                                    <label><text>*</text>Parolă (min 6 caractere) :</label>
+                                    <input type="password" class="input-password" pattern=".{6,}" title="Minimum 6 word required!" name="password" placeholder="" required="">
+                                    <p class="content-input-error-name">Te rog introdu o parolă !</p>
                                     <div class="content-description">This password will be mailed to user.</div>
                                 </div>
                             </div>
                         </div>
                         <div class="content-block content-block-horizantal">
-                            <div class="content-block-ttl">Other details</div>
+                            <div class="content-block-ttl">Alte detalii</div>
                             <div class="content-block-main">
                                 <div class="row content-input">
                                     <div class="col-sm-6">
-                                        <label>Date of Birth : </label>
+                                        <label>Data nașterii : </label>
                                         <input type="date" name="dob" id="user-dob" value="" placeholder="Date of Birth (DD/MM/YY)" class="hasDatepicker">
                                     </div>
                                     <div class="col-sm-6">
@@ -91,9 +91,9 @@
                                 <div class="row content-input">
                                     <div class="col-sm-6">
 
-                                        <label><text>*</text>Location : </label>
+                                        <label><text>*</text>Locație : </label>
                                         <select name="location" title="Select User Role" class="select-list" required="" id="ui-id-1" style="display: none;">
-                                            <option value="">Select your location</option>
+                                            <option value="">Selectează locația</option>
                                             <?php
                                             $sql = "SELECT * FROM locations ";
                                             $result = $pdo->prepare($sql);
@@ -110,32 +110,27 @@
                                         </select>
                                     </div>
                                     <div class="col-sm-6">
-                                        <label>Blood Group : </label>
+                                        <label>Grupa de sânge : </label>
                                         <select name="bloodgroup" title="Select User Role" class="select-list" required="" id="ui-id-1" style="display: none;">
-                                            <option value="">Select your Blood Group</option>
-                                            <option value="A+">A+</option>
-                                            <option value="A-">A-</option>
-                                            <option value="B+">B+</option>
-                                            <option value="B-">B-</option>
-                                            <option value="AB+">AB+</option>
-                                            <option value="AB-">AB-</option>
-                                            <option value="O+">O+</option>
-                                            <option value="O-">O-</option>
-
+                                            <option value="">Selectează grupa de sânge</option>
+                                            <option value="O1">O1</option>
+                                            <option value="A2">A2</option>
+                                            <option value="B3">B3</option>
+                                            <option value="AB4">AB4</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="row content-input content-radio">
                                     <div class="col-sm-12">
-                                        <label>Gender : </label>
+                                        <label>Sex : </label>
                                         <div class="content-radio-container">
                                             <div>
                                                 <input type="radio" name="gender" value="Male" id="gender-male">
-                                                <label for="gender-male"><span><i class="fa fa-check"></i></span><p>Male</p></label>
+                                                <label for="gender-male"><span><i class="fa fa-check"></i></span><p>Masculin</p></label>
                                             </div>
                                             <div>
                                                 <input type="radio" name="gender" value="Female" id="gender-female">
-                                                <label for="gender-female"><span><i class="fa fa-check"></i></span><p>Female</p></label>
+                                                <label for="gender-female"><span><i class="fa fa-check"></i></span><p>Feminin</p></label>
                                             </div>
                                         </div>
                                     </div>
@@ -145,70 +140,70 @@
                             </div>
                         </div>
                         <div class="content-block content-block-horizantal">
-                            <div class="content-block-ttl">Medical History</div>
+                            <div class="content-block-ttl">Istoric medical</div>
                             <div class="content-block-main">
                                 <div class="content-radio">
-                                    <label>Do you now or have you ever had:</label>
+                                   
                                     <div>
                                         <div class="row">
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
                                                     <input type="checkbox" name="medical[]" value="diabetes" id="diabetes">
-                                                    <label for="diabetes"><span><i class="fa fa-check"></i></span><p>Diabetes</p></label>
+                                                    <label for="diabetes"><span><i class="fa fa-check"></i></span><p>Diabet</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
                                                     <input type="checkbox" name="medical[]" value="high-blood-pressure" id="high-blood-pressure">
-                                                    <label for="high-blood-pressure"><span><i class="fa fa-check"></i></span><p>High blood pressure</p></label>
+                                                    <label for="high-blood-pressure"><span><i class="fa fa-check"></i></span><p>Hipertensiune arterială</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
                                                     <input type="checkbox" name="medical[]" value="high-cholesterol" id="high-cholesterol">
-                                                    <label for="high-cholesterol"><span><i class="fa fa-check"></i></span><p>High cholesterol</p></label>
+                                                    <label for="high-cholesterol"><span><i class="fa fa-check"></i></span><p>Colesterol</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
                                                     <input type="checkbox" name="medical[]" value="heart-problems" id="heart-problems">
-                                                    <label for="heart-problems"><span><i class="fa fa-check"></i></span><p>Heart problems</p></label>
+                                                    <label for="heart-problems"><span><i class="fa fa-check"></i></span><p>Probleme cardiace</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
                                                     <input type="checkbox" name="medical[]" value="asthma" id="asthma">
-                                                    <label for="asthma"><span><i class="fa fa-check"></i></span><p>Asthma</p></label>
+                                                    <label for="asthma"><span><i class="fa fa-check"></i></span><p>Astm bronșic</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
                                                     <input type="checkbox" name="medical[]" value="kidney-disease" id="kidney-disease">
-                                                    <label for="kidney-disease"><span><i class="fa fa-check"></i></span><p>Kidney disease</p></label>
+                                                    <label for="kidney-disease"><span><i class="fa fa-check"></i></span><p>Afecțiuni renale</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
                                                     <input type="checkbox" name="medical[]" value="kidney-stones" id="kidney-stones">
-                                                    <label for="kidney-stones"><span><i class="fa fa-check"></i></span><p>Kidney Stones</p></label>
+                                                    <label for="kidney-stones"><span><i class="fa fa-check"></i></span><p>Afecțiuni gastrice</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
                                                     <input type="checkbox" name="medical[]" value="jaundice" id="jaundice">
-                                                    <label for="jaundice"><span><i class="fa fa-check"></i></span><p>Jaundice</p></label>
+                                                    <label for="jaundice"><span><i class="fa fa-check"></i></span><p>Infarct</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
                                                     <input type="checkbox" name="medical[]" value="hepatitis" id="hepatitis">
-                                                    <label for="hepatitis"><span><i class="fa fa-check"></i></span><p>Hepatitis</p></label>
+                                                    <label for="hepatitis"><span><i class="fa fa-check"></i></span><p>Hepatită</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
                                                     <input type="checkbox" name="medical[]" value="rheumatic-fever" id="rheumatic-fever">
-                                                    <label for="rheumatic-fever"><span><i class="fa fa-check"></i></span><p>Rheumatic Fever</p></label>
+                                                    <label for="rheumatic-fever"><span><i class="fa fa-check"></i></span><p>Afecțiuni reumatice</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
@@ -226,13 +221,7 @@
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
                                                     <input type="checkbox" name="medical[]" value="epilepsy" id="epilepsy">
-                                                    <label for="epilepsy"><span><i class="fa fa-check"></i></span><p>Epilepsy</p></label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 content-radio-container">
-                                                <div>
-                                                    <input type="checkbox" name="medical[]" value="pregnancy" id="pregnancy">
-                                                    <label for="pregnancy"><span><i class="fa fa-check"></i></span><p>Pregnancy</p></label>
+                                                    <label for="epilepsy"><span><i class="fa fa-check"></i></span><p>Epilepsie</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
@@ -245,9 +234,9 @@
                                     </div>
                                 </div>
                                 <div class="content-input">
-                                    <label>Other History : </label>
+                                    <label>Alte detalii : </label>
 
-                                    <textarea name="medical[]" placeholder="Patient other history or about user" ></textarea>
+                                    <textarea name="medical[]" placeholder="Alte boli decât cele menționate de mai sus" ></textarea>
 
                                 </div>
                             </div>
@@ -255,12 +244,12 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="content-block content-block-horizantal">
-                            <div class="content-block-ttl">For office use</div>
+                            <div class="content-block-ttl">Pentru uz administrativ</div>
                             <div class="content-block-main">
                                 <div class="content-input">
-                                    <label>User Role : </label>
+                                    <label>Rolul utilizatorului : </label>
                                     <select name="role" title="Select User Role" class="select-list" required="" id="ui-id-1" style="display: none;">
-                                        <option value="1">Patient</option>
+                                        <option value="1">Pacient</option>
                                         <?php
                                             $sql = "SELECT * FROM roles ";
                                             $result = $pdo->prepare($sql);
@@ -281,32 +270,31 @@
                                     </select>
 <!--                                    <span tabindex="0" id="ui-id-1-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="ui-id-1-menu" aria-haspopup="true" title="Select User Role" class="ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget"><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text">Patient</span></span>-->
                                     <div class="content-description">
-                                        If you want to give an admin access to user then select role otherwise do not select. It will automatically assign patient role to user.
+                                    Dacă doriți să le oferiți unui administrator un utilizator, atunci selectați rolul altfel nu selectați. Acesta va atribui automat rolul pacientului utilizatorului.                                    </div>
+                                </div>
+                                <div class="content-input">
+                                    <label>Nume utilizator : </label>
+                                    <input type="text" name="username" value="" placeholder="">
+                                    <div class="content-description">
+                                    Dacă doriți să dați un utilizator admin, atunci completați acest câmp, altfel lăsați-l gol.
                                     </div>
                                 </div>
                                 <div class="content-input">
-                                    <label>User Name : </label>
-                                    <input type="text" name="username" value="" placeholder="User Name">
-                                    <div class="content-description">
-                                        If you want to give an admin access to user then fill this field otherwise leave empty.
+                                  <label>Notify User : </label>
+                                    <div class="content-radio-container">
+                                        <div>
+                                            <input type="checkbox" name="sendmail" value="1" id="send-mail" checked="">
+                                           <label for="send-mail"><span><i class="fa fa-check"></i></span><p>Send an Email</p></label>
+                                       </div>
                                     </div>
                                 </div>
-<!--                                <div class="content-input">-->
-<!--                                    <label>Notify User : </label>-->
-<!--                                    <div class="content-radio-container">-->
-<!--                                        <div>-->
-<!--                                            <input type="checkbox" name="sendmail" value="1" id="send-mail" checked="">-->
-<!--                                            <label for="send-mail"><span><i class="fa fa-check"></i></span><p>Send an Email</p></label>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
                             </div>
                         </div>
                     </div>
                     <input type="hidden" name="id" value="">
                 </div>
                 <div class="content-submit text-center">
-                    <button type="submit" name="patient_submit" class="btn btn-primary">Save</button>
+                    <button type="submit" name="patient_submit" class="btn btn-primary">Salvare</button>
                 </div>
             </div>
         </form>

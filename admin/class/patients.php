@@ -75,7 +75,7 @@ class patients
                 $result->execute();
 
                 if ($result) {
-                    echo '<h3 class="text-center text-success text-capitalize">patient Added Successful !!! </h3>';
+                    echo '<h3 class="text-center text-success text-capitalize">Pacient adăugat cu succes ! </h3>';
                 } else {
                     header("Location: patient_add.php");
                 }

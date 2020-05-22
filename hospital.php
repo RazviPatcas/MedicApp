@@ -33,9 +33,9 @@ $page_name = "<i class=\"fa fa-hospital-o\"> </i> Hospitals ";
                         foreach ($hospitals as $hospital) {
                             ?>
 
-                            <div class="col-sm-4">
-                                <div class="theme-block theme-block-hover animated animated-up fadeInUp">
-                                    <div class="theme-block-picture" style="height: 85px" >
+                            <div class="col-sm-6">
+                            <div class="theme-block animated animated-up">
+                                    <div class="theme-block-picture">
                                         <a href="">
                                             <img src="public/uploads/<?php echo $hospital->photo;?>" style="height: 120px;;" alt="<?php echo $doctor->name; ?>">
                                         </a>

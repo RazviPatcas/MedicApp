@@ -6,11 +6,11 @@ $page_name = "<i class=\"fa fa-medkit\"></i> Services ";
 
 
 <!-- Start Facility List Section -->
-<div class="colored-background">
+<div class="colored-background" style="background:#229AA5;">
 	<div class="layer-stretch">
 		<div class="layer-wrapper layer-bottom-0 animated-wrapper">
 			<div class="layer-ttl layer-ttl-white">
-				<h3 class="animated animated-down">Why Choose Us</h3>
+				<h3 class="animated animated-down"  style="background-color: #00263b;">Why Choose Us</h3>
 			</div>
 			<div class="layer-container">
 				<div class="feature-block animated animated-up">

@@ -68,7 +68,7 @@ $page_name = "<i class=\"fa fa-building-o\"> </i> Departments ";
 
                 </div>
                 <div class="theme-material-card">
-                    <div class="sub-ttl">Doctors</div>
+                    <div class="sub-ttl">Doctori</div>
                     <div class="flexslider theme-flexslider">
                         <ul class="slides">
                             <?php
@@ -95,13 +95,6 @@ $page_name = "<i class=\"fa fa-building-o\"> </i> Departments ";
                                 }
                             }
                             ?>
-                            <li>
-                                <div class="theme-flexslider-container">
-                                    <img src="public/uploads/doctor-2.jpg" />
-                                    <h4>Melissa Bates</h4>
-                                    <p>Gynocologist</p>
-                                </div>
-                            </li>
 
                         </ul>
                     </div>
@@ -124,38 +117,4 @@ $page_name = "<i class=\"fa fa-building-o\"> </i> Departments ";
 </script>
 
 
-        <!---->
-        <!--<div class="colored-background">-->
-        <!--    <div class="layer-stretch">-->
-        <!--        <div class="layer-wrapper layer-bottom-0 animated-wrapper">-->
-        <!--            <div class="layer-ttl layer-ttl-white">-->
-        <!--                <h3 class="animated animated-down">Our Department </h3>-->
-        <!--            </div>-->
-        <!--            <div class="layer-container">-->
-        <!--                --><?php
-        //                $dpt = new departments();
-        //                $result = $dpt->all();
-        //                $departments = $result->fetchAll();
-        //
-        //                if ($result->rowCount()>0){
-        //                    foreach ($departments as $department) {
-        //
-        //                        ?>
-        <!--                        <div class="department-block animated animated-up">-->
-        <!--                            <div class="tbl-cell department-icon"><i class="fa fa-female"></i></div>-->
-        <!--                            <div class="tbl-cell department-detail">-->
-        <!--                                <a>--><?php //echo $department->name;?><!--</a>-->
-        <!--                                <p class="paragraph-small paragraph-white">-->
-        <!--                                    --><?php //echo $department->details;?>
-        <!--                                </p>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!---->
-        <!--                        --><?php
-        //                    }
-        //                }
-        //                ?>
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</div><!-- End Department List Section -->-->
+    

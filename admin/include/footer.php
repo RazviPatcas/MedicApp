@@ -9,14 +9,6 @@
 
 
 </div>
-
-<!--    <script type="text/javascript">-->
-<!--        var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||-->
-<!--            {widgetcode:"b0707d67168a123a4b74ffaaa713d80d766a387e66055ee6c3b075720a1e3e1b", values:{},ready:function(){}};-->
-<!--        var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;-->
-<!--        s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");-->
-<!--    </script>-->
-
 </div>
 </body>
 </html>

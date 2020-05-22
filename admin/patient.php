@@ -12,7 +12,7 @@
 <div class="page-hdr">
 	<div class="row">
 		<div class="col-4 page-name">
-			<h1><i class="fa fa-users"></i>Patients</h1>
+			<h1><i class="fa fa-users"></i>Pacienți</h1>
 		</div>
         <div class="page-name col-3 text-right">
             <h1 id="time" style="color: #900024">Time</h1>
@@ -121,13 +121,13 @@
 			<thead>
 				<tr class="table-heading" style="color: black;background-color: #fff">
 					<th class="table-srno">#</th>
-					<th>Person Info </th>
-					<th>User Name </th>
-					<th>User Role </th>
+					<th>Informații persoană </th>
+					<th>Nume utilizator </th>
+					<th>Rol utilizator </th>
 					<th>Status </th>
-					<th>Created </th>
-					<th>Updated </th>
-					<th>Action  </th>
+					<th>Creat </th>
+					<th>Actualizat </th>
+					<th>Acțiuni  </th>
 				</tr>
 			</thead>
 
@@ -191,7 +191,7 @@
                         <a href="patient_edite.php?id=<?php echo $patient->patient_id;?>" class="btn btn-outline btn-info btn-outline-1x btn-circle" data-toggle="tooltip" title="Edit">
 							<i class="fa fa-pencil-square-o"></i>
 						</a>
-						<a href="patient.php?delete=<?php echo $patient->patient_id;?>" class="btn btn-outline btn-danger btn-outline-1x btn-circle" data-toggle="tooltip" title="Delete" onclick="return confirm('Are you sure you want to delete this item?');">
+						<a href="patient.php?delete=<?php echo $patient->patient_id;?>" class="btn btn-outline btn-danger btn-outline-1x btn-circle" data-toggle="tooltip" title="Delete" onclick="return confirm('Dorești să ștergi această înregistrare?');">
 							<i class="fa fa-trash-o"></i>
 						</a>
 					</td>

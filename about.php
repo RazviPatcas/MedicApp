@@ -26,11 +26,11 @@
 		</div>
 	</div>
 </div><!-- End About Page  -->
-<div class="colored-background">
+<div class="colored-background" style="background:#229AA5;">
 	<div class="layer-stretch">
 		<div class="layer-wrapper layer-bottom-0 animated-wrapper">
 			<div class="layer-ttl layer-ttl-white">
-				<h3 class=" animated animated-down">Who We Are?</h3>
+				<h3 class=" animated animated-down" style="background-color: #00263b;">Who We Are?</h3>
 			</div>
 			<div class="row">
 				<div class="col-md-7">
@@ -154,45 +154,45 @@
 	</div>
 </div><!-- End About Page  -->
 <!-- Start Testimonial Section -->
-<div id="testimonial" class="colored-background">
+<div id="testimonial" class="colored-background" style="background-color: #229AA5;">
 	<div class="layer-stretch">
-		<div class="layer-wrapper layer-bottom-0 animated-wrapper">
-			<div class="layer-ttl layer-ttl-white">
-				<h3 class="animated animated-down">What People Say?</h3>
+		<div class="layer-wrapper layer-bottom-0 animated-wrapper" >
+			<div class="layer-ttl layer-ttl-white" >
+				<h3 class="animated animated-down"  style="background-color: #00263b;">What People Say?</h3>
 			</div>
 			<div id="testimonial-slider" class="owl-carousel owl-theme theme-owl-dot">
 								<div class="testimonial-block animated animated-right">
 					<img class="img-responsive" src="public/uploads/testimonial-3.jpg" alt="">
 					<div class="paragraph-medium paragraph-white">
-						<i class="fa fa-quote-left"></i> Thank you for the remedy. I feel it has been working on a deeper subtle level. An inner seeing. I have had the feeling of a melting inside and great sense of peace and rightness. I experienced this before with your perception and treatment so thank you very much.					</div>
-					<a>Aditya Ghanekar</a>
+						<i class="fa fa-quote-left"></i> Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</div>
+					<a>Lorem ipsum</a>
 				</div>
 								<div class="testimonial-block animated animated-right">
 					<img class="img-responsive" src="public/uploads/testimonial-4.jpg" alt="">
 					<div class="paragraph-medium paragraph-white">
-						<i class="fa fa-quote-left"></i> This was my second visit here I loved it first visit but love it more on my second visit. I loved thier facility and online system.
+						<i class="fa fa-quote-left"></i> Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
 												</div>
-					<a>Amar Ghode</a>
+					<a>Lorem ipsum</a>
 				</div>
 								<div class="testimonial-block animated animated-right">
 					<img class="img-responsive" src="public/uploads/testimonial-2.jpg" alt="">
 					<div class="paragraph-medium paragraph-white">
-						<i class="fa fa-quote-left"></i> Thank you for the remedy. I feel it has been working on a deeper subtle level. An inner seeing. I have had the feeling of a melting inside and great sense of peace and rightness. I experienced this before with your perception and treatment so thank you very much.					</div>
-					<a>Sonu Singh</a>
+						<i class="fa fa-quote-left"></i> Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum	</div>
+					<a>Lorem ipsum</a>
 				</div>
 								<div class="testimonial-block animated animated-right">
 					<img class="img-responsive" src="public/uploads/testimonial-1.jpg" alt="">
 					<div class="paragraph-medium paragraph-white">
-						<i class="fa fa-quote-left"></i> This was my second visit here I loved it first visit but love it more on my second visit. I loved thier facility and online system.
+						<i class="fa fa-quote-left"></i> Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
 					</div>
-					<a>Vaibhav Ramteke</a>
+					<a>Lorem ipsum</a>
 				</div>
 								<div class="testimonial-block animated animated-right">
 					<img class="img-responsive" src="public/uploads/testimonial-5.jpg" alt="">
 					<div class="paragraph-medium paragraph-white">
-						<i class="fa fa-quote-left"></i> Thank you for the remedy. I feel it has been working on a deeper subtle level. An inner seeing. I have had the feeling of a melting inside and great sense of peace and rightness. I experienced this before with your perception and treatment so thank you very much.
+						<i class="fa fa-quote-left"></i> Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
 					</div>
-					<a>winceton logo</a>
+					<a>Lorem ipsum</a>
 				</div>
 							</div>
 		</div>
