@@ -37,7 +37,7 @@
 					</div>
 					<div class="form-submit">
 						<button type="submit" name="forgot" id="forgot-submit" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised mdl-button--raised button button-primary button-pill">Send Reset Link</button>
-					</div>s
+					</div>
 					<div class="login-link">
 						 <span class="paragraph-small">Already have an account?</span>
                         <a href="login.html?route=login">Login</a>

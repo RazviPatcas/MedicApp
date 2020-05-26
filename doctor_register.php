@@ -7,7 +7,6 @@
     require ('class/departments.php');
 
 
-
     $page_name = "<i class='fa fa-registered'></i> Registration <span style='font-size: 18px;'> >>Doctor ";
 ?>
 <?php include('include/nav.php');?>
@@ -17,7 +16,9 @@
     $doctor->add();
 ?>
 </p>
-    <h2 class="text-center text-success" style="font-family: SansSerif;">Please Enter Your Valid Information</h2>
+<div class="page-ttl-name">
+                <h1 style = "text-align:center; color:#32C1CE;"><i class="fa fa-user-md"></i> Înregistrare</h1>
+</div>
     <div id="login-page">
         <div class="layer-stretch" >
             <div class="layer-wrapper" style="background-image: url('public/uploads/slider-1.jpg');">
@@ -127,16 +128,6 @@
                             <input class="mdl-textfield__input" type="password" name="confirmpassword" id="register-confirm-password">
                             <label class="mdl-textfield__label" for="register-confirm-password">Confirm Password <em> *</em></label>
                             <span class="mdl-textfield__error">Please Enter Valid Password(Min 6 Character)!</span>
-                        </div>
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon form-bot-check">
-                            <i class="fa fa-question"></i>
-                            <input class="mdl-textfield__input" type="number" name="bot-check" id="register-bot">
-                            <?php
-                            $a = rand(1,10);
-                            $b = rand(10,20);
-                            ?>
-                            <label class="mdl-textfield__label" for="register-bot">What is <?php echo $a;?> plus <?php echo $b;?> = <em> *</em></label>
-                            <span class="mdl-textfield__error">Please Enter Correct Value!</span>
                         </div>
                         <div class="login-condition">By clicking Creat Account you aggree to our<br /><a href="about.php">Terms & Condition</a></div>
                         <div class="form-submit">
