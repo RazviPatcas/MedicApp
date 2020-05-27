@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rzala
- * Date: 9/25/2018
- * Time: 12:36 AM
- */
+
 require('hospitals.php');
 $hos = new hospitals();
 class doctors

@@ -162,9 +162,9 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 .tbl { display: table; width: 100%; }
 
-.tbl-row { display: table-row; }
+.tbl-row { display: table-row;}
 
-.tbl-cell { display: table-cell; vertical-align: middle; }
+.tbl-cell { display: table-cell; vertical-align: middle;}
 
 .layer-stretch { position: relative; max-width: 1170px; padding: 0 15px; margin: 0 auto; overflow: hidden; }
 
@@ -1458,23 +1458,23 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .footer-block:nth-child(2) { border-left: 1px solid #555; border-right: 1px solid #555; }
 
 .footer-ttl { padding: 0 0 10px 20px; }
-.footer-ttl p { display: inline-block; font-size: 20px; color: #DDD; margin: 0; letter-spacing: .5px; text-transform: uppercase; padding: 10px 20px 10px 0; border-bottom: 1px solid #555; border-radius: 2px; }
+.footer-ttl p { display: inline-block; font-size: 20px; color:white; margin: 0; letter-spacing: .5px; text-transform: uppercase; padding: 10px 20px 10px 0; border-bottom: 1px solid #555; border-radius: 2px; }
 
-.footer-container { padding: 20px 30px; }
+.footer-container { padding: 20px 10px; }
 .footer-container a { display: block; font-size: 14px; color: #AAA; margin: 10px 0; }
 
 .footer-b .tbl-cell { padding: 0; vertical-align: top; }
 .footer-b .tbl-cell:nth-last-child(1) { padding: 0 0 0 10px; }
 .footer-b li { list-style-type: none; }
 .footer-b p { display: block; }
-.footer-b a { position: relative; display: inline-block; margin: 5px 0; padding: 0 0 0 10px; letter-spacing: .5px; }
+.footer-b a { position: relative; display: inline-block; margin: 5px 0; padding: 0 0 0 10px; letter-spacing: .5px; color:white;}
 .footer-b a::before { content: ''; position: absolute; top: 9px; left: 0; width: 3px; height: 3px; background: #AAA; border-radius: 50%; }
 .footer-b a:hover { color: #32C1CE; }
 
 .footer-a .tbl-row:nth-last-child(1) .tbl-cell { border-bottom: 0; }
 .footer-a .tbl-cell { padding: 10px; border-bottom: 1px solid #999; }
-.footer-a .tbl-cell p { color: #AAA; }
-.footer-a .tbl-cell .fa { font-size: 28px; color: #AAA; }
+.footer-a .tbl-cell p { color: white; }
+.footer-a .tbl-cell .fa { font-size: 28px; color: #00c192; }
 .footer-a .tbl-cell .fa.fa-phone { font-size: 25x; }
 .footer-a .tbl-cell .fa.fa-envelope { font-size: 22px; }
 .footer-a .tbl-cell p { margin: 0; }
@@ -1485,7 +1485,7 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .footer-subscribe-button { padding: 10px 0 0 0; }
 .footer-subscribe-button button:hover { color: #FFF; opacity: .8; background: #32C1CE; }
 
-.footer-social { padding: 20px 0 0 0; }
+.footer-social { padding: 20px 0px 0 0; }
 
 /* Copyright */
 #copyright { width: 100%; padding: 5px 0; text-align: center; background: #0A1415; }

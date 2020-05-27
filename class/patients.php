@@ -58,11 +58,11 @@ class patients
             $mobile     = trim($_REQUEST['mobile']);
             $gender     = trim($_REQUEST['gender']);
             $username   = trim($_REQUEST['username']);
-            $password   = trim($_REQUEST['password']);
+          //  $password   = trim($_REQUEST['password']);
             $blood_group = trim($_REQUEST['blood']) ;
             $location    = trim($_REQUEST['location']) ;
 
-          $password   = password_hash($password,PASSWORD_BCRYPT,array('cost'=>12));
+         $password   = hash('sha512',$password);
 
             if ($this->username_exist($username)){
                 echo "<h2 class='text-center text-danger text-capitalize'>Please Try Another username this is already Registered</h2>";

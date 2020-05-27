@@ -6,7 +6,7 @@
 //        if (empty($_REQUEST['password']) ) header('Location: ../login.php');
 
         $email      = $_REQUEST['email'];
-        $password   = $_POST['password'];
+        $password=md5(md5(mysqli_real_escape_string($_POST['password'])));
         $n   = $_POST['n'];
         $m   = $_POST['m'];
         $m = $n+$m;
@@ -24,7 +24,7 @@
 
                         $id         = $row['patient_id'];
                         $user_name  = $row['user_name'];
-                        $pass       = $row['password'];
+                        $pass       = md5(md5(mysqli_real_escape_string($row['password'])));
                         $first_name = $row['first_name'];
                         $last_name  = $row['last_name'];
                         $gender     = $row['gender'];
@@ -78,7 +78,7 @@
 
                         $id         = $row['id'];
                         $user_name  = $row['username'];
-                        $pass       = $row['password'];
+                        $pass       = md5(md5(mysqli_real_escape_string($row['password'])));
                         $first_name = $row['first_name'];
                         $last_name  = $row['last_name'];
                         $gender     = $row['gender'];

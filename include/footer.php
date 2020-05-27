@@ -21,7 +21,7 @@
                 <div class="footer-ttl">
                     <p>Informații</p>
                 </div>
-                <div class="footer-container footer-a">
+                <div class="footer-container footer-a" style="padding-right:10px;">
                     <div class="tbl">
                         <div class="tbl-row">
                             <div class="tbl-cell"><i class="fa fa-map-marker"></i></div>
@@ -32,7 +32,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="tbl-row">
+                        <div class="tbl-row" >
                             <div class="tbl-cell"><i class="fa fa-phone"></i></div>
                             <div class="tbl-cell">
                                 <p class="paragraph-medium paragraph-white">0359876432</p>
