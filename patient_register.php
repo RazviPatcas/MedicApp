@@ -25,19 +25,19 @@
                             <i class="fa fa-user-o"></i>
                             <input class="mdl-textfield__input" type="text" name="firstname" pattern="[A-Z,a-z, ]*" id="register-first-name">
                             <label class="mdl-textfield__label" for="register-first-name">Nume <em> *</em></label>
-                            <span class="mdl-textfield__error">Introdu numele !</span>
+                            <span class="mdl-textfield__error">Introduceți numele !</span>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-user-o"></i>
                             <input class="mdl-textfield__input" type="text" name="lastname" pattern="[A-Z,a-z, ]*" id="register-last-name">
                             <label class="mdl-textfield__label" for="register-last-name">Prenume <em> *</em></label>
-                            <span class="mdl-textfield__error">Introdu prenumele!</span>
+                            <span class="mdl-textfield__error">Introduceți prenumele !</span>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-envelope-o"></i>
                             <input class="mdl-textfield__input" type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="register-email">
                             <label class="mdl-textfield__label" for="register-email">Adresă de e-mail <em> *</em></label>
-                            <span class="mdl-textfield__error">Introdu o adresă de e-mail validă!</span>
+                            <span class="mdl-textfield__error">Introduceți o adresă de e-mail validă!</span>
                         </div>
 
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
@@ -74,7 +74,7 @@
                             <i class="fa fa-phone"></i>
                             <input class="mdl-textfield__input" type="text" name="mobile" pattern="[0-9]*" id="register-mobile">
                             <label class="mdl-textfield__label" for="register-mobile">Telefon <em> *</em></label>
-                            <span class="mdl-textfield__error">Introdu un număr de telefon valid !</span>
+                            <span class="mdl-textfield__error">Introduceți un număr de telefon valid !</span>
                         </div>
 
                         <div class="row form-input">
@@ -95,13 +95,13 @@
                             <i class="fa fa-key"></i>
                             <input class="mdl-textfield__input" type="text" name="username" id="register-username">
                             <label class="mdl-textfield__label" for="register-password">Nume de utilizator <em> *</em></label>
-                            <span class="mdl-textfield__error">Introdu un nume de utilizator valid (minim 6 caractere)!</span>
+                            <span class="mdl-textfield__error">Introduceți un nume de utilizator valid (minim 6 caractere)!</span>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-key"></i>
                             <input class="mdl-textfield__input" type="password" name="password" id="register-password">
                             <label class="mdl-textfield__label" for="register-password">Parolă <em> *</em></label>
-                            <span class="mdl-textfield__error">Introdu o parolă valid (minim 6 caractere)!</span>
+                            <span class="mdl-textfield__error">Introduceți o parolă valid (minim 6 caractere)!</span>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-key"></i>

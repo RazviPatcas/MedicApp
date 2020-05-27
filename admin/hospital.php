@@ -13,14 +13,14 @@
 <div class="page-hdr">
 	<div class="row">
 		<div class="col-4 page-name">
-			<h1><i class="fa fa-user-md"></i>Hospitals</h1>
+			<h1><i class="fa fa-user-md"></i>Spitale/Clinici</h1>
 		</div>
         <div class="page-name col-3 text-right">
             <h1 id="time">Time</h1>
         </div>
 		<div class="col-5 page-menu">
 			<a id="cancel" href="hospital.php" data-toggle="tooltip" data-placement="left" title="Reload"><i class="fa fa-refresh"></i></a>
-			<a href="add_hospital.php" data-toggle="tooltip" data-placement="left" title="Add Doctor"><i class="fa fa-plus"></i></a>
+			<a href="add_hospital.php" data-toggle="tooltip" data-placement="left" title="Adaugă spital"><i class="fa fa-plus"></i></a>
 		</div>
 	</div>
 </div>

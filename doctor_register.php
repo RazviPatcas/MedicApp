@@ -28,14 +28,14 @@
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-user-o"></i>
                             <input class="mdl-textfield__input" type="text" name="firstname" pattern="[A-Z,a-z, ]*" id="register-first-name">
-                            <label class="mdl-textfield__label" for="register-first-name">First Name <em> *</em></label>
-                            <span class="mdl-textfield__error">Please Enter Valid Name!</span>
+                            <label class="mdl-textfield__label" for="register-first-name">Nume <em> *</em></label>
+                            <span class="mdl-textfield__error">Introduceți numele !</span>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-user-o"></i>
                             <input class="mdl-textfield__input" type="text" name="lastname" pattern="[A-Z,a-z, ]*" id="register-last-name">
-                            <label class="mdl-textfield__label" for="register-last-name">Last Name <em> *</em></label>
-                            <span class="mdl-textfield__error">Please Enter Valid Name!</span>
+                            <label class="mdl-textfield__label" for="register-last-name">Prenume <em> *</em></label>
+                            <span class="mdl-textfield__error">Introduceți prenumele !</span>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-file-picture-o"></i>
@@ -45,14 +45,16 @@
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-envelope-o"></i>
                             <input class="mdl-textfield__input" type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="register-email">
-                            <label class="mdl-textfield__label" for="register-email">Email Address <em> *</em></label>
-                            <span class="mdl-textfield__error">Please Enter Valid Email Address!</span>
+                            <label class="mdl-textfield__label" for="register-email">Adresă de e-mail <em> *</em></label>
+                            <span class="mdl-textfield__error">Introduceți o adresă de e-mail validă!</span>
                         </div>
 
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                            <i class="fa fa-location-arrow"></i>
-                            <select name="hospital" id="hospital" class="form-input" >
-                                <option class="text-capitalize text-info " >  Select Your main Chamber :</option>
+                        <i class="fa fa-location-arrow"></i>
+                            <label style="float:left;padding-top:5px;" for="location">Clinica/Spital : </label>
+                            <select style="padding-top:4px;" name="hospital" id="hospital" class="form-input" >
+                            
+                                <option  class="text-capitalize text-info " >  Selectați opțiunile :</option>
                                 <?php
 
                                 $hsptl = new hospitals();
@@ -69,8 +71,9 @@
 
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-location-arrow"></i>
-                            <select name="department" id="department" class="form-input" >
-                                <option class="text-capitalize text-info " >Select Your Department:</option>
+                            <label style="float:left;padding-top:5px;" for="location">Departament : </label>
+                            <select style="padding-top:4px;" name="department" id="department" class="form-input" >
+                                <option class="text-capitalize text-info " >Selectați departament:</option>
                                 <?php
 
                                 $dpt = new departments();
@@ -87,55 +90,55 @@
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-graduation-cap"></i>
                             <input class="mdl-textfield__input" type="text" name="degree" pattern="[A-Z,a-z, ]*" id="register-last-name">
-                            <label class="mdl-textfield__label" for="register-mobile">Degree <em> *</em></label>
-                            <span class="mdl-textfield__error">Please Enter Completed Degree!</span>
+                            <label class="mdl-textfield__label" for="register-mobile">Studii <em> *</em></label>
+                            <span class="mdl-textfield__error">Vă rugăm să introduceți studiile !</span>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-phone"></i>
                             <input class="mdl-textfield__input" type="text" name="mobile" pattern="[0-9]*" id="register-mobile">
-                            <label class="mdl-textfield__label" for="register-mobile">Mobile Number <em> *</em></label>
-                            <span class="mdl-textfield__error">Please Enter Valid Mobile Number!</span>
+                            <label class="mdl-textfield__label" for="register-mobile">Telefon <em> *</em></label>
+                            <span class="mdl-textfield__error">Introduceți un număr de telefon valid !</span>
                         </div>
 
                         <div class="row form-input content-radio-container">
                             <div class="col-md-4">
-                                <label for=""><span></span><p class="text-info"><i class="fa fa-intersex text-success"> </i><b>  Gender : </b></p> </label>
+                                <label for=""><span></span><p class="text-info"><i class="fa fa-intersex text-success"> </i><b>  Sex : </b></p> </label>
                             </div>
                             <div class="col-md-4">
                                 <input type="radio" name="gender" value="Male" id="gender-male" class="mdl-radio__outer-circle">
-                                <label for="gender-male"><span></span><p><i class="fa fa-mars"></i> Male </p></label>
+                                <label for="gender-male"><span></span><p><i class="fa fa-mars"></i> Masculin </p></label>
                             </div>
                             <div class="col-md-4">
                                 <input type="radio" name="gender" value="Female" id="gender-female" class="mdl-radio__outer-circle">
-                                <label for="gender-female"><span></span><p><i class="fa fa-venus"></i> Female </p></label>
+                                <label for="gender-female"><span></span><p><i class="fa fa-venus"></i> Feminin </p></label>
                             </div>
                         </div>
 
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-key"></i>
                             <input class="mdl-textfield__input" type="text" name="username" id="register-username">
-                            <label class="mdl-textfield__label" for="register-password">Username <em> *</em></label>
-                            <span class="mdl-textfield__error">Please Enter Valid Username(Min 6 Character)!</span>
+                            <label class="mdl-textfield__label" for="register-password">Nume de utilizator <em> *</em></label>
+                            <span class="mdl-textfield__error">Introduceți un nume de utilizator valid (minim 6 caractere)!</span>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-key"></i>
                             <input class="mdl-textfield__input" type="password" name="password" id="register-password">
-                            <label class="mdl-textfield__label" for="register-password">Password <em> *</em></label>
-                            <span class="mdl-textfield__error">Please Enter Valid Password(Min 6 Character)!</span>
+                            <label class="mdl-textfield__label" for="register-password">Parolă <em> *</em></label>
+                            <span class="mdl-textfield__error">Introduceți o parolă valid (minim 6 caractere)!</span>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-key"></i>
                             <input class="mdl-textfield__input" type="password" name="confirmpassword" id="register-confirm-password">
-                            <label class="mdl-textfield__label" for="register-confirm-password">Confirm Password <em> *</em></label>
-                            <span class="mdl-textfield__error">Please Enter Valid Password(Min 6 Character)!</span>
+                            <label class="mdl-textfield__label" for="register-confirm-password">Confirmă parola  <em> *</em></label>
+                            <span class="mdl-textfield__error">Parola nu se potrivește !</span>
                         </div>
-                        <div class="login-condition">By clicking Creat Account you aggree to our<br /><a href="about.php">Terms & Condition</a></div>
+                        <div class="login-condition">Dând clic pe creare cont, sunteți de acord cu<br /><a href="about.php">Termenii și condițiile noastre</a></div>
                         <div class="form-submit">
                             <button type="submit" id="register-submit" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised mdl-button--raised button button-primary button-pill" name="register_doctor">Create Account</button>
                         </div>
                         <div class="login-link">
-                            <span class="paragraph-small">Already have an account?</span>
-                            <a href="login.php">Login</a>
+                            <span class="paragraph-small">Aveți deja un cont?</span>
+                            <a href="login.php">Autentificare</a>
                         </div>
                     </form>
                 </div>

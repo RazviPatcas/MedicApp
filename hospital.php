@@ -40,15 +40,23 @@ $page_name = "<i class=\"fa fa-hospital-o\"> </i> Hospitals ";
                                             <img src="public/uploads/<?php echo $hospital->photo;?>" style="height: 120px;;" alt="<?php echo $doctor->name; ?>">
                                         </a>
                                     </div>
-                                    <div class="doctor-name">
-                                        <h4 class="text-capitalize" style="height: 120px">
+                                    <div class="theme-block-data service-block-data">
+<!--                                    <div class="service-icon">
+                                            <i class="fa fa-stethoscope"></i>
+                                        </div>-->
+                                        <h3 class="text-capitalize" style="height: 150px">
                                             <a href="hospital_details.php?id=<?php echo $hospital->id; ?>"
-                                               style="color: #fff;font-size: 15px">
+                                               style="color: black;font-size:25px;">
                                                 <b> <?php echo $hospital->name; ?></b>
                                                 <p class="text-capitalize" style="font-family: 'Harlow Solid Italic'; color: #0b0b0b">
                                                     <?php echo $hospital->address; ?>
                                                 </p>
-                                            </a>
+                                                <div class="theme-block-hidden service-hidden-block">
+                                                <i class="fa fa-stethoscope"></i>
+                                        <h4>
+                                            <a href="hospital_details.php?id==<?php echo $hospital->id;?>"><?php echo $hospital->name;?></a>
+                                        </h4>
+                                
                                         </h4>
                                     </div>
                                 </div>

@@ -26,7 +26,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 text-justify" >
-                    <button type="button" class="btn btn-success btn-lg btn-block btn-pill">
+                        <button type="button" class="btn btn-success btn-lg btn-block btn-pill">
                         <a href="doctor_register.php">
                             <h2><b>Înregistrare doctor</b></h2>
                         </a></button>

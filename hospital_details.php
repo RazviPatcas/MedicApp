@@ -47,7 +47,7 @@
     <div class="layer-stretch animated-wrapper">
         <div class="layer-wrapper layer-bottom-0">
             <div class="layer-ttl">
-                <h3 class="animated animated-down">Doctors</h3>
+                <h3 class="animated animated-down">Doctori disponibili</h3>
             </div>
             <div class="row">
                 <?php
@@ -101,9 +101,9 @@
     }
 ?><!-- End About Page  -->
 <!-- Start Testimonial Section -->
-<div id="testimonial" class="colored-background">
-	<div class="layer-stretch">
-		<div class="layer-wrapper layer-bottom-0 animated-wrapper">
+<div id="testimonial" class="colored-background" style="background:#229AA5;">
+	<div class="layer-stretch"  >
+		<div class="layer-wrapper layer-bottom-0 animated-wrapper" >
 			<div class="layer-ttl layer-ttl-white">
 				<h3 class="animated animated-down">What People Say?</h3>
 			</div>

@@ -223,16 +223,21 @@
                         <canvas id="clinicStats" width="518" height="518" style="display: block; width: 259px; height: 259px;"></canvas>
                         <script>
                             var barChartData = {
-                                labels: ['Patient', 'Appointment', 'Doctor', 'Department', 'Hospital', 'Comment'],
+                                labels: ['Pacienți', 'Doctori','Spitale', 'Departamente', 'Programări', 'Comentarii'],
                                 datasets: [{
-                                    label: "System Statistics",
-                                    data: [20,290,37,16,57,100],
-                                    backgroundColor: [color(window.chartColors.purple).alpha(0.7).rgbString(),
+                                    label: "Statisticile sistemului",
+                                    data: [[<?php echo $patient->count();?>],
+                                           [<?php echo $doctor->count();?>],
+                                           [<?php echo $hos->count();?>],
+                                           [<?php echo $dpt->count();?>],10],
+                                    backgroundColor: 
+                                    [   color(window.chartColors.purple).alpha(0.7).rgbString(),
                                         color(window.chartColors.blue).alpha(0.7).rgbString(),
                                         color(window.chartColors.orange).alpha(0.7).rgbString(),
                                         color(window.chartColors.green).alpha(0.7).rgbString(),
-                                        color(window.chartColors.red).alpha(0.7).rgbString(),
-                                        color(window.chartColors.yellow).alpha(0.7).rgbString()],
+                                        //color(window.chartColors.red).alpha(0.7).rgbString(),
+                                        //olor(window.chartColors.yellow).alpha(0.7).rgbString()
+                                        ],
                                     borderColor: [window.chartColors.purple,
                                         window.chartColors.blue,
                                         window.chartColors.orange,
@@ -271,7 +276,7 @@
                                     backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
                                     borderColor: window.chartColors.blue,
                                     borderWidth: 2,
-                                    data: [301,182,235,140,296,123],
+                                    data: [<?php echo $doctor->count();?>],
                                     fill: 'end'
                                 }]
                             };

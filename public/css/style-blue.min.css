@@ -261,7 +261,7 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 .btn-primary { background-color: #32C1CE; border-color: #32C1CE; }
 
-.btn-success { background-color: #00c292; border-color: #00c292; }
+.btn-success { background-color: #00c292; }
 
 .btn-warning { background-color: #fec107; border-color: #fec107; }
 .btn-warning:hover, .btn-warning:active, .btn-warning:focus { color: #FFF !important; }
