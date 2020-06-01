@@ -91,11 +91,11 @@
                     <i class="icon-user-follow"></i><span>Adauga pacient</span>
                 </a>
             </li>
-          <li>
+<!--          <li>
                 <a href="request.php">
                     <i class="icon-envelope-open"></i><span>Cereri</span>
                 </a>
-            </li>
+            </li>-->
         </ul>
     </li>
     <li id="appointment-li">

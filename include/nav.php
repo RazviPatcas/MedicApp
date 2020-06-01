@@ -149,8 +149,8 @@
                     <?php if (isset($_SESSION['admin_name'])) { ?>
 
                         <li><a href="admin" id="menu-admin"
-                               class="mdl-button mdl-js-button mdl-js-ripple-effect btn btn-facebook mdl-color-text--black">
-                                <b>Admin Panel</b></a></li>
+                               class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                <b>Dashboard</b></a></li>
                         <?php
                     }
                     ?>
