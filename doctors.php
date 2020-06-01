@@ -11,8 +11,8 @@
     <?php include('include/nav.php');
 ?>
 
-    <!-- Start Doctor List Section -->
-<div class="layer-stretch animated-wrapper" style="background-color: #f7f7f7">
+<!-- Start Doctor List Section -->
+<div class="layer-stretch animated-wrapper" style="opacity: 1;">
     <div class="layer-wrapper layer-bottom-0">
         <div class="row text-center">
             <div class="col-md-8">
@@ -30,7 +30,7 @@
                                     ?>
 
                                     <div class="col-sm-3">
-                                        <div class="theme-block theme-block-hover animated animated-up fadeInUp">
+                                        <div class="theme-block animated animated-up">
                                             <div class="theme-block-picture" style="height: auto">
                                                 <a href="doctor_details.php?id=<?php echo $doctor->id; ?>">
                                                     <img src="public/uploads/<?php echo $doctor->photo; ?>"
@@ -38,20 +38,15 @@
                                                          alt="<?php echo $doctor->first_name . " " . $doctor->last_name ?>">
                                                 </a>
                                             </div>
-                                            <div class="doctor-name">
-                                                <h4 class="text-capitalize" style="height: 220px">
+                                            <div class="theme-block-data service-block-data">
+                                                <h3 class="text-capitalize" style="height: 220px">
                                                     <a href="doctor_details.php?id=<?php echo $doctor->id; ?>"
                                                        style="color: #e5007a;font-size: 14px">
                                                         <b>Dr. <?php echo $doctor->first_name . " " . $doctor->last_name . "<br>"; ?></b>
                                                         <?php echo $doctor->degree . "<br>"; ?>
                                                         <p class="text-capitalize"
                                                            style="font-family: 'Harlow Solid Italic'; color: #0b0b0b">
-                                                            <?php
-                                                            $id = $doctor->department_id;
-                                                            $doct->doctor_dpt($id);
-                                                            echo " (Exp:" . $doctor->experience . " Y)";
 
-                                                            ?>
                                                         </p>
                                                         <hr>
                                                         <p class="text-capitalize"
@@ -155,7 +150,7 @@
                                             <div class="doctor-name">
                                                 <h4 class="text-capitalize" style="height: 200px">
                                                     <a href="doctor_details.php?id=<?php echo $doctor->id; ?>"
-                                                       style="color: #fff;font-size: 15px">
+                                                       style="color: #fff;font-size: 25px">
                                                         <b>Dr. <?php echo $doctor->first_name . " " . $doctor->last_name . "<br>"; ?></b>
                                                         <!--?php echo $doctor->degree . "<br>"; ?>-->
                                                         <p class="text-capitalize"
@@ -247,7 +242,7 @@
 <!-- End Doctor List Section -->
 
 <!-- Start Department div -->
-<div class="colored-background" style="background:#229AA5;">
+<div class="colored-background">
 	<div class="layer-stretch">
 		<div class="layer-wrapper layer-bottom-0 animated-wrapper">
 			<div class="layer-ttl layer-ttl-white">

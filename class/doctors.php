@@ -30,19 +30,6 @@ class doctors
             echo $dpt->name_adj;
         }
     }
-//
-//    function doctor_hptl($id){
-//        global  $pdo;
-//        global  $hos;
-//        $sql2 = "SELECT * FROM hospitals WHERE id = :id";
-//        $r = $pdo->prepare($sql2);
-//        $r->execute(['id'=>$id]);
-//        $hptl = $r->fetchAll();
-//
-//        foreach ($hptl as $hpt){
-//            echo "<h6 class=''>".$hos->find($hpt->location_id)."</h6>";
-//        }
-//    }
     function count() {
         global $pdo;
         $sql = "SELECT * FROM doctors";

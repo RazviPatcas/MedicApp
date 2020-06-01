@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rzala
- * Date: 9/25/2018
- * Time: 2:12 AM
- */
 
 class patients
 {

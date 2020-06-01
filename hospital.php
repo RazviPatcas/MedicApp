@@ -35,9 +35,9 @@ $page_name = "<i class=\"fa fa-hospital-o\"> </i> Hospitals ";
 
                             <div class="col-sm-6">
                             <div class="theme-block animated animated-up">
-                                    <div class="theme-block-picture">
+                                    <div class="theme-block-picture" style="height: auto">
                                         <a href="">
-                                            <img src="public/uploads/<?php echo $hospital->photo;?>" style="height: 120px;;" alt="<?php echo $doctor->name; ?>">
+                                            <img src="public/uploads/<?php echo $hospital->photo;?>"  alt="<?php echo $doctor->name; ?>">
                                         </a>
                                     </div>
                                     <div class="theme-block-data service-block-data">
