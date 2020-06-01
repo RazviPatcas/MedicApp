@@ -1,25 +1,3 @@
-/**
-* Cuprins:
-* 1.0  -  BASIC CSS 
-* 2.0  -  DEFAULT CSS START
-* 3.0  -  HEADER CSS START   
-* 4.0  -  HEADER 2 CSS START
-* 5.0  -  HOME PAGE CSS START
-* 6.0  -  SERVICE PAGE CSS START
-* 7.0  -  DOCTOR PAGE CSS START
-* 8.0  -  ABOUT PAGE CSS START
-* 9.0  -  CONTACT PAGE CSS START
-* 10.0 - LOGIN PAGE CSS START
-* 11.0 - FORM INPUT CSS START
-* 12.0 - MYAPPOINTMENT PAGE CSS START
-* 13.0 - GALLERY PAGE CSS START
-* 14.0 - BLOGS LIST PAGE CSS START
-* 15.0 - BLOG DETAIL PAGE CSS START
-* 16.0 - FOOTER CSS START
-* 17.0 - MEDIA QUERIES START
-
-
-
 /************************************************
 [ 1.0 - BASIC CSS ] ***********************
 *************************************************/
@@ -118,14 +96,23 @@ h5 { font-size: 16px; }
 
 h6 { font-size: 14px; }
 
-.mdl-button, .mdl-textfield__input { font-family: "Montserrat", sans-serif; }
+.mdl-button, .mdl-textfield__input 
+{ 
+  font-family: "Montserrat", sans-serif; 
+}
 
-.mdl-textfield__label::after, .mdl-selectfield__label::after { background-color: #32C1CE; }
+.mdl-textfield__label::after, .mdl-selectfield__label::after 
+{ 
+  background-color: #32C1CE; }
 
-.mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label, .mdl-selectfield--floating-label.is-focused .mdl-selectfield__label, .mdl-selectfield--floating-label.is-dirty .mdl-selectfield__label { color: #32C1CE; }
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label, .mdl-selectfield--floating-label.is-focused .mdl-selectfield__label, .mdl-selectfield--floating-label.is-dirty .mdl-selectfield__label { 
+  color: #32C1CE; }
 
-.dataTables_wrapper { font-size: 14px; }
-.dataTables_wrapper td { vertical-align: middle; padding: 8px 5px; }
+.dataTables_wrapper { 
+  font-size: 14px; }
+  
+.dataTables_wrapper td { 
+  vertical-align: middle; padding: 8px 5px; }
 
 .img-thumbnail, .modal-content { border-radius: 2px; }
 

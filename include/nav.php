@@ -120,9 +120,7 @@
         <div class="layer-stretch hdr">
             <div class="row align-items-center justify-content-end">
             <a href="index.php"><h2 class="text-info"><b>Medic App</b></h2></a>
-<!--                <a href="index.php" style="padding-left: 60px" class="text-primary"><h1 style="font-family: 'Harlow Solid Italic'">AppointmentBD</h1></a>-->
-               <!-- <a href="" style="padding-left: 60px" class="text-primary"><h1 style="font-family: 'Harlow Solid Italic'"><?php echo $page_name;?></h1></a>
-               --> <!-- Start Menu Section -->
+
                 <ul class="col menu">
                     <li >
                         <a href="index.php" id="" class="mdl-button mdl-js-button mdl-js-ripple-effect">Acasă</a>

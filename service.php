@@ -34,27 +34,7 @@ $page_name = "<i class=\"fa fa-medkit\"></i> Services ";
 					<span>Doctors follow up after appointment </span>
 					<p class="paragraph-small paragraph-white">Doctor is a vehicle for transportation of sick or injured people to, from or between places of treatment for an illness or injury.</p>
 				</div>
-<!--				<div class="feature-block animated animated-up">-->
-<!--					<div class="feature-icon">-->
-<!--						<i class="fa fa-shopping-bag"></i>-->
-<!--					</div>-->
-<!--					<span>Pharmacies and drug stores</span>-->
-<!--					<p class="paragraph-small paragraph-white">Pharmacies and drug stores comprise establishments engaged in retailing prescription or nonprescription drugs and medicines, and other types of goods.</p>-->
-<!--				</div>-->
-<!--				<div class="feature-block animated animated-up">-->
-<!--					<div class="feature-icon">-->
-<!--						<i class="fa fa-hospital-o"></i>-->
-<!--					</div>-->
-<!--					<span>Laboratory and research</span>-->
-<!--					<p class="paragraph-small paragraph-white">A medical laboratory or clinical laboratory is a laboratory where tests are done on biological specimens in order to get information about the health of a patient.</p>-->
-<!--				</div>-->
-<!--				<div class="feature-block animated animated-up">-->
-<!--					<div class="feature-icon">-->
-<!--						<i class="fa fa-user-md"></i>-->
-<!--					</div>-->
-<!--					<span>Medical nursing home</span>-->
-<!--					<p class="paragraph-small paragraph-white">Medical nursing homes, including residential treatment centers and geriatric care facilities, are health care institutions which have accommodation facilities.</p>-->
-<!--				</div>-->
+
 			</div>
 		</div>
 	</div>

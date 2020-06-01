@@ -7,9 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medic App</title>
-   <!-- <link rel="icon" type="image/x-icon" href="public/uploads/favicon-blue-32x32.png" />
-    <link rel="icon" type="image/x-icon" href="public/uploads/favicon-blue-32x32.png" />-->
-
     <link rel="stylesheet" href="public/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,500">
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
@@ -21,8 +18,7 @@
     <link rel="stylesheet" href="public/css/animate.min.css" />
     <link rel="stylesheet" href="public/css/magnific-popup.css" />
     <link rel="stylesheet" href="public/css/flexslider.css" />
-    <!-- <link rel="stylesheet" href="public/css/style-blue.min.css"> -->
-    <link rel="stylesheet" href="public/css/style-blue.min.css">
+    <link rel="stylesheet" href="public/css/style-app.css"/>
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="admin/public/css/datatables.min.css">
 </head>
