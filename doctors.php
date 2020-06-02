@@ -202,7 +202,7 @@
                 </div>
 
                 <div class="theme-material-card">
-                    <div class="sub-ttl">Our Departments</div>
+                    <div class="sub-ttl">Departamentele noastre</div>
                     <div class="flexslider theme-flexslider">
 
                         <div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" style="width: 1600%; transition-duration: 0s; transform: translate3d(-391px, 0px, 0px);">
@@ -222,8 +222,7 @@
                                             <div class="theme-flexslider-container">
                                                 <img src="public/uploads/<?php echo $department->photo;?>" draggable="false">
                                                 <h4><?php echo $department->name;?></h4>
-                                                <a href="  " class="anchor-icon pull-right">Read More <i
-                                                            class="fa fa-arrow-right"></i></a>
+                                                <a href="  " class="anchor-icon pull-right">Mai multe... <i class="fa fa-arrow-right"></i></a>
                                             </div>
                                         </li>
                                         <?php
@@ -234,7 +233,6 @@
                         </div>
                         <ol class="flex-control-nav flex-control-paging"><li><a href="#" class="flex-active">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li><a href="#">6</a></li></ol><ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev" href="#">Previous</a></li><li class="flex-nav-next"><a class="flex-next" href="#">Next</a></li></ul></div>
                 </div>
-                <div class="theme-material-card"><p>Nice Job</p></div>
             </div>
         </div>
     </div>
@@ -242,11 +240,11 @@
 <!-- End Doctor List Section -->
 
 <!-- Start Department div -->
-<div class="colored-background">
+<div class="colored-background" style = "background-color: #219aa5;">
 	<div class="layer-stretch">
 		<div class="layer-wrapper layer-bottom-0 animated-wrapper">
 			<div class="layer-ttl layer-ttl-white">
-				<h3 class="animated animated-down" style="background-color: #00263b;"> Department </h3>
+				<h3 class="animated animated-down" style="background-color: #00263b;"> Departamente </h3>
 			</div>
 			<div class="layer-container">
                 <?php
