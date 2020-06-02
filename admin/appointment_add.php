@@ -14,7 +14,7 @@
 		<div class="page-hdr">
 			<div class="row">
 				<div class="col-4 page-name">
-					<h1><i class="fa fa-envelope"></i>Add Appointment</h1>
+					<h1><i class="fa fa-envelope"></i>Adaugă programare</h1>
 				</div>
                 <div class="page-name col-3 text-right">
                     <h1 id="time">Time</h1>
@@ -29,7 +29,7 @@
 			<div class="row">
 				<div class="col-md-7">
 					<div class="content-block content-block-horizantal">
-						<div class="content-block-ttl">Appointment Info</div>
+						<div class="content-block-ttl">Informații programare</div>
 						<div class="content-block-main">
 							<input type="hidden" name="_token" value="413ccea5ca6b8ce59e0da0d74a15110a305317f742542dcc5f09cc85ddf4f25288776a66377494dbf3154612b21c29b49cdcd6ee235b8ea2b77355d52eef0188">
 							<div class="content-input" style="display: none">
@@ -38,9 +38,9 @@
 								<input type="hidden" name="department" id="appointment-department" value="">
 							</div>
 							<div class="content-input">
-								<label>Choose Doctor</label>
+								<label>Alege doctor</label>
 								<select name="doctor" id="app-doctor" class="select-list appointment-doctor">
-                                    <option value="">Select Doctor</option>
+                                    <option value="">Selectează doctor</option>
                                     <?php
                                     $sql = "SELECT * FROM doctors order by department_id";
                                     $result = $pdo->prepare($sql);
@@ -72,10 +72,10 @@
 							</div>
                             <input type="hidden" name="dpt_id" id="dpt_id" value="<?php echo $dpt_id;?>" >
 							<div class="content-input">
-								<label>Appointment Date : </label>
+								<label>Data programării : </label>
 								<input type="date" name="date" id="ap-date" value="" placeholder="Date" required>
-								<p class="content-input-error-name">Please Select Date!</p>
-								<div class="content-description">Select Date to select time slot.</div>
+								<p class="content-input-error-name">Selectează data</p>
+								<div class="content-description"></div>
 							</div>
 							<div class="content-input" id="add-address">
 								<label>Hospital & Address : </label>
@@ -123,16 +123,6 @@
 								<input type="text" id="prblm" name="email" value="" placeholder="Problems" required>
 								<p class="content-input-error-name">Please enter valid Email!</p>
 							</div>
-<!--                            <div class="content-input">-->
-<!--								<label>Email : </label>-->
-<!--								<input type="email" class="input-email" name="email" value="--><?php //echo $email;?><!--" placeholder="Email" required>-->
-<!--								<p class="content-input-error-name">Please enter valid Email!</p>-->
-<!--							</div>-->
-<!--							<div class="content-input">-->
-<!--								<label>Mobile : </label>-->
-<!--								<input type="number" class="input-number" name="mobile" value="--><?php //echo $mobile;?><!--" placeholder="Mobile" required>-->
-<!--								<p class="content-input-error-name">Please enter valid Phone number!</p>-->
-<!--							</div>-->
 						</div>
 					</div>
 				</div>

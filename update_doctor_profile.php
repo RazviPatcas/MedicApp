@@ -6,7 +6,7 @@ $page_name = "<i class='fa fa-pencil-square-o'></i> My Profile<span style='font-
 ?>
 <?php include('include/nav.php');?>
 
-<div id="edit-profile-page" class="animated-wrapper " style="opacity: 1;background-color: #7b5389">
+<div id="edit-profile-page" class="animated-wrapper " style="opacity: 1;background-color: #5dbcd2">
     <div class="layer-stretch">
         <div class="row layer-wrapper text-center">
             <div class="col-md-8 form-full-container">
