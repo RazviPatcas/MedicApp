@@ -71,12 +71,12 @@
 </div>
 <ul>
     <li id="dashboard-li">
-        <a href="index.php"><i class="icon-screen-desktop">
-            </i><span>Dashboard</span></a></li>
+        <a href="index.php"><i style="color:white;font-size:15px;" class="icon-screen-desktop"></i><span style="color:white;font-size:15px;">Dashboard</span></a>
+    </li>
 
     <li id="patient-li">
         <a class="menu-dropdown active-danger">
-            <i class="fa fa-wheelchair"></i><span>Pacienti</span><i class="fa fa-angle-down"></i>
+            <i style="color:white;font-size:15px;" class="fa fa-wheelchair"></i><span style="color:white;font-size:15px;">Pacienti</span><i style="color:white;font-size:20px;" class="fa fa-angle-down"></i>
         </a>
         <ul id="patient" class="sub-menu">
 
@@ -191,13 +191,6 @@
             <li>
                 <a class="menu-dropdown" href="user.php"><i class="icon-people"></i><span>Subscribers</span></a>
             </li>
-<!--            <li>-->
-<!--                <a class="menu-dropdown" href=""><i class="icon-user-follow"></i><span>Add User</span></a>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a class="menu-dropdown" href=""><i class="icon-user-follow"></i><span>Update Users</span></a>-->
-<!--            </li>-->
-
         </ul>
     </li>
 

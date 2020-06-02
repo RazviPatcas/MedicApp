@@ -1043,7 +1043,7 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 /* Home Testimonial */
 .testimonial-block { width: 100%; text-align: center; }
-.testimonial-block img { width: 150px !important; height: 150px; margin: 0 auto; border: 3px solid #FFF; border-radius: 2px; }
+.testimonial-block img { width: 150px !important; height: 150px; margin: 0 auto; }
 .testimonial-block a { display: inline-block; font-size: 24px; color: #EEE; padding: 10px 0 0 0; }
 .testimonial-block .paragraph-medium { text-align: center; }
 .testimonial-block .fa { color: #32C1CE; font-size: 32px; }

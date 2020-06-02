@@ -107,40 +107,40 @@ foreach ($dpts
 				<h3 class="animated animated-down" style="background-color: #00263b;">Ce spun pacienții ?</h3>
 			</div>
 			<div id="testimonial-slider" class="owl-carousel owl-theme theme-owl-dot">
-								<div class="testimonial-block animated animated-right">
-					<!--<img class="img-responsive" src="public/uploads/testimonial-3.jpg" alt="">-->
+					<div class="testimonial-block animated animated-right">
+					    <img class="img-responsive" src="public/uploads/testimonial-1.png" alt="">
 					<div class="paragraph-medium paragraph-white">
 						<i class="fa fa-quote-left"></i> Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</div>
-					<a>Aditya Ghanekar</a>
+					<a>John Doe</a>
 			</div>
 					<div class="testimonial-block animated animated-right">
 					<img class="img-responsive" src="public/uploads/testimonial-1.png" alt="">
 					<div class="paragraph-medium paragraph-white">
 						<i class="fa fa-quote-left"></i> Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-												</div>
-					<a>Amar Ghode</a>
+					</div>
+					<a>John Doe</a>
 				</div>
 								<div class="testimonial-block animated animated-right">
 					<img class="img-responsive" src="public/uploads/testimonial-1.png" alt="">
 					<div class="paragraph-medium paragraph-white">
 						<i class="fa fa-quote-left"></i> Thank you for the remedy. I feel it has been working on a deeper subtle level. An inner seeing. I have had the feeling of a melting inside and great sense of peace and rightness. I experienced this before with your perception and treatment so thank you very much.					</div>
-					<a>Sonu Singh</a>
+					<a>John Doe</a>
 				</div>
 								<div class="testimonial-block animated animated-right">
 					<img class="img-responsive" src="public/uploads/testimonial-1.png" alt="">
 					<div class="paragraph-medium paragraph-white">
 						<i class="fa fa-quote-left"></i> This was my second visit here I loved it first visit but love it more on my second visit. I loved thier facility and online system.
 					</div>
-					<a>Vaibhav Ramteke</a>
+					<a>John Doe</a>
 				</div>
 								<div class="testimonial-block animated animated-right">
-					<img class="img-responsive" src="public/uploads/testimonial-5.jpg" alt="">
+					<img class="img-responsive" src="public/uploads/testimonial-1.png" alt="">
 					<div class="paragraph-medium paragraph-white">
 						<i class="fa fa-quote-left"></i> Thank you for the remedy. I feel it has been working on a deeper subtle level. An inner seeing. I have had the feeling of a melting inside and great sense of peace and rightness. I experienced this before with your perception and treatment so thank you very much.
 					</div>
-					<a>winceton logo</a>
+					<a>John Doe</a>
 				</div>
-							</div>
+			</div>
 		</div>
 	</div>
 </div><!-- End Testimonial Section -->

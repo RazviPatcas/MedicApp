@@ -7,7 +7,6 @@ $page_name = "<i class=\"fa fa-info-circle\"></i> Department ";
 <?php
     include('include/nav.php');
     require ('class/doctors.php');
-    //  require ('class/hospitals.php');
     require ('class/patients.php');
     require ('class/departments.php');
 ?>
@@ -38,7 +37,7 @@ $page_name = "<i class=\"fa fa-info-circle\"></i> Department ";
                     <br>
                     <div class="row">
                         <div class="col-6 paragraph-medium paragraph-black">
-                            <div >Phone : <?php echo $doctor->phone; ?> </div>
+                            <div >Telefon : <?php echo $doctor->phone; ?> </div>
                             <div >Email : <?php echo $doctor->email; ?> </div>
                             <div >Gender : <?php echo $doctor->gender; ?> </div>
                             <div >Age : <?php echo $doctor->age; ?> Year</div>
@@ -72,6 +71,7 @@ $page_name = "<i class=\"fa fa-info-circle\"></i> Department ";
                             <input type="hidden" name="doctor_id" value="<?php echo $_GET['id'];?>">
                             <input type="hidden" name="time" value="<?php echo $doctor->start_appointment;?>">
                             <input type="hidden" name="address" value="<?php foreach ($hospital as $name) { echo $name->name.", ".$name->address; } ?>">
+                           <br>
                            <br>
                             <?php
                             if (isset($_SESSION['patient_id'])) {
