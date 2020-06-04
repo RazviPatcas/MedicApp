@@ -11,6 +11,8 @@
 ?>
 
 
+
+
     <div class="page-container">
 
         <script>
@@ -180,7 +182,7 @@
                         <div class="col-sm-6 col-md-3 col-lg-4" >
                             <a href="user.php">
                             <div class="icon-widget">
-                                <h2 class="icon-widget-heading"><b>Subscriberi</b></h2>
+                                <h2 class="icon-widget-heading"><b>Abonați</b></h2>
                                 <div class="icon-widget-body tbl">
                                     <p class="tbl-cell">
                                         <i class="fa fa-user-circle-o text-info"></i>
@@ -217,9 +219,9 @@
             </script>
 
             <div class="row">
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-4">
                     <div class="dashboard-card"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
-                        <p class="dashboard-card-ttl"><i class="fa fa-bar-chart"></i>Statisitici sistem</p>
+                        <p class="dashboard-card-ttl"><i class="fa fa-bar-chart"></i>Statistici sistem</p>
                         <canvas id="clinicStats" width="518" height="518" style="display: block; width: 259px; height: 259px;"></canvas>
                         <script>
                             var barChartData = {
@@ -229,13 +231,16 @@
                                     data: [[<?php echo $patient->count();?>],
                                            [<?php echo $doctor->count();?>],
                                            [<?php echo $hos->count();?>],
-                                           [<?php echo $dpt->count();?>],10],
+                                           [<?php echo $dpt->count();?>],
+                                           [<?php $result = $appointment->all();
+                                                  echo $result->rowCount();?>],10],
+                                    
                                     backgroundColor: 
                                     [   color(window.chartColors.purple).alpha(0.7).rgbString(),
                                         color(window.chartColors.blue).alpha(0.7).rgbString(),
                                         color(window.chartColors.orange).alpha(0.7).rgbString(),
                                         color(window.chartColors.green).alpha(0.7).rgbString(),
-                                        //color(window.chartColors.red).alpha(0.7).rgbString(),
+                                        color(window.chartColors.red).alpha(0.7).rgbString()
                                         //olor(window.chartColors.yellow).alpha(0.7).rgbString()
                                         ],
                                     borderColor: [window.chartColors.purple,
@@ -244,8 +249,8 @@
                                         window.chartColors.green,
                                         window.chartColors.red,
                                         window.chartColors.yellow],
-                                    borderWidth: 2
-                                }]
+                                    borderWidth: 2,
+                                    fill: 'end'  }]
                             };
                             var ctx = document.getElementById("clinicStats").getContext("2d");
                             window.myBar = new Chart(ctx, {
@@ -264,19 +269,20 @@
                         </script>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-4">
                     <div class="dashboard-card"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
-                        <p class="dashboard-card-ttl"><i class="fa fa-bar-chart"></i>Statisitici programri</p>
+                        <p class="dashboard-card-ttl"><i class="fa fa-bar-chart"></i>Statistici programări</p>
                         <canvas id="grouped" width="518" height="518" style="display: block; width: 259px; height: 259px;"></canvas>
                         <script>
                             var barChartData = {
-                                labels: ["Apr","May","Jun","Jul","Aug","Sep"],
+                                labels: [<?php $year = date("Y");echo $year; ?>],
                                 datasets: [{
-                                    label: 'Appointment Count ',
+                                    label: 'Programări ',
                                     backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
                                     borderColor: window.chartColors.blue,
                                     borderWidth: 2,
-                                    data: [<?php echo $doctor->count();?>],
+                                    data: [<?php $result = $appointment->all();
+                                                  echo $result->rowCount();?>],
                                     fill: 'end'
                                 }]
                             };
@@ -295,22 +301,21 @@
                         </script>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-4">
                     <div class="dashboard-card"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
-                        <p class="dashboard-card-ttl"><i class="fa fa-bar-chart"></i>Pacienti</p>
+                        <p class="dashboard-card-ttl"><i class="fa fa-bar-chart"></i>Pacienți</p>
                         <canvas id="lineChart" width="518" height="518" style="display: block; width: 259px; height: 259px;"></canvas>
                         <script>
                             var ctx = document.getElementById("lineChart");
                             var myChart = new Chart(ctx, {
                                 type: 'line',
                                 data: {
-                                    labels: ["Apr","May","Jun","Jul","Aug","Sep"],
+                                    labels: ["Iun","Iul","Aug","Sept","Oct","Nov"],
                                     datasets: [{
-                                        label: 'Patient Count ',
-                                        data: [3010,1820,2350,3400,2260,4230],
+                                        label: 'Pacienți ', 
+                                        data:[<?php echo $patient->count();?>],
                                         backgroundColor: [
-                                            color(window.chartColors['yellow']).alpha(0.5).rgbString(),
-                                        ],
+                                            color(window.chartColors['yellow']).alpha(10.5).rgbString(),                                        ],
                                         borderColor: [
                                             window.chartColors['yellow']
                                         ],
