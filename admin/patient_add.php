@@ -4,7 +4,6 @@
 
 <?php require('class/patients.php')?>
 
-<!--page Container start-->
     <div class="page-container">
         <link rel="stylesheet" href="public/css/jquery.fancybox.min.css">
         <script src="public/js/jquery.fancybox.min.js"></script>
@@ -28,8 +27,8 @@
                         <h1><i class="fa fa-users"></i>Adaugă pacient</h1>
                     </div>
                     <div class="col-sm-4 page-menu" >
-                        <a id="cancel" href="patient.php" data-toggle="tooltip" data-placement="left" title="" data-original-title="Back to List"><i class="fa fa-reply"></i></a>
-                        <button type="submit" name="patient_submit" data-toggle="" data-placement="left" title="" data-original-title="Save Page"><i class="fa fa-floppy-o"></i></button>
+                        <a id="cancel" href="patient.php" data-toggle="tooltip" data-placement="left" title="" data-original-title="înapoi la listă"><i class="fa fa-reply"></i></a>
+                        <button type="submit" name="patient_submit" data-toggle="" data-placement="left" title="" data-original-title="Salvare"><i class="fa fa-floppy-o"></i></button>
                     </div>
                 </div>
             </div><div style="display: block; width: 920px; height: 70px; float: none;"></div>

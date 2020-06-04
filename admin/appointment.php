@@ -19,16 +19,16 @@
 <div class="page-hdr">
     <div class="row">
         <div class="col-4 page-name">
-            <h1><i class="fa fa-plus-square"></i>Appointments</h1>
+            <h1><i class="fa fa-plus-square"></i>Programări</h1>
         </div>
         <div class="page-name col-3 text-right">
-            <h1 id="time">Time</h1>
+            <h1 id="time">Timp</h1>
         </div>
         <div class="col-5 page-menu">
-            <a id="cancel" href=" " data-toggle="tooltip" data-placement="left" title="Reload">
+            <a id="cancel" href=" " data-toggle="tooltip" data-placement="left" title="Reîncarcă">
                 <i class="fa fa-refresh"></i>
             </a>
-            <a href="appointment_add.php?ap=add" data-toggle="tooltip" data-placement="left" title="Add Appointment">
+            <a style = "background-color:#32C1CE;" href="appointment_add.php?ap=add" data-toggle="tooltip" data-placement="left" title="Adaugă programare">
                 <i class="fa fa-plus"></i>
             </a>
         </div>
@@ -145,10 +145,9 @@
                         <div class="card card-color-new">
                             <div class="row card-hdr">
                                 <div class="col-2 card-left text-left">
-                                    <span class="text-center">1</span>
                                 </div>
                                 <div class="col-10 pull-right text-right card-right">
-                                    <em>Appointment ID :</em> <span>12040<?php echo $appointment->id;?>1230</span>
+                                    <em>ID Programare :</em> <span><?php echo $appointment->id;?></span>
                                 </div>
                             </div>
                             <div class="row card-bdy">
@@ -163,9 +162,8 @@
                                     <div class="card-img">
                                         <img class="img-thumbnail" src="../public/uploads/<?php echo $doctor->photo;?>" alt="">
                                     </div>
-                                    <div class="card-info text-capitalize">
-                                        <a href="" class="card-name"
-                                           target="_blank"><?php echo $doctor->first_name." ".$doctor->last_name;?></a>
+                                    <div class="card-info ">
+                                        <a href="doctors.php" class="card-name" ><?php echo $doctor->first_name." ".$doctor->last_name;?></a>
                                         <div class="card-text">
                                             <?php
                                             $dpt = new departments();
@@ -197,7 +195,7 @@
                                     foreach ($patients as $patient) {
 
                                         ?>
-                                        <a href="index.php?route=user/edit&id=" class="patient-name" target="_blank">
+                                        <a href="patient.php" class="patient-name">
                                             <i class="fa fa-user-o"></i> <?php echo $patient->first_name." ".$patient->last_name;?> </a>
                                         <p class="patient-other">
                                             <i class="fa fa-envelope-o"></i>
@@ -212,7 +210,7 @@
                                 </div>
                                 <div class="col-2 appointment-time text-center">
                                     <div class="crated_at">
-                                        <i class="fa fa-calendar"></i>Created
+                                        <i class="fa fa-calendar"></i>Creat
                                         <span><?php echo $appointment->created_at;?></span>
                                     </div>
                                 </div>
@@ -231,7 +229,7 @@
 <!--                                       class="btn btn-outline btn-info btn-outline-1x btn-circle" data-toggle="tooltip"-->
 <!--                                       title="Edit"><i class="fa fa-pencil-square-o"></i></a>-->
                                     <a href="appointment.php?id=<?php echo $appointment->id;?>" class="btn btn-outline btn-danger btn-outline-1x btn-circle"
-                                       data-toggle="tooltip" title="Delete" onclick="return confirm('Are you sure you want to delete this item?');">
+                                       data-toggle="tooltip" title="Șterge" onclick="return confirm('Sunteți sigur să ștergeți înregistrarea?');">
                                         <i class="fa fa-trash-o"></i>
 
                                     </a>
@@ -272,9 +270,9 @@
             <div class="modal-footer">
                 <form action="index.php?route=appointment/delete" class="delete-card-button" method="post">
                     <input type="hidden" value="" name="id">
-                    <button type="submit" class="btn btn-danger" name="delete">Delete</button>
+                    <button type="submit" class="btn btn-danger" name="delete">Șterge</button>
                 </form>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Închide</button>
             </div>
         </div>
     </div>

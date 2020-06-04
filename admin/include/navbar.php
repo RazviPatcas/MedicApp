@@ -77,19 +77,19 @@
     <li id="patient-li">
         <a class="menu-dropdown active-danger">
            <!-- <i style="color:white;font-size:15px;" class="fa fa-wheelchair"></i> -->
-           <i style="color:white;font-size:15px;" class="fa fa-user-plus"></i><span style="color:white;font-size:15px;">Pacienti</span><i style="color:white;font-size:20px;" class="fa fa-angle-down"></i>
+           <i style="color:white;font-size:15px;" class="fa fa-user-plus"></i><span style="color:white;font-size:15px;">Pacienți</span><i style="color:white;font-size:20px;" class="fa fa-angle-down"></i>
         </a>
         <ul id="patient" class="sub-menu">
 
             <li>
                 <a href="patient.php">
-                    <i class="icon-people"></i><span>Lista pacienti</span>
+                    <i class="icon-people"></i><span>Listă pacienți</span>
                 </a>
             </li>
 
             <li id="appointment">
                 <a href="patient_add.php">
-                    <i class="icon-user-follow"></i><span>Adauga pacient</span>
+                    <i class="icon-user-follow"></i><span>Adaugă pacient</span>
                 </a>
             </li>
 <!--          <li>
@@ -102,7 +102,7 @@
     <li id="appointment-li">
         <a class="menu-dropdown">
             <i style="color:white;font-size:15px;" class="fa fa-plus-square-o"></i>
-            <span style="color:white;font-size:15px;">Programare</span>
+            <span style="color:white;font-size:15px;">Programări</span>
             <i style="color:white;font-size:20px;" class="fa fa-angle-down"></i>
         </a>
 
@@ -111,13 +111,13 @@
             <li id="appointment">
                 <a href="appointment.php">
                     <i class="fa fa-plus-square"></i>
-                    <span>Lista programare</span>
+                    <span>Listă programări</span>
                 </a>
             </li>
             <li id="department">
                 <a href="appointment_add.php">
                     <i class="icon-user-follow"></i>
-                    <span>Adauga programare</span>
+                    <span>Adaugă programare</span>
                 </a>
             </li>
 <!--            <li id="service">-->
@@ -138,10 +138,10 @@
             <span style="color:white;font-size:15px;">Doctori</span><i style="color:white;font-size:20px;" class="fa fa-angle-down"></i></a>
         <ul id="doctor" class="sub-menu">
             <li id="menu_page">
-                <a href="doctors.php"><i class="icon-people"></i><span>Lista doctori</span></a>
+                <a href="doctors.php"><i class="icon-people"></i><span>Listă doctori</span></a>
             </li>
             <li id="home_page">
-                <a href="add_doctors.php"><i class="fa fa-user-plus"></i><span>Adauga doctori</span></a>
+                <a href="add_doctors.php"><i class="fa fa-user-plus"></i><span>Adaugă doctori</span></a>
             </li>
         </ul>
     </li>
@@ -150,10 +150,10 @@
             <span style="color:white;font-size:15px;">Clinici</span><i style="color:white;font-size:20px;" class="fa fa-angle-down"></i></a>
         <ul id="hospital" class="sub-menu">
             <li id="menu_page">
-                <a href="hospital.php"><i class="fa fa-list-alt"></i><span>Lista clinici</span></a>
+                <a href="hospital.php"><i class="fa fa-list-alt"></i><span>Listă clinici</span></a>
             </li>
             <li id="home_page">
-                <a href="add_hospital.php"><i class="fa fa-home"></i><span>Adauga clinica</span></a>
+                <a href="add_hospital.php"><i class="fa fa-home"></i><span>Adaugă clinică</span></a>
             </li>
 
         </ul>
@@ -163,19 +163,19 @@
             <span style="color:white;font-size:15px;">Departamente</span><i style="color:white;font-size:20px;" class="fa fa-angle-down"></i></a>
         <ul id="department" class="sub-menu">
             <li id="menu_page">
-                <a href="department.php"><i class="icon-home"></i><span>Lista departamente</span></a>
+                <a href="department.php"><i class="icon-home"></i><span>Listă departamente</span></a>
             </li>
             <li id="home_page">
-                <a href="department_add.php"><i class="icon-home"></i><span>Adauga departamente</span></a>
+                <a href="department_add.php"><i class="icon-home"></i><span>Adaugă departamente</span></a>
             </li>
         </ul>
 
     </li>
     <li id="user-li">
-        <a class="menu-dropdown"><i style="color:white;font-size:15px;" class="icon-people"></i><span style="color:white;font-size:15px;">Subscriber </span><i style="color:white;font-size:20px;" class="fa fa-angle-down"></i></a>
+        <a class="menu-dropdown"><i style="color:white;font-size:15px;" class="icon-people"></i><span style="color:white;font-size:15px;">Abonați </span><i style="color:white;font-size:20px;" class="fa fa-angle-down"></i></a>
         <ul id="user" class="sub-menu">
             <li>
-                <a class="menu-dropdown" href="user.php"><i class="icon-people"></i><span>Subscribers</span></a>
+                <a class="menu-dropdown" href="user.php"><i class="icon-people"></i><span>Abonați</span></a>
             </li>
         </ul>
     </li>

@@ -15,11 +15,11 @@
 			<h1><i class="fa fa-users"></i>Pacienți</h1>
 		</div>
         <div class="page-name col-3 text-right">
-            <h1 id="time" style="color: #900024">Time</h1>
+            <h1 id="time" style="color: #32C1CE">Timp</h1>
         </div>
 		<div class="col-5 page-menu">
 			<a id="cancel" href="patient.php" data-toggle="tooltip" data-placement="left" title="Reload"><i class="fa fa-refresh"></i></a>
-			<a href="patient_add.php" data-toggle="tooltip" data-placement="left" title="Add Patient"><i class="fa fa-plus"></i></a>
+			<a style="background-color:#32C1CE" href="patient_add.php" data-toggle="tooltip" data-placement="left" title="Adaugă pacient"><i class="fa fa-plus"></i></a>
 		</div>
 	</div>
 </div>
@@ -183,15 +183,15 @@
                         ?>
                     </td>
 					<td class="user-status">
-                        <span class="badge badge-sm badge-success badge-pill text-capitalize"><?php if ($patient->status==1){echo "active";}else{echo "in active";}?></span>
+                        <span class="badge badge-sm badge-success badge-pill text-capitalize"><?php if ($patient->status==1){echo "activ";}else{echo "in active";}?></span>
                     </td>
 					<td class="user-date"><?php echo $patient->created_at;?></td>
 					<td class="user-date"><?php echo $patient->updated_at;?></td>
 					<td class="table-action">
-                        <a href="patient_edite.php?id=<?php echo $patient->patient_id;?>" class="btn btn-outline btn-info btn-outline-1x btn-circle" data-toggle="tooltip" title="Edit">
+                        <a href="patient_edite.php?id=<?php echo $patient->patient_id;?>" class="btn btn-outline btn-info btn-outline-1x btn-circle" data-toggle="tooltip" title="Editează">
 							<i class="fa fa-pencil-square-o"></i>
 						</a>
-						<a href="patient.php?delete=<?php echo $patient->patient_id;?>" class="btn btn-outline btn-danger btn-outline-1x btn-circle" data-toggle="tooltip" title="Delete" onclick="return confirm('Dorești să ștergi această înregistrare?');">
+						<a href="patient.php?delete=<?php echo $patient->patient_id;?>" class="btn btn-outline btn-danger btn-outline-1x btn-circle" data-toggle="tooltip" title="Șterge" onclick="return confirm('Dorești să ștergi această înregistrare?');">
 							<i class="fa fa-trash-o"></i>
 						</a>
 					</td>

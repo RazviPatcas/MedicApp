@@ -23,10 +23,10 @@
         <div class="page-hdr">
             <div class="row">
                 <div class="page-name col-4">
-                    <h1><i class="fa fa-tachometer"></i>Dashboard</h1>
+                    <h1><i class="fa fa-tachometer"></i>Panou de control</h1>
                 </div>
                 <div class="page-name col-3 text-right">
-                    <h1 id="time">Time</h1>
+                    <h1 id="time">Timp</h1>
                 </div>
                 <div class="col-5 text-right">
                     <div class="nav-menu">
@@ -39,13 +39,13 @@
                                         <div class="tbl-cell">
                                             <a href="patient_add.php">
                                                 <i class="icon-user-follow text-primary"></i>
-                                                <span>Adauga pacient</span>
+                                                <span>Adaugă pacient</span>
                                             </a>
                                         </div>
                                         <div class="tbl-cell">
                                             <a href="appointment_add.php">
                                                 <i class="icon-calendar text-primary"></i>
-                                                <span>Adauga programare</span>
+                                                <span>Adaugă programare</span>
                                             </a>
                                         </div>
                                     </div>
@@ -54,13 +54,13 @@
                                         <div class="tbl-cell">
                                             <a href="add_hospital.php">
                                                 <i class="fa fa-hospital-o text-danger"></i>
-                                                <span>Adauga clinica</span>
+                                                <span>Adaugă clinică</span>
                                             </a>
                                         </div>
                                         <div class="tbl-cell">
                                             <a href="department_add.php">
                                                 <i class="fa fa-building text-warning"></i>
-                                                <span>Adauga departament</span>
+                                                <span>Adaugă departament</span>
                                             </a>
                                         </div>
                                     </div>
@@ -68,7 +68,7 @@
                                         <div class="tbl-cell">
                                             <a href="add_doctors.php">
                                                 <i class="fa fa-user-md text-success"></i>
-                                                <span>Adauga doctori</span>
+                                                <span>Adaugă doctori</span>
                                             </a>
                                         </div>
                                     </div>
@@ -87,7 +87,7 @@
                         <div class="col-sm-6 col-md-3 col-lg-4">
                             <a href="patient.php">
                             <div class="icon-widget">
-                                    <h5 class="icon-widget-heading"><b>Pacienti</b></h5>
+                                    <h5 class="icon-widget-heading"><b>Pacienți</b></h5>
                                 <div class="icon-widget-body tbl">
                                     <p class="tbl-cell">
                                             <i class="fa fa-user-plus " style="color: #32C1CE"></i>
@@ -161,7 +161,7 @@
                         <div class="col-sm-6 col-md-3 col-lg-4" >
                             <a href="appointment.php">
                             <div class="icon-widget">
-                                <h5 class="icon-widget-heading"><b>Programari</b></h5>
+                                <h5 class="icon-widget-heading"><b>Programări</b></h5>
                                 <div class="icon-widget-body tbl">
                                     <p class="tbl-cell">
                                         <i class="fa fa-calendar-minus-o text-info"></i>

@@ -17,11 +17,11 @@
 					<h1><i class="fa fa-envelope"></i>Adaugă programare</h1>
 				</div>
                 <div class="page-name col-3 text-right">
-                    <h1 id="time">Time</h1>
+                    <h1 id="time">Timp</h1>
                 </div>
 				<div class="col-5 page-menu">
-					<a id="cancel" href="appointment.php" data-toggle="tooltip" data-placement="left" title="Back to List"><i class="fa fa-reply"></i></a>
-					<button type="submit" name="submit" data-toggle="tooltip" data-placement="left" title="Save Appointment"><i class="fa fa-floppy-o"></i></button>
+					<a id="cancel" href="appointment.php" data-toggle="tooltip" data-placement="left" title="Înapoi la listă"><i class="fa fa-reply"></i></a>
+					<button type="submit" name="submit" data-toggle="tooltip" data-placement="left" title="Salvează"><i class="fa fa-floppy-o"></i></button>
 				</div>
 			</div>
 		</div>
@@ -78,11 +78,11 @@
 								<div class="content-description"></div>
 							</div>
 							<div class="content-input" id="add-address">
-								<label>Hospital & Address : </label>
+								<label>Spitalul/Clinica și adresa : </label>
 								<div id="doctor_loc"></div>
 							</div>
                             <div class="content-input" id="add-ap-slot">
-								<label>Appointment Time Start From(24 H): </label>
+								<label>Ora programării: </label>
 								<div id="ap-slot"></div>
 							</div>
 						</div>
@@ -90,12 +90,13 @@
 				</div>
 				<div class="col-md-5">
 					<div class="content-block content-block-horizantal">
-						<div class="content-block-ttl">Patient Info</div>
+						<div class="content-block-ttl">Informații pacient
+                        </div>
 						<div class="content-block-main">
 							<div class="content-input">
-								<label> Patient Name : </label>
+								<label> Nume pacient : </label>
                                 <select name="patient" id="patient" class="text-capitalize">
-                                    <option value=""> Select Patient </option>
+                                    <option value=""> Selectează pacient </option>
                                     <?php
                                     $sql = "SELECT * FROM patients";
                                     $result = $pdo->prepare($sql);
@@ -118,10 +119,10 @@
 
 
 							</div>
-							<div class="content-input">
+						<!--	<div class="content-input">
 								<label>Problems (If Any ): </label>
 								<input type="text" id="prblm" name="email" value="" placeholder="Problems" required>
-								<p class="content-input-error-name">Please enter valid Email!</p>
+								<p class="content-input-error-name">Please enter valid Email!</p>-->
 							</div>
 						</div>
 					</div>
@@ -130,7 +131,7 @@
 			
 			
 			<div class="content-submit text-center">
-				<button type="submit" name="submit" id="ap_sub" class="btn btn-primary">Save</button>
+				<button type="submit" name="submit" id="ap_sub" class="btn btn-primary">Salvare</button>
 			</div>
 		</div>
 	</form>
