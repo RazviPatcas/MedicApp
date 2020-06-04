@@ -13,11 +13,15 @@ $dpt = new departments();
 
 $result = $dpt->all();
 $departments = $result->fetchAll();
+
 session_start();
 if (!isset($_SESSION['patient_email'])) {header("Location: login.php");}
 if (isset($_SESSION['admin_email'])) {header("Location: admin/appointment_add.php");}
 
 ?>
+
+
+
 
 <div id="appointment">
     <div class="container" style="background-color: #229AA5; height:700px">
@@ -58,12 +62,19 @@ if (isset($_SESSION['admin_email'])) {header("Location: admin/appointment_add.ph
 
                     </div>
 
-                  <  <div class="mdl-textfield mdl-textfield--floating-label form-input-icon form-bot-check" id="time_ap">
+                    <div class="mdl-textfield mdl-textfield--floating-label form-input-icon form-bot-check" id="time_ap">
                         <i class="fa fa-clock-o"></i>
                         <div id="ap_time"></div>
-
+                        <?php
+                            
+                            foreach ($departments as $key=>$department) {
+                                ?>
+                                <option value="<?php echo $department->id;?>" id="v"><?php echo $department->name; ?></option>
+                                <?php
+                            }
+                            ?>
                     </div>
-<!--                    <input type="hidden" name="id" value="--><?php //echo $_SESSION['patient_id']; ?><!--">-->
+                    <input type="hidden" name="id" value="--><?php echo $_SESSION['patient_id']; ?><!--">
                     <div class="form-submit text-center" id="submit">
                         <input type="submit" name="appointment_submit" id="ap_sub" value="Confirm Appointment" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised mdl-button--raised button button-primary button-pill">
                     </div>

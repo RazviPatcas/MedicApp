@@ -88,7 +88,7 @@
                                     <h5 class="icon-widget-heading"><b>Pacienti</b></h5>
                                 <div class="icon-widget-body tbl">
                                     <p class="tbl-cell">
-                                            <i class="fa fa-wheelchair " style="color: #32C1CE"></i>
+                                            <i class="fa fa-user-plus " style="color: #32C1CE"></i>
                                     </p>
                                     <p class="tbl-cell text-right"><b>
                                             <?php

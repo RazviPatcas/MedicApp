@@ -72,9 +72,9 @@ class patients
                 $result->execute();
 
                 if ($result){
-                    echo '<h2 class="text-center text-success text-capitalize">patient Registration Successful !!! <a href="login.php">Login Please</a></h2>';
+                    echo '<h2 class="text-center text-success "> Pacient înregistrat cu succes ! <a href="login.php">Autentificare</a></h2>';
                 }else
-                    echo '<h2 class="text-center text-danger text-capitalize">patient Registration failed !!! <a href="login.php">Login Please</a></h2>';
+                    echo '<h2 class="text-center text-danger"> Înregistrarea pacientului a eșuat ! <a href="login.php"></a></h2>';
 
 
             }

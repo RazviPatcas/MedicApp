@@ -6,7 +6,7 @@ $page_name = "<i class='fa fa-pencil-square-o'></i> My Profile<span style='font-
 ?>
 <?php include('include/nav.php');?>
 
-<div id="edit-profile-page" class="animated-wrapper " style="opacity: 1;background-color: #7b5389">
+<div id="edit-profile-page" class="animated-wrapper " style="opacity: 1;background-color: #219aa5;">
     <div class="layer-stretch">
         <div class="row layer-wrapper text-center">
             <div class="col-md-8 form-full-container">
@@ -112,7 +112,7 @@ $page_name = "<i class='fa fa-pencil-square-o'></i> My Profile<span style='font-
                         <div class="col-sm-12 col-md-6">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input is-upgraded"
                                  data-upgraded=",MaterialTextfield">
-                                <input class="mdl-textfield__input" type="text" name="country" value="Bangladesh"
+                                <input class="mdl-textfield__input" type="text" name="country" value=""
                                        id="profile-country" readonly>
                                 <label class="mdl-textfield__label" for="profile-country"></label>
                                 <input type="hidden" name="id" value="<?php echo $doctor->patient_id;?>">

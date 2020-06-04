@@ -279,15 +279,7 @@
                                     Dacă doriți să dați un utilizator admin, atunci completați acest câmp, altfel lăsați-l gol.
                                     </div>
                                 </div>
-                                <div class="content-input">
-                                  <label>Notify User : </label>
-                                    <div class="content-radio-container">
-                                        <div>
-                                            <input type="checkbox" name="sendmail" value="1" id="send-mail" checked="">
-                                           <label for="send-mail"><span><i class="fa fa-check"></i></span><p>Send an Email</p></label>
-                                       </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>

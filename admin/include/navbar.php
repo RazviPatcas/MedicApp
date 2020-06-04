@@ -50,17 +50,17 @@
 
                 <div class="menu-user-icon"><!--<i class="fa fa-user-circle"></i>-->
                     <a href="profile.php">
-                        <i class="fa fa-user-circle"></i>
+                        <i style= "color:white;" class="fa fa-user-circle"></i>
 <!--                        <img src="public/images/--><?php //echo $_SESSION['admin_img']?><!--" style="height: 50px" alt="">-->
                     </a>
                 </div>
                 <div class="menu-user-info"><a href="profile.php">
-                    <p><?php echo $_SESSION['admin_name'];?></p>
-                    <p><?php echo $_SESSION['admin_first_name'];
+                    <p style= "color:white;"><?php echo $_SESSION['admin_name'];?></p>
+                    <p style= "color:white;"><?php echo $_SESSION['admin_first_name'];
                              echo "\n";                    
                              echo $_SESSION['admin_last_name'];?></p></a>
 <div class="menu-user-dropdown">
-    <i class="fa fa-angle-double-down fa-2x" id="menu-user-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></i>
+    <i style= "color:white;" class="fa fa-angle-double-down fa-2x" id="menu-user-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></i>
     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-user-drop">
         <li><a href="../index.php" target="_blank"><i class="icon-link"></i>Website</a></li>
         <li><a href="profile.php"><i class="icon-user"></i>Profil</a></li>
@@ -76,7 +76,8 @@
 
     <li id="patient-li">
         <a class="menu-dropdown active-danger">
-            <i style="color:white;font-size:15px;" class="fa fa-wheelchair"></i><span style="color:white;font-size:15px;">Pacienti</span><i style="color:white;font-size:20px;" class="fa fa-angle-down"></i>
+           <!-- <i style="color:white;font-size:15px;" class="fa fa-wheelchair"></i> -->
+           <i style="color:white;font-size:15px;" class="fa fa-user-plus"></i><span style="color:white;font-size:15px;">Pacienti</span><i style="color:white;font-size:20px;" class="fa fa-angle-down"></i>
         </a>
         <ul id="patient" class="sub-menu">
 
@@ -100,9 +101,9 @@
     </li>
     <li id="appointment-li">
         <a class="menu-dropdown">
-            <i class="fa fa-plus-square-o"></i>
-            <span>Programare</span>
-            <i class="fa fa-angle-down"></i>
+            <i style="color:white;font-size:15px;" class="fa fa-plus-square-o"></i>
+            <span style="color:white;font-size:15px;">Programare</span>
+            <i style="color:white;font-size:20px;" class="fa fa-angle-down"></i>
         </a>
 
         <ul id="appointment" class="sub-menu">
@@ -133,8 +134,8 @@
         </ul>
     </li>
     <li id="doctor-li">
-        <a class="menu-dropdown"><i class="fa fa-user-md"></i>
-            <span>Doctori</span><i class="fa fa-angle-down"></i></a>
+        <a class="menu-dropdown"><i style="color:white;font-size:15px;" class="fa fa-user-md"></i>
+            <span style="color:white;font-size:15px;">Doctori</span><i style="color:white;font-size:20px;" class="fa fa-angle-down"></i></a>
         <ul id="doctor" class="sub-menu">
             <li id="menu_page">
                 <a href="doctors.php"><i class="icon-people"></i><span>Lista doctori</span></a>
@@ -145,8 +146,8 @@
         </ul>
     </li>
     <li id="hospital-li">
-        <a class="menu-dropdown"><i class="fa fa-hospital-o"></i>
-            <span>Clinici</span><i class="fa fa-angle-down"></i></a>
+        <a class="menu-dropdown"><i style="color:white;font-size:15px;" class="fa fa-hospital-o"></i>
+            <span style="color:white;font-size:15px;">Clinici</span><i style="color:white;font-size:20px;" class="fa fa-angle-down"></i></a>
         <ul id="hospital" class="sub-menu">
             <li id="menu_page">
                 <a href="hospital.php"><i class="fa fa-list-alt"></i><span>Lista clinici</span></a>
@@ -158,8 +159,8 @@
         </ul>
     </li>
     <li id="department-li">
-        <a class="menu-dropdown"><i class="fa fa-building"></i>
-            <span>Departamentul</span><i class="fa fa-angle-down"></i></a>
+        <a class="menu-dropdown"><i style="color:white;font-size:15px;" class="fa fa-building"></i>
+            <span style="color:white;font-size:15px;">Departamente</span><i style="color:white;font-size:20px;" class="fa fa-angle-down"></i></a>
         <ul id="department" class="sub-menu">
             <li id="menu_page">
                 <a href="department.php"><i class="icon-home"></i><span>Lista departamente</span></a>
@@ -170,23 +171,8 @@
         </ul>
 
     </li>
-   <!-- <li id="area-li">
-        <a class="menu-dropdown"><i class="fa fa-map-marker"></i>
-            <span>Areas</span><i class="fa fa-angle-down"></i></a>
-        <ul id="area" class="sub-menu">
-            <li>
-                <a class="menu-dropdown" href="locations.php"><i class="icon-list"></i><span>Area List</span></a>
-            </li>
-            <li>
-                <a href="add_location.php"><i class="icon-map"></i><span>Add Area</span></a>
-            </li>
-
-
-        </ul>
-    </li>-->
-
     <li id="user-li">
-        <a class="menu-dropdown"><i class="icon-people"></i><span>Subscriber </span><i class="fa fa-angle-down"></i></a>
+        <a class="menu-dropdown"><i style="color:white;font-size:15px;" class="icon-people"></i><span style="color:white;font-size:15px;">Subscriber </span><i style="color:white;font-size:20px;" class="fa fa-angle-down"></i></a>
         <ul id="user" class="sub-menu">
             <li>
                 <a class="menu-dropdown" href="user.php"><i class="icon-people"></i><span>Subscribers</span></a>
