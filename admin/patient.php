@@ -18,7 +18,7 @@
             <h1 id="time" style="color: #32C1CE">Timp</h1>
         </div>
 		<div class="col-5 page-menu">
-			<a id="cancel" href="patient.php" data-toggle="tooltip" data-placement="left" title="Reload"><i class="fa fa-refresh"></i></a>
+			<a id="cancel" href="patient.php" data-toggle="tooltip" data-placement="left" title="Reîncarcă"><i class="fa fa-refresh"></i></a>
 			<a style="background-color:#32C1CE" href="patient_add.php" data-toggle="tooltip" data-placement="left" title="Adaugă pacient"><i class="fa fa-plus"></i></a>
 		</div>
 	</div>
@@ -121,7 +121,7 @@
 			<thead>
 				<tr class="table-heading" style="color: black;background-color: #fff">
 					<th class="table-srno">#</th>
-					<th>Informații persoană </th>
+					<th>Informații pacient </th>
 					<th>Nume utilizator </th>
 					<th>Rol utilizator </th>
 					<th>Status </th>

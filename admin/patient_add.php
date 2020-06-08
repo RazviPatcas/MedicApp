@@ -48,31 +48,31 @@
                                     <div class="col-sm-6">
                                         <label><text>*</text>Nume : </label>
                                         <input type="text" class="input-text" name="firstname" value="" placeholder="" required="">
-                                        <p class="content-input-error-name">Te rog introdu un nume !</p>
+                                        <p class="content-input-error-name">Te rog introdu un nume </p>
                                     </div>
                                     <div class="col-sm-6">
                                         <label><text>*</text>Prenume : </label>
                                         <input type="text" class="input-text" name="lastname" value="" placeholder="" required="">
-                                        <p class="content-input-error-name">Te rog introdu un prenume !</p>
+                                        <p class="content-input-error-name">Te rog introdu un prenume </p>
                                     </div>
                                 </div>
                                 <div class="row content-input">
                                     <div class="col-sm-6">
                                         <label><text>*</text>Email : </label>
                                         <input type="email" class="input-email" name="email" value="" placeholder="" required="">
-                                        <p class="content-input-error-name">Te rog introdu o adresă de email !</p>
+                                        <p class="content-input-error-name">Te rog introdu o adresă de email </p>
                                     </div>
                                     <div class="col-sm-6">
                                         <label><text>*</text>Telefon : </label>
                                         <input type="number" class="input-mobile" name="mobile" value="" placeholder="" min="1" required="">
-                                        <p class="content-input-error-name">Te rog introdu un număr de telefon !</p>
+                                        <p class="content-input-error-name">Te rog introdu un număr de telefon </p>
                                     </div>
                                 </div>
                                 <div class="content-input">
                                     <label><text>*</text>Parolă (min 6 caractere) :</label>
                                     <input type="password" class="input-password" pattern=".{6,}" title="Minimum 6 word required!" name="password" placeholder="" required="">
                                     <p class="content-input-error-name">Te rog introdu o parolă !</p>
-                                    <div class="content-description">This password will be mailed to user.</div>
+                                    <div class="content-description">Această parolă va fi trimisă către utilizator </div>
                                 </div>
                             </div>
                         </div>

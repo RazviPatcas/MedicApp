@@ -1,7 +1,8 @@
 <?php include('include/db.php'); ?>
 <?php include('include/header.php'); ?>
 <?php include('include/navbar.php'); ?>
-<?php require ('class/doctors.php')?>
+<?php require ('class/appointments.php'); ?>
+<?php require ('class/doctors.php');?>
 
 <div class="page-container">
             <script>
@@ -9,17 +10,20 @@
 	$('#doctor-li>a').addClass('active');
             </script>
 
+
+    
+
 <div class="page-hdr">
 	<div class="row">
 		<div class="col-4 page-name">
-			<h1><i class="fa fa-user-md"></i>Doctors</h1>
+			<h1><i class="fa fa-user-md"></i>Doctori</h1>
 		</div>
         <div class="page-name col-3 text-right">
-            <h1 id="time">Time</h1>
+            <h1 id="time">Timp</h1>
         </div>
 		<div class="col-5 page-menu">
-			<a id="cancel" href="doctors.php" data-toggle="tooltip" data-placement="left" title="Reload"><i class="fa fa-refresh"></i></a>
-			<a href="add_doctors.php" data-toggle="tooltip" data-placement="left" title="Add Doctor"><i class="fa fa-plus"></i></a>
+			<a id="cancel" href="doctors.php" data-toggle="tooltip" data-placement="left" title="Reîncarcă"><i class="fa fa-refresh"></i></a>
+			<a style = "background-color:#32C1CE;" href="add_doctors.php" data-toggle="tooltip" data-placement="left" title="Adaugă doctor"><i class="fa fa-plus"></i></a>
 		</div>
 	</div>
 </div>
@@ -29,11 +33,11 @@
 			<thead>
 				<tr class="table-heading">
 					<th>#</th>
-					<th>Doctor Info</th>
-                    <th>Department</th>
-                    <th>Picture</th>
-					<th class="text-center">Appointment</th>
-					<th class="table-action">Action</th>
+					<th>Informații doctor</th>
+                    <th>Departament</th>
+                    <th>Imagine</th>
+					<th class="text-center">Programări</th>
+					<th class="table-action">Acțiuni</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -56,6 +60,8 @@
                         foreach ($docts as $doct) {
 
                 ?>
+
+
                 <tr>
                 <td class="table-srno"><?php echo $doct->id;?></td>
                 <td>
@@ -64,22 +70,22 @@
                     <p class="font-12 margin-0"><?php echo $doct->phone;?></p>
                 </td>
                 <td>
-                    <?php $doctors->doctor_dpt($doct->id); ?>
+                    <?php echo $doct->department_id;?>
                 </td>
                     <td class="table-img">
                         <img class="img-thumbnail" src="../public/uploads/<?php echo $doct->photo;?>" alt="">
                     </td>
 
                 <td class="text-center">
-                    <a href="appointment.php?doctor=<?php echo $doct->id;?>">
-                        0
+                    <a href="appointment.php?doctor=">
+                  1
                     </a>
                 </td>
                 <td class="table-action">
-                    <a href="include/make_admin.php?id=<?php echo $doct->id; ?>" class="btn btn-outline btn-info btn-outline-1x btn-circle" data-toggle="tooltip" title="Make Admin" onclick="return confirm('Are you sure you want to Make Admin this Doctor?');"><i class="fa fa-header"></i></a>
+                    <a href="include/make_admin.php?id=<?php echo $doct->id; ?>" class="btn btn-outline btn-info btn-outline-1x btn-circle" data-toggle="tooltip" title="Faceți admin" onclick="return confirm('Dorești ca acest doctor sa fie administrator?');"><i class="fa fa-header"></i></a>
 
-                    <a href="edit_doctor.php?id=<?php echo $doct->id; ?>" class="btn btn-outline btn-info btn-outline-1x btn-circle" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil-square-o"></i></a>
-                    <a href="doctors.php?delete=<?php echo $doct->id; ?>" class="btn btn-outline btn-danger btn-outline-1x btn-circle table-delete" data-toggle="tooltip" title="Delete" onclick="return confirm('Are you sure you want to delete this item?');">
+                    <a href="edit_doctor.php?id=<?php echo $doct->id; ?>" class="btn btn-outline btn-info btn-outline-1x btn-circle" data-toggle="tooltip" title="Editează"><i class="fa fa-pencil-square-o"></i></a>
+                    <a href="doctors.php?delete=<?php echo $doct->id; ?>" class="btn btn-outline btn-danger btn-outline-1x btn-circle table-delete" data-toggle="tooltip" title="Șterge" onclick="return confirm('Dorești să ștergi această înregistrare?');">
                         <i class="fa fa-trash-o"></i>
                     </a>
                 </td>

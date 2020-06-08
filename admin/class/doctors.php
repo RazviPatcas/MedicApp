@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rzala
- * Date: 9/25/2018
- * Time: 12:36 AM
- */
+
 require('hospitals.php');
 $hos = new hospitals();
 class doctors
@@ -35,19 +30,6 @@ class doctors
             echo $dpt->name_adj;
         }
     }
-//
-//    function doctor_hptl($id){
-//        global  $pdo;
-//        global  $hos;
-//        $sql2 = "SELECT * FROM hospitals WHERE id = :id";
-//        $r = $pdo->prepare($sql2);
-//        $r->execute(['id'=>$id]);
-//        $hptl = $r->fetchAll();
-//
-//        foreach ($hptl as $hpt){
-//            echo "<h6 class=''>".$hos->find($hpt->location_id)."</h6>";
-//        }
-//    }
     function count() {
         global $pdo;
         $sql = "SELECT * FROM doctors";
@@ -83,21 +65,21 @@ class doctors
 //            $mail           = trim($_REQUEST['email']);
             $mobile         = trim($_REQUEST['mobile']);
             $gender         = trim($_REQUEST['gender']);
-            $age            = trim($_REQUEST['age']);
+//            $age            = trim($_REQUEST['age']);
             $department_id  = trim($_REQUEST['department']);
             $hospital_id    = trim($_REQUEST['chamber']);
-            $position       = trim($_REQUEST['position']);
+ //           $position       = trim($_REQUEST['position']);
             $role_id       = trim($_REQUEST['role']);
             $degree         = trim($_REQUEST['degree']);
-            $speciality     = trim($_REQUEST['speciality']);
+//            $speciality     = trim($_REQUEST['speciality']);
             $experience     = trim($_REQUEST['experience']);
-            $awards         = trim($_REQUEST['awards']);
+ //           $awards         = trim($_REQUEST['awards']);
             $username       = trim($_REQUEST['username']);
-            $password       = trim($_REQUEST['password']);
+            $password   = password_hash($password,PASSWORD_BCRYPT,array('cost'=>12));
 
             $start_time     = trim($_REQUEST['st']);
             $end_time       = trim($_REQUEST['et']);
-            $slot           = trim($_REQUEST['slot']);
+ //           $slot           = trim($_REQUEST['slot']);
             $week_end       = trim($_REQUEST['week_end']);
             $status         = trim($_REQUEST['status']);
             $id             = trim($_REQUEST['id']);
@@ -122,15 +104,16 @@ class doctors
                 $result->execute();
 
                 if ($result){
-                    echo '<h2 class="text-center text-primary">Successful Update Doctor !!! </h2>';
+                    echo '<h2 class="text-center text-primary">Datele au fost actualizate ! </h2>';
                     header('Location: doctors.php');
                 }else
-                    echo '<h2 class="text-center text-danger">Update failed !!! </h2>';
+                    echo '<h2 class="text-center text-danger">Actualizarea datelor a eșuat ! </h2>';
 
             }
         }
     }
     function add(){
+        error_reporting(E_ERROR);
         global $pdo;
         if (isset($_POST['doctor_submit'])){
 
@@ -139,20 +122,21 @@ class doctors
             $mail           = trim($_REQUEST['email']);
             $mobile         = trim($_REQUEST['mobile']);
             $gender         = trim($_REQUEST['gender']);
-            $age            = trim($_REQUEST['age']);
+ //           $age            = trim($_REQUEST['age']);
             $department_id  = trim($_REQUEST['department']);
             $hospital_id    = trim($_REQUEST['chamber']);
-            $position       = trim($_REQUEST['position']);
+ //           $position       = trim($_REQUEST['position']);
             $degree         = trim($_REQUEST['degree']);
-            $speciality     = trim($_REQUEST['speciality']);
+//            $speciality     = trim($_REQUEST['speciality']);
             $experience     = trim($_REQUEST['experience']);
-            $awards         = trim($_REQUEST['awards']);
+//            $awards         = trim($_REQUEST['awards']);
             $username       = trim($_REQUEST['username']);
-            $password       = trim($_REQUEST['password']);
+            $password   = password_hash($password,PASSWORD_BCRYPT,array('cost'=>12));
+ //           $password       = trim($_REQUEST['password']);
 
             $start_time     = trim($_REQUEST['st']);
             $end_time       = trim($_REQUEST['et']);
-            $slot           = trim($_REQUEST['slot']);
+ //           $slot           = trim($_REQUEST['slot']);
             $week_end       = trim($_REQUEST['week_end']);
             $status         = trim($_REQUEST['status']);
 
@@ -165,9 +149,9 @@ class doctors
 
 
             if ($this->username_exist($username)){
-                echo "<h3 class='text-center text-danger'>Please Try Another username this is already Registered</h3>";
+                echo "<h3 class='text-center text-danger'>Încercați alt utilizator deoarece acesta există deja</h3>";
             }else if ($this->email_exist($mail)){
-                echo "<h3 class='text-center text-danger'>Please Try Another Email Id this is already Registered</h3>";
+                echo "<h3 class='text-center text-danger'>Încercați alt email deoarece acesta există deja</h3>";
             }else if (!empty($degree) || !empty($hospital_id) || !empty($department_id) || !empty($username)|| !empty($password)){
 
                 move_uploaded_file($img_temp,"../public/uploads/{$img}");
@@ -178,9 +162,9 @@ class doctors
                 $result->execute();
 
                 if ($result){
-                    echo '<h2 class="text-center text-primary">Successful Added Doctor !!! </h2>';
+                    echo '<h2 class="text-center text-primary">Doctor adăugat cu succes !</h2>';
                 }else
-                    echo '<h2 class="text-center text-danger">Addition failed !!! </h2>';
+                    echo '<h2 class="text-center text-danger">Adăugarea a eșuat ! </h2>';
 
             }
         }
