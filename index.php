@@ -3,11 +3,9 @@
 <?php require ('class/doctors.php');?>
 <?php require ('class/departments.php');?>
 <?php require ('class/patients.php');?>
-<?php //require ('class/hospitals.php');?>
 
 
 <body>
-    <!-- Start Header Section -->
     <header id="header-transparent">
         <div class="layer-stretch hdr-center pt-4 pb-4">
             <div class="row align-items-center">
@@ -29,8 +27,6 @@
                         <?php }
                         else {
                             ?>
-                           <!-- <a href="login.php?route=login" class="font-14"><i class="fa fa-sign-in"></i>Autenti</a>
-                            <a href="register.php?route=register" class="font-14"><i class="fa fa-user-o"></i>Înregistrare</a>-->
                             <?php
                         }
                             ?>
@@ -56,9 +52,7 @@
             <div class="hdr layer-stretch" >
                 <div class="row align-items-center justify-content-end" >
 
-                    <!-- Start Menu Section -->
                     <ul class="col menu text-left">
-                      <!--  <li><a href="/" id="menu-home" class="font-18 text-uppercase color-white"><i class="fa fa-home"></i></a></li>-->
 						<li><a href="doctors.php" id="menu-doctor" class="mdl-button mdl-js-button mdl-js-ripple-effect">Doctori</a></li>
                         <li><a href="hospital.php" id="menu-hospital" class="mdl-button mdl-js-button mdl-js-ripple-effect">Spitale</a></li>
                         <li><a href="department.php" id="menu-department" class="mdl-button mdl-js-button mdl-js-ripple-effect">Departamente</a></li>
@@ -138,9 +132,6 @@
                                             <li class="mdl-menu__item">
                                                 <a href="my_appointment.php"><i class="fa fa-plus-circle color-green"> </i> Consultațiile mele</a>
                                             </li>
-<!--                                            <li class="mdl-menu__item">-->
-<!--                                                <a href="my_request.php?id=--><?php //echo $_SESSION['patient_id'];?><!--"><i class="fa fa-qrcode color-green"> </i> My Request</a>-->
-<!--                                            </li>-->
                                             <li class="mdl-menu__item">
                                                 <a href="my_invoice.php"><i class="fa fa-hospital-o color-green"> </i> Istoric medical</a>
                                             </li>
@@ -228,78 +219,133 @@
 	</div>
 </div>
 <!-- Start Home About Section -->
-<div id="hm-about" class="colored-background" style="background:#229AA5;">
+<div class="colored-background" style="background:#229AA5;">
 	<div class="layer-stretch">
-		<div class="layer-wrapper animated-wrapper">
+		<div class="layer-wrapper layer-bottom-0 animated-wrapper">
 			<div class="layer-ttl layer-ttl-white">
-				<h3 class="animated animated-down" style="background-color: #00263b;">Departamentele noastre</h3>
+				<h3 class=" animated animated-down" style="background-color: #00263b;">Cine suntem ?</h3>
 			</div>
 			<div class="row">
 				<div class="col-md-7">
-					<div class="hm-about-block">
+
+                    <div class="hm-about-block">
                         <a href="doctors.php">
                             <div class="tbl-cell hm-about-icon"><i class="fa fa-user-md"></i></div>
-						<div class="tbl-cell hm-about-number">
+                            <div class="tbl-cell hm-about-number">
 							<span>
                                 <?php
                                 $doctor = new doctors();
                                 echo $doctor->count();
                                 ?>
                             </span>
-							<p>Doctori</p>
-						</div>
+                                <p>Doctori</p>
+                            </div>
                         </a>
-					</div>
-					<div class="hm-about-block">
+                    </div>
+                    <div class="hm-about-block">
                         <a href="hospital.php">
                             <div class="tbl-cell hm-about-icon"><i class="fa fa-hospital-o"></i></div>
-						<div class="tbl-cell hm-about-number">
+                            <div class="tbl-cell hm-about-number">
 							<span>
                                 <?php
                                 $hos = new hospitals();
                                 echo $hos->count();
                                 ?>
                             </span>
-							<p>Spitale</p>
-						</div>
+                                <p>Spitale/Clinici</p>
+                            </div>
                         </a>
-					</div>
+                    </div>
 
-					<div class="hm-about-block">
-						<div class="tbl-cell hm-about-icon"><i class="fa fa-users"></i></div>
-						<div class="tbl-cell hm-about-number">
+                    <div class="hm-about-block">
+                        <div class="tbl-cell hm-about-icon"><i class="fa fa-users"></i></div>
+                        <div class="tbl-cell hm-about-number">
 							<span>
                                 <?php
-                                    $patient = new patients();
-                                    echo $patient->count();
+                                $patient = new patients();
+                                echo $patient->count();
                                 ?>
                             </span>
-							<p>Pacienți</p>
-						</div>
-					</div>
+                            <p>Pacienți</p>
+                        </div>
+                    </div>
                     <div class="hm-about-block">
 
                         <a href="department.php">
                             <div class="tbl-cell hm-about-icon"><i class="fa fa-building-o"></i></div>
-                        <div class="tbl-cell hm-about-number">
+                            <div class="tbl-cell hm-about-number">
                             <span>
                                 <?php
-                                    $dpt = new departments();
-                                    echo $dpt->count();
+                                $dpt = new departments();
+                                echo $dpt->count();
                                 ?>
                             </span>
-                            <p>Cabinete</p>
-                        </div>
+                                <p>Departamente</p>
+                            </div>
                         </a>
                     </div>
+                </div>
+				<div class="col-md-5">
+					<img class="img-thumbnail animated animated-up" src="public/uploads/hm-about-1.jpg" alt="">
 				</div>
-				<div class="col-md-5 animated animated-up fadeInUp">
-					<img class="img-thumbnail" src="public/uploads/service-5.jpg" alt="">
+				<div class="row about-mission-vission text-center">
+					<div class="col-md-6 about-mission animated animated-up ">
+						<span>Misiunea noastră</span>
+						<p class="paragraph-medium paragraph-white text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eligendi perferendis ducimus sed aliquid natus enim, beatae velit reiciendis, inventore molestiae, neque sapiente temporibus architecto dicta, vero quaerat sequi quos. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+					</div>
+					<div class="col-md-6 about-vission animated animated-up ">
+						<span>Viziunea noastră</span>
+						<p class="paragraph-medium paragraph-white text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eligendi perferendis ducimus sed aliquid natus enim, beatae velit reiciendis, inventore molestiae, neque sapiente temporibus architecto dicta, vero quaerat sequi quos. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+<!-- Start Doctor Section -->
+<div class="layer-stretch animated-wrapper">
+	<div class="layer-wrapper layer-bottom-0">
+		<div class="layer-ttl">
+			<h3 class="animated animated-down">Doctori</h3>
+		</div>
+		<div class="row">
+            <?php
+            $sql = "SELECT * FROM doctors LIMIT 2";
+            $result = $pdo->prepare($sql);
+            $result->execute();
+            $doctors= $result->fetchAll();
+            foreach ($doctors as $doct) {
+
+                ?>
+                <div class="col-sm-6 col-md-3">
+                    <div class="theme-block theme-block-hover animated animated-up">
+                        <div class="theme-block-picture">
+                            <img src="public/uploads/<?php echo $doct->photo; ?>" alt="">
+                        </div>
+                        <div class="doctor-name">
+                            <h4><a href="doctors.php" class="text-capitalize" >Dr.
+                                    <?php echo $doct->first_name." ".$doct->last_name;?>
+                                </a></h4>
+                        </div>
+                        <div class="doctor-details">
+                            <div class="doctor-specility">
+                                <p class="text-capitalize">
+                                    <?php
+                                    $id = $doct->department_id;
+                                    $doctor->doctor_dpt($id);
+                                    ?></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php
+
+            }
+            ?>
+
+        </div>
+	</div>
+</div><!-- End About Page  -->
 <!-- Start Home Facility Section -->
 <?php
 

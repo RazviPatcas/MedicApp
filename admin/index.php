@@ -227,7 +227,7 @@
                             var barChartData = {
                                 labels: ['Pacienți', 'Doctori','Spitale', 'Departamente', 'Programări', 'Comentarii'],
                                 datasets: [{
-                                    label: "Statisticile sistemului",
+                                    label: "Statistici sistem",
                                     data: [[<?php echo $patient->count();?>],
                                            [<?php echo $doctor->count();?>],
                                            [<?php echo $hos->count();?>],
@@ -277,7 +277,7 @@
                             var barChartData = {
                                 labels: [<?php $year = date("Y");echo $year; ?>],
                                 datasets: [{
-                                    label: 'Programări ',
+                                    label: 'Statistici programări ',
                                     backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
                                     borderColor: window.chartColors.blue,
                                     borderWidth: 2,
@@ -303,7 +303,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="dashboard-card"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
-                        <p class="dashboard-card-ttl"><i class="fa fa-bar-chart"></i>Pacienți</p>
+                        <p class="dashboard-card-ttl"><i class="fa fa-bar-chart"></i>Statistici pacienți</p>
                         <canvas id="lineChart" width="518" height="518" style="display: block; width: 259px; height: 259px;"></canvas>
                         <script>
                             var ctx = document.getElementById("lineChart");
@@ -312,7 +312,7 @@
                                 data: {
                                     labels: ["Iun","Iul","Aug","Sept","Oct","Nov"],
                                     datasets: [{
-                                        label: 'Pacienți ', 
+                                        label: 'Statistici pacienți ', 
                                         data:[<?php echo $patient->count();?>],
                                         backgroundColor: [
                                             color(window.chartColors['yellow']).alpha(10.5).rgbString(),                                        ],

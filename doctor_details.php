@@ -23,7 +23,7 @@ $page_name = "<i class=\"fa fa-info-circle\"></i> Department ";
 ?>
 
     <div class="layer-stretch animated-wrapper">
-        <div class="layer-wrapper text-capitalize">
+        <div class="layer-wrapper ">
 
             <div class="row">
 
@@ -39,13 +39,11 @@ $page_name = "<i class=\"fa fa-info-circle\"></i> Department ";
                         <div class="col-6 paragraph-medium paragraph-black">
                             <div >Telefon : <?php echo $doctor->phone; ?> </div>
                             <div >Email : <?php echo $doctor->email; ?> </div>
-                            <div >Gender : <?php echo $doctor->gender; ?> </div>
-                            <div >Age : <?php echo $doctor->age; ?> Year</div>
-                            <div >Degree : <?php echo $doctor->degree; ?> </div>
-                            <div >Position :<?php echo $doctor->position; ?> </div>
+                            <div >Studii finalizate : <?php echo $doctor->degree; ?> </div>
+                          <!--  <div >Position :<//?php echo $doctor->position; ?> </div>-->
                         </div>
                         <div class="col-6 paragraph-medium paragraph-black">
-                            <div > Department : <?php $doct->doctor_dpt($doctor->department_id); ?> </div>
+                            <div > Departament : <?php $doct->doctor_dpt($doctor->department_id); ?> </div>
                             <?php
                                 $sql = "SELECT * FROM hospitals WHERE  id = $doctor->hospital_id";
                                 $result = $pdo->prepare($sql);
@@ -53,8 +51,8 @@ $page_name = "<i class=\"fa fa-info-circle\"></i> Department ";
                                 $hospital = $result->fetchAll();
                                 foreach ($hospital as $name) {
                                     ?>
-                                    <div> Address : <?php  echo $name->name;?></div>
-                                    <div> Address : <?php  echo $name->address;?></div>
+                                    <div> Clinică/Spital : <?php  echo $name->name;?></div>
+                                    <div> Adresă : <?php  echo $name->address;?></div>
                                     <?php
                                 }
 
@@ -63,16 +61,16 @@ $page_name = "<i class=\"fa fa-info-circle\"></i> Department ";
                     </div>
                     <br>
                     <div class="paragraph-medium paragraph-black">
-                        <h2>Realizeaza o programare</h2>
-                        <form action="include/appointment/add_ap.php" method="post">
-                            <label for="">Selecteaza data</label><br>
+                        <!--<h2>Realizeaza o programare</h2>-->
+                        <form action="make_appointment.php" method="post">
+                           <!-- <label for="">Selecteaza data</label><br>
                             <input type="date" name="date">
                             <input type="hidden" name="dpt_id" value="<?php echo $doctor->department_id;?>">
                             <input type="hidden" name="doctor_id" value="<?php echo $_GET['id'];?>">
                             <input type="hidden" name="time" value="<?php echo $doctor->start_appointment;?>">
                             <input type="hidden" name="address" value="<?php foreach ($hospital as $name) { echo $name->name.", ".$name->address; } ?>">
                            <br>
-                           <br>
+                           <br>-->
                             <?php
                             if (isset($_SESSION['patient_id'])) {
                                 ?>
@@ -80,7 +78,7 @@ $page_name = "<i class=\"fa fa-info-circle\"></i> Department ";
                                 </button>
                                 <?php
                             }else
-                                echo "Pentru a face programarea, va rog sa va inregistrati !!!";
+                                echo "Pentru a face programarea, vă rog să vă înregistrați !!!";
                             ?>
                         </form>
 

@@ -25,11 +25,11 @@
             <div class="page-hdr scroll-to-fixed-fixed" style="z-index: 9; position: fixed; top: 0px; margin-left: 0px; width: 920px; left: 60px;">
                 <div class="row">
                     <div class="col-6 page-name">
-                        <h1><i class="fa fa-users"></i>Edit Patient</h1>
+                        <h1><i class="fa fa-users"></i>Editează pacient</h1>
                     </div>
                     <div class="col-4 page-menu" style="padding-right: 50px">
-                        <a id="cancel" href="patient.php" data-toggle="tooltip" data-placement="left" title="" data-original-title="Back to List"><i class="fa fa-reply"></i></a>
-                        <button type="submit" name="patient_update" data-toggle="tooltip" data-placement="left" title="" data-original-title="Save Page"><i class="fa fa-floppy-o"></i></button>
+                        <a id="cancel" href="patient.php" data-toggle="tooltip" data-placement="left" title="" data-original-title="Înapoi la listă"><i class="fa fa-reply"></i></a>
+                        <button type="submit" name="patient_update" data-toggle="tooltip" data-placement="left" title="" data-original-title="Salvează"><i class="fa fa-floppy-o"></i></button>
                     </div>
                 </div>
             </div>
@@ -51,63 +51,63 @@
                     ?>
                     <div class="col-sm-8">
                         <div class="content-block content-block-horizantal">
-                            <div class="content-block-ttl">Basic details</div>
+                            <div class="content-block-ttl">Informații de bază</div>
                             <div class="content-block-main">
                                 <div class="row content-input">
                                     <div class="col-sm-6">
                                         <label>
                                             <text>*</text>
-                                            First Name : </label>
+                                            Nume : </label>
                                         <input type="text" class="input-text" name="firstname" value="<?php echo $patient->first_name;?>"
-                                               placeholder="Enter your First Name" required="">
-                                        <p class="content-input-error-name">Please enter name!</p>
+                                               placeholder="Nume" required="">
+                                        <p class="content-input-error-name">Nume</p>
                                     </div>
                                     <div class="col-sm-6">
                                         <label>
                                             <text>*</text>
-                                            Last Name : </label>
+                                            Prenume : </label>
                                         <input type="text" class="input-text" name="lastname" value="<?php echo $patient->last_name;?>"
-                                               placeholder="Enter your Last Name" required="">
-                                        <p class="content-input-error-name">Please enter last name!</p>
+                                               placeholder="Prenume" required="">
+                                        <p class="content-input-error-name">Prenume</p>
                                     </div>
                                 </div>
                                 <div class="row content-input">
                                     <div class="col-sm-6">
                                         <label>
                                             <text>*</text>
-                                            Email Address : </label>
+                                            Email : </label>
                                         <input type="email" class="input-email" name="email" value="<?php echo $patient->email;?>"
-                                               placeholder="Enter your Email Address" required="">
-                                        <p class="content-input-error-name">Please enter email!</p>
+                                               placeholder="Email" required="">
+                                        <p class="content-input-error-name">Email</p>
                                     </div>
                                     <div class="col-sm-6">
                                         <label>
                                             <text>*</text>
-                                            Mobile : </label>
+                                            Telefon : </label>
                                         <input type="number" class="input-mobile" name="mobile" value="<?php echo $patient->phone;?>"
-                                               placeholder="Enter your Mobile number" min="1" required="">
-                                        <p class="content-input-error-name">Please enter phone number!</p>
+                                               placeholder="Telefon" min="1" required="">
+                                        <p class="content-input-error-name">Telefon</p>
                                     </div>
                                 </div>
                                 <div class="content-input">
                                     <label>
                                         <text>*</text>
-                                        Password (min 6 words) :</label>
+                                        Parolă :</label>
                                     <input type="password" class="input-password" pattern=".{6,}"
-                                           title="Minimum 6 word required!" name="password"
-                                           placeholder="Enter your Password" required="">
+                                           title="Minim 6 cuvinte" name="password"
+                                           placeholder="Parolă" required="">
                                     <p class="content-input-error-name">Please enter password (minimum 6 words)!</p>
-                                    <div class="content-description">This password will be mailed to user.</div>
+                                    <div class="content-description"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="content-block content-block-horizantal">
-                            <div class="content-block-ttl">Other details</div>
+                            <div class="content-block-ttl">Alte detalii</div>
                             <div class="content-block-main">
                                 <div class="row content-input">
                                     <div class="col-sm-6">
-                                        <label>Date of Birth : </label>
-                                        <input type="text" value="<?php echo $patient->dob;?>"  disabled>
+                                        <label>Data nașterii : </label>
+                                        <input type="text" value="<?php echo $patient->dob;?>">
                                     </div>
                                     <div class="col-sm-6">
                                     </div>
@@ -117,10 +117,10 @@
 
                                         <label>
                                             <text>*</text>
-                                            Location : </label>
+                                            Adresa : </label>
                                         <select name="location" title="Select User Role" class="select-list" required=""
                                                 id="ui-id-1" style="display: none;">
-                                            <option value="">Select your location</option>
+                                            <option value="">Selectează orașul</option>
                                             <?php
                                             $sql = "SELECT * FROM locations ";
                                             $result = $pdo->prepare($sql);
@@ -139,35 +139,30 @@
                                         </select>
                                     </div>
                                     <div class="col-sm-6">
-                                        <label>Blood Group : </label>
+                                        <label>Grupa de sânge : </label>
                                         <select name="bloodgroup" title="Select User Role" class="select-list"
                                                 required="" id="ui-id-1" style="display: none;">
-                                            <option value="">Select your Blood Group</option>
-                                            <option value="A+" <?php if ($patient->blood_group=='A+'){echo 'selected';} ?>>A+</option>
-                                            <option value="A-" <?php if ($patient->blood_group=='A-'){echo 'selected';} ?>>A-</option>
-                                            <option value="B+" <?php if ($patient->blood_group=='B+'){echo 'selected';} ?>>B+</option>
-                                            <option value="B-" <?php if ($patient->blood_group=='B-'){echo 'selected';} ?>>B-</option>
-                                            <option value="AB+" <?php if ($patient->blood_group=='AB+'){echo 'selected';} ?>>AB+</option>
-                                            <option value="AB-" <?php if ($patient->blood_group=='AB-'){echo 'selected';} ?>>AB-</option>
-                                            <option value="O+" <?php if ($patient->blood_group=='O+'){echo 'selected';} ?>>O+</option>
-                                            <option value="O-" <?php if ($patient->blood_group=='O-'){echo 'selected';} ?>>O-</option>
-
+                                            <option value="">Selectează grupa de sânge</option>
+                                            <option value="A+" <?php if ($patient->blood_group=='A+'){echo 'selected';} ?>>O1</option>
+                                            <option value="A-" <?php if ($patient->blood_group=='A-'){echo 'selected';} ?>>A2</option>
+                                            <option value="B+" <?php if ($patient->blood_group=='B+'){echo 'selected';} ?>>B3</option>
+                                            <option value="B-" <?php if ($patient->blood_group=='B-'){echo 'selected';} ?>>AB4</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="row content-input content-radio">
                                     <div class="col-sm-12">
-                                        <label>Gender : </label>
+                                        <label>Sex : </label>
                                         <div class="content-radio-container">
                                             <div>
                                                 <input type="radio" name="gender" value="Male" id="gender-male" <?php if ($patient->gender == 'Male') echo 'checked'; ?>>
                                                 <label for="gender-male"><span><i class="fa fa-check"></i></span>
-                                                    <p>Male</p></label>
+                                                    <p>Masculin</p></label>
                                             </div>
                                             <div>
                                                 <input type="radio" name="gender" value="Female" id="gender-female" <?php if ($patient->gender == 'Female') echo 'checked'; ?>>
                                                 <label for="gender-female"><span><i class="fa fa-check"></i></span>
-                                                    <p>Female</p></label>
+                                                    <p>Feminin</p></label>
                                             </div>
                                         </div>
                                     </div>
@@ -177,10 +172,10 @@
                             </div>
                         </div>
                         <div class="content-block content-block-horizantal">
-                            <div class="content-block-ttl">Medical History</div>
+                            <div class="content-block-ttl">Istoric medical</div>
                             <div class="content-block-main">
                                 <div class="content-radio">
-                                    <label>Do you now or have you ever had:</label>
+                                    <label>Se va completa în cazul în care pacientul a avut una sau mai multe afecțiuni de mai jos:</label>
                                     <div>
                                         <?php
                                         $md_rpt = explode(',',$patient->medical_history);
@@ -200,7 +195,7 @@
 
                                                            id="diabetes">
                                                     <label for="diabetes"><span><i class="fa fa-check"></i></span>
-                                                        <p>Diabetes</p></label>
+                                                        <p>Diabet</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
@@ -214,7 +209,7 @@
                                                            id="high-blood-pressure">
                                                     <label for="high-blood-pressure"><span><i
                                                                     class="fa fa-check"></i></span>
-                                                        <p>High blood pressure</p></label>
+                                                        <p>Presiune arterială</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
@@ -227,7 +222,7 @@
                                                            id="high-cholesterol">
                                                     <label for="high-cholesterol"><span><i
                                                                     class="fa fa-check"></i></span>
-                                                        <p>High cholesterol</p></label>
+                                                        <p>Colesterol</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
@@ -240,7 +235,7 @@
                                                         }?>
                                                            id="heart-problems">
                                                     <label for="heart-problems"><span><i class="fa fa-check"></i></span>
-                                                        <p>Heart problems</p></label>
+                                                        <p>Probleme cardiace</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
@@ -251,7 +246,7 @@
                                                         if ($item == 'asthma') echo 'checked';
                                                     }?>>
                                                     <label for="asthma"><span><i class="fa fa-check"></i></span>
-                                                        <p>Asthma</p></label>
+                                                        <p>Astm</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
@@ -263,32 +258,19 @@
                                                         }?>
                                                            id="kidney-disease">
                                                     <label for="kidney-disease"><span><i class="fa fa-check"></i></span>
-                                                        <p>Kidney disease</p></label>
+                                                        <p>Cancer</p></label>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-4 content-radio-container">
+                                           <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
                                                     <input type="checkbox" name="medical[]" value="kidney-stones"
                                                         <?php
                                                          foreach ($md_rpt as $item) {
                                                              if ($item == 'kidney-stones') echo 'checked';
-                                                        }?>
+                                                         }?>
                                                            id="kidney-stones">
                                                     <label for="kidney-stones"><span><i class="fa fa-check"></i></span>
-                                                        <p>Kidney Stones</p></label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 content-radio-container">
-                                                <div>
-                                                    <input type="checkbox" name="medical[]" value="jaundice"
-                                                        <?php
-                                                        foreach ($md_rpt as $item) {
-
-                                                            if ($item =='jaundice') echo 'checked';
-                                                        }?>
-                                                           id="jaundice">
-                                                    <label for="jaundice"><span><i class="fa fa-check"></i></span>
-                                                        <p>Jaundice</p></label>
+                                                        <p>Pietre la rinichi</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
@@ -301,7 +283,7 @@
                                                         }?>
                                                            id="hepatitis" >
                                                     <label for="hepatitis"><span><i class="fa fa-check"></i></span>
-                                                        <p>Hepatitis</p></label>
+                                                        <p>Hepatită</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
@@ -315,7 +297,7 @@
                                                            id="rheumatic-fever">
                                                     <label for="rheumatic-fever"><span><i
                                                                     class="fa fa-check"></i></span>
-                                                        <p>Rheumatic Fever</p></label>
+                                                        <p>Reutamatism</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
@@ -329,22 +311,10 @@
                                                            id="cancer">
 
                                                     <label for="cancer"><span><i class="fa fa-check"></i></span>
-                                                        <p>Cancer</p></label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 content-radio-container">
-                                                <div>
-                                                    <input type="checkbox" name="medical[]" value="hiv"
-                                                        <?php
-                                                    foreach ($md_rpt as $item) {
-
-                                                        if ($item == 'hiv') echo 'checked';
-                                                    }?> id="hiv">
-
-                                                    <label for="hiv"><span><i class="fa fa-check"></i></span>
                                                         <p>HIV/AIDS</p></label>
                                                 </div>
                                             </div>
+
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
                                                     <input type="checkbox" name="medical[]" value="epilepsy"
@@ -355,51 +325,22 @@
                                                         }?>
                                                            id="epilepsy">
                                                     <label for="epilepsy"><span><i class="fa fa-check"></i></span>
-                                                        <p>Epilepsy</p></label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 content-radio-container">
-                                                <div>
-                                                    <input type="checkbox" name="medical[]" value=""
-                                                        <?php
-                                                        foreach ($md_rpt as $item) {
-
-                                                            if ($item =='pregnancy') echo 'checked';
-                                                        }?>
-                                                           id="pregnancy">
-                                                    <label for="pregnancy"><span><i class="fa fa-check"></i></span>
-                                                        <p>Pregnancy</p></label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 content-radio-container">
-                                                <div>
-                                                    <input type="checkbox" name="medical[]" value="blood-thinners"
-                                                        <?php
-                                                        foreach ($md_rpt as $item) {
-
-                                                            if ($item =='blood-thinners') echo 'checked';
-                                                        }?>
-                                                           id="blood-thinners">
-                                                    <label for="blood-thinners"><span><i class="fa fa-check"></i></span>
-                                                        <p>Blood thinners</p></label>
+                                                        <p>Epilepsie</p></label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content-input">
-                                    <label>Other History : </label>
-                                    <textarea name="medical[]" placeholder="Patient other history or about user"><?php if (!empty($md_rpt)) { echo $md_rpt[$n-2]; } ?></textarea>
-                                </div>
+
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="content-block">
-                            <div class="content-block-ttl">Patient history</div>
+                            <div class="content-block-ttl">Istoric pacient</div>
                             <div class="content-block-main user-history">
                                 <p class="btn btn-primary btn-sm" data-toggle="modal" data-target="#appointment-modal">
-                                    Appointments (
+                                    Programări (
                                     <?php
                                     $sql = "SELECT * FROM appointment WHERE patient_id = {$_GET['id']}";
                                     $result = $pdo->prepare($sql);
@@ -408,17 +349,16 @@
                                     echo $row;
                                     ?>
                                     ) </p>
-                                <p class="btn btn-danger btn-sm" data-toggle="modal" data-target="#report-modal">All
-                                    Reports</p>
-                                <p id="create" class="btn btn-default btn-sm"><a href="appointment_add.php?id=<?php $_GET['id'];?>">Create Appointment</a></p>
+                               <!-- <p class="btn btn-danger btn-sm" data-toggle="modal" data-target="#report-modal">Rapoarte</p>-->
+                                <p id="create" class="btn btn-default btn-sm"><a href="appointment_add.php?id=<?php $_GET['id'];?>">Crează programare</a></p>
                             </div>
                         </div>
                         <div class="content-block content-block-horizantal">
-                            <div class="content-block-ttl">For office use</div>
+                            <div class="content-block-ttl">Pentru uz administrativ</div>
                             <div class="content-block-main">
                                 <div class="content-input">
-                                    <label>User Role : </label>
-                                    <select name="role" title="Select User Role" class="select-list" required=""
+                                    <label>Rolul utilizatorului : </label>
+                                    <select name="role" title="Selectează rolul" class="select-list" required=""
                                             id="ui-id-1" style="display: none;">
                                         <?php
                                         $sql = "SELECT * FROM roles ";
@@ -440,32 +380,21 @@
 
 
                                     </select>
-                                    <div class="content-description">
-                                        If you want to give an admin access to user then select role otherwise do not
-                                        select. It will automatically assign patient role to user.
-                                    </div>
                                 </div>
                                 <div class="content-input">
-                                    <label>User Name : </label>
-                                    <input type="text" name="username" value="<?php echo $patient->user_name;?>" placeholder="User Name">
-                                    <div class="content-description">
-                                        If you want to give an admin access to user then fill this field otherwise leave
-                                        empty.
-                                    </div>
+                                    <label>Nume utilizator : </label>
+                                    <input type="text" name="username" value="<?php echo $patient->user_name;?>" placeholder="Nume utilizator">
                                 </div>
                                 <div class="content-input">
-                                    <label>Created Date : </label>
+                                    <label>Data înregistrării contului : </label>
                                     <input type="text" value="<?php echo $patient->created_at;?>" readonly="">
                                 </div>
-<!--                                <div class="content-input">-->
-<!--                                    <label>Email Confirmation : </label>-->
-<!--                                    <input type="text" value="Unconfirmed" readonly="">-->
-<!--                                </div>-->
+
                                 <div class="content-input">
-                                    <label>Status : </label>
+                                    <label>Stare : </label>
                                     <select name="status" class="select-list" id="ui-id-2" style="display: none;">
-                                        <option value="1" <?php if ($patient->status == 1) echo "selected"?>>Active</option>
-                                        <option value="0" <?php if ($patient->status == 0) echo "selected"?>>InActive</option>
+                                        <option value="1" <?php if ($patient->status == 1) echo "selected"?>>Activ</option>
+                                        <option value="0" <?php if ($patient->status == 0) echo "selected"?>>Inactiv</option>
                                     </select>
 
                                 </div>

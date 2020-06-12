@@ -18,12 +18,12 @@
                                 <tr class="table-heading" role="row">
                                     <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 10.5px;" aria-label="#: activate to sort column ascending">ID</th>
                                     <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 16.5px;" aria-label="ID: activate to sort column ascending">Doctor</th>
-                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 49.5px;" aria-label="Doctor: activate to sort column ascending">Chamber</th>
-                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 34.5px;" aria-label="Date: activate to sort column ascending">Date & Time</th>
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 49.5px;" aria-label="Doctor: activate to sort column ascending">Spital/Clinică</th>
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 34.5px;" aria-label="Date: activate to sort column ascending">Data și ora</th>
 <!--                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 45.5px;" aria-label="Status: activate to sort column ascending">Serial</th>-->
-                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 45.5px;" aria-label="Status: activate to sort column ascending">Comments</th>
-                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 45.5px;" aria-label="Status: activate to sort column ascending">Status</th>
-                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0.5px;" aria-label=": activate to sort column ascending">Action</th>
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 45.5px;" aria-label="Status: activate to sort column ascending">Alte comentarii</th>
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 45.5px;" aria-label="Status: activate to sort column ascending">Stare</th>
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0.5px;" aria-label=": activate to sort column ascending">Acțiuni</th>
                                 </tr>
 
                             </thead>
@@ -37,7 +37,7 @@
 
                                 ?>
                                 <tr class="odd text-capitalize" >
-                                    <td>12040<?php echo $appointment->id; ?>1238</td>
+                                    <td><?php echo $appointment->id; ?></td>
                                     <td>
                                         <?php
 //                                        echo $appointment->doctor_id;
@@ -54,7 +54,7 @@
                                     <td><?php echo $appointment->address; ?></td>
                                     <td><?php echo $appointment->date."<br>".$appointment->time; ?></td>
                                     <td><?php echo $appointment->comments; ?></td>
-                                    <td><?php echo "Active" ?></td>
+                                    <td><?php echo "Activ" ?></td>
                                     <td class="text-center">
 
                                             <a href="my_appointment.php?delete=<?php echo $appointment->id; ?>" onclick="return confirm('Are you sure you want to delete this item?');"><i class="fa fa-trash-o"></i</a>

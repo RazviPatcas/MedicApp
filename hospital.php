@@ -41,9 +41,7 @@ $page_name = "<i class=\"fa fa-hospital-o\"> </i> Hospitals ";
                                         </a>
                                     </div>
                                     <div class="theme-block-data service-block-data">
-<!--                                    <div class="service-icon">
-                                            <i class="fa fa-stethoscope"></i>
-                                        </div>-->
+
                                         <h3 class="text-capitalize" style="height: 150px">
                                             <a href="hospital_details.php?id=<?php echo $hospital->id; ?>"
                                                style="color: black;font-size:25px;">
@@ -100,7 +98,7 @@ $page_name = "<i class=\"fa fa-hospital-o\"> </i> Hospitals ";
                                             <div class="theme-flexslider-container">
                                                 <img src="public/uploads/<?php echo $department->photo;?>" draggable="false">
                                                 <h4><?php echo $department->name;?></h4>
-                                                <a href="  " class="anchor-icon pull-right">Read More <i
+                                                <a href="  " class="anchor-icon pull-right">Mai multe... <i
                                                             class="fa fa-arrow-right"></i></a>
                                             </div>
                                         </li>

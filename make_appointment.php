@@ -35,7 +35,7 @@ if (isset($_SESSION['admin_email'])) {header("Location: admin/appointment_add.ph
                     <div class="text-center mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                         <i class="fa fa-building"></i>
                         <select name="ap_dpt" id="ap_dpt">
-                            <option value="">Choose Department </option>
+                            <option value="">Alege departamentul </option>
                             <?php
                             foreach ($departments as $key=>$department) {
                                 ?>
@@ -48,7 +48,7 @@ if (isset($_SESSION['admin_email'])) {header("Location: admin/appointment_add.ph
 
                     <div class="text-center mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon" id="doctor_change">
                         <i class="fa fa-user-md"></i>
-                        <div id="ap">Select Doctor</div>
+                        <div id="ap">Selectează doctor</div>
                         <div id="ap_doctor"></div>
 
                     </div>
@@ -69,14 +69,14 @@ if (isset($_SESSION['admin_email'])) {header("Location: admin/appointment_add.ph
                             
                             foreach ($departments as $key=>$department) {
                                 ?>
-                                <option value="<?php echo $department->id;?>" id="v"><?php echo $department->name; ?></option>
+                                <option value="<?php echo $department->id;?>" id="v"></option>
                                 <?php
                             }
                             ?>
                     </div>
                     <input type="hidden" name="id" value="--><?php echo $_SESSION['patient_id']; ?><!--">
                     <div class="form-submit text-center" id="submit">
-                        <input type="submit" name="appointment_submit" id="ap_sub" value="Confirm Appointment" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised mdl-button--raised button button-primary button-pill">
+                        <input type="submit" name="appointment_submit" id="ap_sub" value="Confirmă programarea" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised mdl-button--raised button button-primary button-pill">
                     </div>
 
                 </form>

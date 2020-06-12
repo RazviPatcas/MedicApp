@@ -134,7 +134,7 @@
                         </div>
                         <div class="login-condition">Dând clic pe creare cont, sunteți de acord cu<br /><a href="about.php">Termenii și condițiile noastre</a></div>
                         <div class="form-submit">
-                            <button type="submit" id="register-submit" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised mdl-button--raised button button-primary button-pill" name="register_doctor">Create Account</button>
+                            <button type="submit" id="register-submit" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised mdl-button--raised button button-primary button-pill" name="register_doctor">Crează cont</button>
                         </div>
                         <div class="login-link">
                             <span class="paragraph-small">Aveți deja un cont?</span>

@@ -17,7 +17,7 @@
                     <div class="col-sm-3">
                     </div>
                         <div class="col-sm-6">
-                        <form action="appointment_details.php" method="post" class="form-control form-group text-capitalize">
+                        <form action="appointment_details.php" method="post" class="form-control form-group">
 
                             <?php
                             if (isset($_GET['id'])) {
@@ -40,32 +40,29 @@
 
 
                                         ?>
-                                        <div class="form-group row text-capitalize">
-                                            <div class="col-6"><label for="Patient Name"> Patient Name :</label></div>
-                                            <div class="col-6" style="background-color: #c6fff0;height: 35px;">
-                                                <input type="text"
-                                                       value="<?php echo $patient->first_name . " " . $patient->last_name; ?>"
-                                                       readonly>
+                                        <div class="form-group row">
+                                            <div class="col-6"><label for="Nume pacient"> Numele pacientului :</label></div>
+                                            <div class="col-6" style="background-color: #c6fff0; height: 35px;">
+                                                <input type="text" value="<?php echo $patient->first_name . " " . $patient->last_name; ?>" readonly>
                                             </div>
 
                                         </div>
                                         <div class="form-group row">
-                                            <div class="col-6"><label for=""> Patient Contact :</label></div>
+                                            <div class="col-6"><label for=""> Telefon :</label></div>
                                             <div class="col-6" style="background-color: #c6fff0;height: 35px;">
-                                                <input type="text" value="<?php echo $patient->phone; ?>" readonly>
+                                                <input type="text" value="0<?php echo $patient->phone; ?>" readonly>
                                             </div>
 
                                         </div>
                                         <div class="form-group row">
 
-                                            <div class="col-6"><label for=""> Patient Problem :</label></div>
+                                            <div class="col-6"><label for=""> Simptome/Afecțiuni :</label></div>
                                             <div class="col-6" style="background-color: #c6fff0;height: 36px;">
-                                                <input type="text" value="<?php echo $appointment->problems; ?>"
-                                                       readonly></div>
+                                                <input type="text" value="<?php echo $appointment->problems; ?>"></div>
                                         </div>
                                         <div class="form-group row">
 
-                                            <div class="col-6"><label for=""> Patient Medical History :</label>
+                                            <div class="col-6"><label for=""> Istoric medical :</label>
                                             </div>
                                             <div class="col-6" style="background-color: #c6fff0;height: 35px;">
                                                 <input ype="text" value="<?php echo $patient->medical_history; ?>"
@@ -73,7 +70,7 @@
 
                                         </div>
                                         <div class=" row form-group">
-                                            <div class="col-6"><label for=""> comments :</label></div>
+                                            <div class="col-6"><label for=""> Comentarii :</label></div>
                                             <div class="col-6" style="background-color: #daccff;height: 100px;">
                                                 <textarea name="comment" rows="5"></textarea>
                                             </div>
@@ -82,7 +79,7 @@
                                         <div class=" row form-group">
                                             <div class="col-4"></div>
                                             <button type="submit" name="submit" class="btn btn-lg btn-pill btn-success">
-                                                Submit
+                                            Trimite
                                             </button>
 
                                         </div>
@@ -94,6 +91,7 @@
                             }
                             if (isset($_POST['submit'])) {
                                 $comment = $_POST['comment'];
+                                $problems = $_POST['problems'];
                                 $id     = $_POST['id'];
                                  echo $sq = "UPDATE appointment set `comments`='$comment' where id = $id";
                                 $result = $pdo->prepare($sq);

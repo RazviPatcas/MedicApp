@@ -14,11 +14,11 @@
             <div class="page-hdr scroll-to-fixed-fixed" style="z-index: 9; position: fixed; top: 0px; margin-left: 0px; width: 920px; left: 60px;">
                 <div class="row">
                     <div class="col-6 page-name">
-                        <h1><i class="fa fa-hospital-o"></i>Add Hospital</h1>
+                        <h1><i class="fa fa-hospital-o"></i>Adaugă spital</h1>
                     </div>
                     <div class="col-4 page-menu" style="padding-right: 50px">
-                        <a id="cancel" href="hospital.php" data-toggle="tooltip" data-placement="left" title="" data-original-title="Back to List"><i class="fa fa-reply"></i></a>
-                        <button type="submit" name="add_hospital" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add Hospital"><i class="fa fa-floppy-o"></i></button>
+                        <a id="cancel" href="hospital.php" data-toggle="tooltip" data-placement="left" title="" data-original-title="Înapoi la listă"><i class="fa fa-reply"></i></a>
+                        <button type="submit" name="add_hospital" data-toggle="tooltip" data-placement="left" title="" data-original-title="Salvare"><i class="fa fa-floppy-o"></i></button>
                     </div>
                 </div>
             </div><div style="display: block; width: 920px; height: 70px; float: none;"></div>
@@ -28,23 +28,23 @@
                         $dpt = new hospitals();
                         $dpt->add();
                     ?>
-                    <div class="content-block-ttl">Hospital Details</div>
+                    <div class="content-block-ttl">Detalii spital/clinică</div>
                     <div class="content-block-main">
                         <input type="hidden" name="_token" value="413cce0188">
                         <div class="content-input">
-                            <label><text>*</text>Name : </label>
-                            <input type="text" class="input-text" value="" name="name" placeholder="Enter Hospital Name" required="">
-                            <p class="content-input-error-name">Please enter department name!</p>
+                            <label><text>*</text>Nume : </label>
+                            <input type="text" class="input-text" value="" name="name" placeholder="Numele spitalului sau a clinicii" required="">
+                            <p class="content-input-error-name">Nume</p>
                         </div>
                         <div class="content-input">
-                            <label><text>*</text>Address : </label>
-                            <input type="text" class="input-text" value="" name="address" placeholder="Enter Address" required="">
-                            <p class="content-input-error-name">Please enter hospital address!</p>
+                            <label><text>*</text>Adresa : </label>
+                            <input type="text" class="input-text" value="" name="address" placeholder="Adresa" required="">
+                            <p class="content-input-error-name">Adresa</p>
                         </div>
                         <div class="content-input">
-                            <label>Key Location : </label>
+                            <label>Locația : </label>
                             <select name="location" id="ui-id-2" class="select-list" required="" style="display: none;">
-                                <option class="text-capitalize text-info " >Select Your key Location ...........</option>
+                                <option class="text-capitalize text-info " >Selectează locația</option>
                                 <?php
 
                                 $l = new location();
@@ -62,7 +62,7 @@
 
                         </div>
                         <div class="content-input">
-                            <label><text>*</text>Hospital Photo :</label>
+                            <label><text>*</text>Poză :</label>
                             <input type="file" name="photo" class="btn btn-info">
 
                         </div>
@@ -71,7 +71,7 @@
                 </div>
                 <input type="hidden" name="id" value="">
                 <div class="content-submit text-center">
-                    <button type="submit" name="add_hospital" class="btn btn-primary">Save</button>
+                    <button type="submit" name="add_hospital" class="btn btn-primary">Salvează</button>
                 </div>
             </div>
         </form>

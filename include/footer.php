@@ -1,9 +1,8 @@
 
-<!-- Start of Time Table Section -->
 <div id="tt" class="animated-wrapper">
     <div class="layer-stretch">
     </div>
-</div><!-- End of Time Table Section -->
+</div>
 
 <div id="appointment-button">
     <a href="make_appointment.php">
@@ -12,8 +11,6 @@
     </a>
 </div>
 
-<!-- End Fixed Appointment Bottom Button -->
-<!-- Start of Footer Section -->
 <footer id="footer" style="background-color: #00263b;">
     <div class="layer-stretch">
         <div class="row layer-wrapper">
@@ -60,7 +57,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="">Privacy policy</a>
+                                    <a href="">Politica de confidențialitate</a>
                                 </li>
                                 <li>
                                     <a href="">Termeni și condiții</a>
@@ -79,7 +76,7 @@
             </div>
             <div class="col-md-4 footer-block">
                 <div class="footer-ttl">
-                    <p>Subscribe</p>
+                    <p>Abonați-vă</p>
                 </div>
                 <div class="footer-container footer-c">
                     <div class="footer-subscribe">
@@ -122,7 +119,6 @@
             </div>
         </div>
     </div>
-    <!-- Start of Copyright Section -->
     <div id="copyright">
         <div class="layer-stretch">
 
@@ -130,11 +126,10 @@
                 Developed By : Razvan Patcas
             </div> -->
             <div class="paragraph-medium paragraph-white">
-                2020 © ALL RIGHTS RESERVED.
+                2020 © Toate drepturile rezervate.
             </div>
         </div>
-    </div><!-- End of Copyright Section -->
-</footer><!-- End of Footer Section -->
+    </div>
 
 <!-- Included Scripts -->
 <script src="public/js/jquery-2.1.4.min.js"></script>

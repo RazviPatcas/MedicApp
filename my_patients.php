@@ -19,12 +19,12 @@
                                 <tr class="table-heading" role="row">
                                     <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 10.5px;" aria-label="#: activate to sort column ascending">#</th>
                                     <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 16.5px;" aria-label="ID: activate to sort column ascending">ID</th>
-                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 49.5px;" aria-label="Doctor: activate to sort column ascending">Patients Name</th>
-                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 34.5px;" aria-label="Date: activate to sort column ascending">Date</th>
-                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 34.5px;" aria-label="Date: activate to sort column ascending">Time</th>
-                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 34.5px;" aria-label="Date: activate to sort column ascending">Problems</th>
-                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 45.5px;" aria-label="Status: activate to sort column ascending">Status</th>
-                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0.5px; display: none;" aria-label=": activate to sort column ascending"></th></tr>
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 49.5px;" aria-label="Doctor: activate to sort column ascending">Nume pacient</th>
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 34.5px;" aria-label="Date: activate to sort column ascending">Data</th>
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 34.5px;" aria-label="Date: activate to sort column ascending">Ora</th>
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 34.5px;" aria-label="Date: activate to sort column ascending">Simptome/Afecțiuni</th>
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 45.5px;" aria-label="Status: activate to sort column ascending">Stare</th>
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0.5px; display: none;" aria-label=": activate to sort column ascending">Acțiuni</th></tr>
                             </thead>
                             <tbody>
                             <?php
@@ -40,7 +40,7 @@
                                 <tr class="odd text-capitalize">
 
                                     <td valign="top" class="dataTables_empty"><?php echo $i; ?></td>
-                                    <td valign="top" class="dataTables_empty">2040<?php echo $appointment->id;?>1230</td>
+                                    <td valign="top" class="dataTables_empty"><?php echo $appointment->id;?></td>
                                     <td valign="top" class="dataTables_empty">
                                         <a href="appointment_details.php?id=<?php echo $appointment->id;?>">
                                         <?php
@@ -57,7 +57,7 @@
                                     <td valign="top" class="dataTables_empty"><?php echo $appointment->time;?></td>
                                     <td valign="top" class="dataTables_empty"><?php echo $appointment->problems;?></td>
 
-                                    <td>Active</td>
+                                    <td>Activ</td>
                                     <td><a href="my_patients.php?delete=<?php $appointment->id; ?>"><i class="fa fa-trash-o"></i></a></td>
 
                                 </tr>

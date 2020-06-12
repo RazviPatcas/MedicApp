@@ -16,11 +16,11 @@
 			<h1><i class="fa fa-user-md"></i>Spitale/Clinici</h1>
 		</div>
         <div class="page-name col-3 text-right">
-            <h1 id="time">Time</h1>
+            <h1 id="time">Timp</h1>
         </div>
 		<div class="col-5 page-menu">
-			<a id="cancel" href="hospital.php" data-toggle="tooltip" data-placement="left" title="Reload"><i class="fa fa-refresh"></i></a>
-			<a href="add_hospital.php" data-toggle="tooltip" data-placement="left" title="Adaugă spital"><i class="fa fa-plus"></i></a>
+			<a id="cancel" href="hospital.php" data-toggle="tooltip" data-placement="left" title="Reîncarcă"><i class="fa fa-refresh"></i></a>
+			<a style = "background-color:#32C1CE;" href="add_hospital.php" data-toggle="tooltip" data-placement="left" title="Adaugă spital"><i class="fa fa-plus"></i></a>
 		</div>
 	</div>
 </div>
@@ -30,11 +30,11 @@
 			<thead>
 				<tr class="table-heading">
 					<th>#</th>
-					<th>Hospital Info</th>
-					<th>Picture</th>
-					<th>Doctors</th>
-					<th>Location</th>
-					<th class="table-action">Action</th>
+					<th>Informații spital/clinică</th>
+					<th>Poză</th>
+					<th>Doctori</th>
+					<th>Locația</th>
+					<th class="table-action">Acțiuni</th>
 				</tr>
 			</thead>
 			<tbody>

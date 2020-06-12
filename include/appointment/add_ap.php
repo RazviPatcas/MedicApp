@@ -15,12 +15,12 @@ if (isset($_POST['dpt_id'])){
         $result = $pdo->prepare($sql);
         $result->execute();
         if ($result){
-            echo 'Appointment Booking Successful!!';
+            echo 'Programarea s-a efectuat cu succes';
                     header('Location: ../../doctors.php');
 
         }
     }else
-        echo 'Time or address Can not be empty !!!!';
+        echo 'Data și ora nu pot fi goale ! ';
 
 }
 
