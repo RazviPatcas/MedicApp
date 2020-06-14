@@ -1,4 +1,3 @@
-
 <?php include('include/db.php');?>
 <?php include('include/header.php');?>
 <?php
@@ -6,12 +5,11 @@
     require ('class/departments.php');
     $doct = new doctors();
 
-    $page_name = "<i class='fa fa-user-md'> </i> Doctors";
+    $page_name = "<i class='fa fa-user-md'> </i> Doctori";
 ?>
     <?php include('include/nav.php');
 ?>
 
-<!-- Start Doctor List Section -->
 <div class="layer-stretch animated-wrapper" style="opacity: 1;">
     <div class="layer-wrapper layer-bottom-0">
         <div class="row text-center">
@@ -29,35 +27,35 @@
                                 foreach ($doctors as $doctor) {
                                     ?>
 
-                                    <div class="col-sm-3">
-                                        <div class="theme-block animated animated-up">
-                                            <div class="theme-block-picture" style="height: auto">
+                                    <div class="col-sm-6">
+                                        <div class="theme-block theme-block-hover animated animated-up">
+                                            <div class="theme-block-picture" style="height: auto;">
                                                 <a href="doctor_details.php?id=<?php echo $doctor->id; ?>">
                                                     <img src="public/uploads/<?php echo $doctor->photo; ?>"
-                                                         style="height: 130px;;"
+                                                         style="height: auto;;"
                                                          alt="<?php echo $doctor->first_name . " " . $doctor->last_name ?>">
                                                 </a>
                                             </div>
                                             <div class="theme-block-data service-block-data">
-                                                <h3 class="text-capitalize" style="height: 220px">
+                                                <h3 class="text-capitalize" style="height: auto;">
                                                     <a href="doctor_details.php?id=<?php echo $doctor->id; ?>"
-                                                       style="color: #e5007a;font-size: 14px">
+                                                       style="color: #e5007a; font-size: 30px;">
                                                         <b>Dr. <?php echo $doctor->first_name . " " . $doctor->last_name . "<br>"; ?></b>
                                                         <?php echo $doctor->degree . "<br>"; ?>
                                                         <p class="text-capitalize"
-                                                           style="font-family: 'Harlow Solid Italic'; color: #0b0b0b">
+                                                           style="font-family: 'Harlow Solid Italic'; color: #0b0b0b;">
 
                                                         </p>
                                                         <hr>
                                                         <p class="text-capitalize"
-                                                           style="font-family: Rockwell; color: #050092;height: 40px;">
+                                                           style="font-family: Rockwell; color: #050092; height: 40px;">
                                                             <?php
                                                             $hospital = new hospitals();
                                                             $hospital->find($doctor->hospital_id);
                                                             ?>
                                                         </p>
                                                         <p class="text-capitalize"
-                                                           style="font-family: Rockwell; height: 40px;">
+                                                           style="font-family: Rockwell; height: 20px;">
                                                             <?php
                                                             $hospital->hptl_location($doctor->hospital_id);
 
@@ -80,8 +78,8 @@
                                 foreach ($doctorss as $doctor) {
                                     ?>
 
-                                    <div class="col-sm-3">
-                                        <div class="theme-block theme-block-hover animated animated-up fadeInUp">
+                                    <div class="col-sm-6">
+                                        <div class="theme-block theme-block-hover animated animated-up">
                                             <div class="theme-block-picture" style="height: auto">
                                                 <a href="doctor_details.php?id=<?php echo $doctor->id; ?>">
                                                     <img src="public/uploads/<?php echo $doctor->photo; ?>"
@@ -90,9 +88,9 @@
                                                 </a>
                                             </div>
                                             <div class="doctor-name">
-                                                <h4 class="text-capitalize" style="height: 220px">
+                                                <h4 class="text-capitalize" style="height: auto;">
                                                     <a href="doctor_details.php?id=<?php echo $doctor->id; ?>"
-                                                       style="color: #fff;font-size: 14px">
+                                                       style="color: #fff;font-size: 30px;">
                                                         <b>Dr. <?php echo $doctor->first_name . " " . $doctor->last_name . "<br>"; ?></b>
                                                         <?php echo $doctor->degree . "<br>"; ?>
                                                         <p class="text-capitalize"
@@ -138,19 +136,19 @@
                                 foreach ($doctorss as $doctor) {
                                     ?>
 
-                                    <div class="col-sm-3">
-                                        <div class="theme-block theme-block-hover animated animated-up fadeInUp">
-                                            <div class="theme-block-picture" style="height: auto">
+                                    <div class="col-sm-6">
+                                        <div class="theme-block theme-block-hover animated animated-up">
+                                            <div class="theme-block-picture" style="height: auto;">
                                                 <a href="doctor_details.php?id=<?php echo $doctor->id; ?>">
                                                     <img src="public/uploads/<?php echo $doctor->photo; ?>"
-                                                         style="height: 130px;;"
+                                                         style="height: auto;"
                                                          alt="<?php echo $doctor->first_name . " " . $doctor->last_name ?>">
                                                 </a>
                                             </div>
                                             <div class="doctor-name">
-                                                <h4 class="text-capitalize" style="height: 200px">
+                                                <h4 class="text-capitalize" style="height: auto;">
                                                     <a href="doctor_details.php?id=<?php echo $doctor->id; ?>"
-                                                       style="color: #fff;font-size: 25px">
+                                                       style="color: #fff;font-size: 30px;">
                                                         <b>Dr. <?php echo $doctor->first_name . " " . $doctor->last_name . "<br>"; ?></b>
                                                         <!--?php echo $doctor->degree . "<br>"; ?>-->
                                                         <p class="text-capitalize"

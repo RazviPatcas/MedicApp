@@ -70,6 +70,7 @@ class doctors
             $gender     = trim($_REQUEST['gender']);
             $username   = trim($_REQUEST['username']);
             $password   = trim($_REQUEST['password']);
+            $paraf_code = trim($_REQUEST['paraf_code']);
 
             $password   = password_hash($password,PASSWORD_BCRYPT,array('cost'=>12));
 
@@ -85,8 +86,8 @@ class doctors
 
                 move_uploaded_file($img_temp,"public/uploads/{$img}");
 
-                $sql = "INSERT INTO `doctors`(`first_name`, `last_name`, `email`, `phone`, `gender`, `username`, `password`,`photo`, `degree`, `department_id`,`experience`, `hospital_id`, `created_at`) " ;
-                $sql .= "VALUES ('$fname','$lname','$mail','$mobile','$gender','$username','$password','$img','$degree',$department_id,0,$hospital_id,now())";
+                $sql = "INSERT INTO `doctors`(`first_name`, `last_name`, `email`, `phone`, `gender`, `username`, `password`,`photo`, `degree`, `department_id`,`experience`, `hospital_id`, `created_at`, `paraf_code`) " ;
+                $sql .= "VALUES ('$fname','$lname','$mail','$mobile','$gender','$username','$password','$img','$degree',$department_id,0,$hospital_id,now(),$paraf_code)";
 
                 $result = $pdo->prepare($sql);
                 $result->execute();

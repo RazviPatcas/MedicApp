@@ -566,7 +566,19 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .text-muted { color: #8d9ea7 !important; }
 
 /* THEME BLOCK CSS START */
-.theme-block { position: relative; width: 100%; padding: 4px; margin: 0 0 30px 0; text-align: center; background: #FFF; border-radius: 2px; -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); overflow: hidden; }
+.theme-block { 
+    position: relative; 
+    width: 100%; 
+    padding: 4px; 
+    margin: 0 0 30px 0; 
+    text-align: center; 
+    background: #FFF; 
+    border-radius: 2px; 
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); 
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); 
+    overflow: hidden; }
+
 .theme-block:hover .theme-block-hidden { opacity: 1; z-index: 2; bottom: 0; }
 
 .theme-block-hover:hover .theme-block-picture img { opacity: 0.8; -webkit-transform: scale(1.3) rotate(6deg); -moz-transform: scale(1.3) rotate(6deg); -ms-transform: scale(1.3) rotate(6deg); -o-transform: scale(1.3) rotate(6deg); transform: scale(1.3) rotate(6deg); }
@@ -578,8 +590,8 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .theme-block-picture::before, .theme-img::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0); }
 
 .theme-block-data { position: relative; padding: 15px; }
-.theme-block-data h4 { font-size: 20px; text-align: center; margin: 0; padding: 10px 0 5px 0; }
-.theme-block-data h4 a { color: #555; }
+.theme-block-data h3 { font-size: 20px; text-align: center; margin: 0; padding: 10px 0 5px 0; }
+.theme-block-data h3 a { color: #555; }
 .theme-block-data p a { float: right; color: #32C1CE; }
 
 .theme-block-hidden { position: absolute; bottom: -100%; left: 0; width: 100%; height: 100%; background: #FFF; border: 1px solid #EEE; opacity: 0; z-index: -2; }
@@ -944,7 +956,7 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 *************************************************/
 /* Image Slider Section */
 .slider-wrapper .slides li { position: relative; }
-.slider-wrapper .slides li::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); 
+.slider-wrapper .slides li::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); 
 /*  background: linear-gradient(-90deg, rgba(2, 167, 182, 0.8), rgba(1, 82, 89, 0.8)); }*/
 }
   
