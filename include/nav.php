@@ -10,7 +10,7 @@
             <div class="hdr-top-block hidden-xs">
                 <div id="hdr-social">
                     <ul class="social-list social-list-sm">
-                        <li><a class="width-auto font-13">Follow Us : </a></li>
+                        <li><a class="width-auto font-13">Urmăriți-ne : </a></li>
                         <li><a href="https://www.facebook.com/" target="_blank" id="hdr-facebook" ><i class="fa fa-facebook" ></i></a><span class="mdl-tooltip mdl-tooltip--bottom" for="hdr-facebook">Facebook</span></li>
                         <li><a href="https://twitter.com/" target="_blank" id="hdr-twitter" ><i class="fa fa-twitter" ></i></a><span class="mdl-tooltip mdl-tooltip--bottom" for="hdr-twitter">Twitter</span></li>
                         <li><a href="https://plus.google.com/" target="_blank" id="hdr-google" ><i class="fa fa-google" ></i></a><span class="mdl-tooltip mdl-tooltip--bottom" for="hdr-google">Google</span></li>
@@ -130,7 +130,10 @@
                     <li id="department"><a href="department.php" id="menu-doctor" class="mdl-button mdl-js-button mdl-js-ripple-effect ">Departamente</a></li>
 
                     <li id="service"><a href="service.php" id="menu-service" class="mdl-button mdl-js-button mdl-js-ripple-effect">Serviciul nostru</a></li>
-                    <li id="page">
+                    <li id="service"><a href="contact.php" id="menu-service" class="mdl-button mdl-js-button mdl-js-ripple-effect">Contact</a></li>
+         
+                  
+                   <!-- <li id="page">
                         <a id="menu-pages" class="mdl-button mdl-js-button mdl-js-ripple-effect">Altele <i class="fa fa-chevron-down"></i></a>
                         <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-pages">
                             <li class="mdl-menu__item">
@@ -140,7 +143,7 @@
                                 <a href="contact.php">Contact</a>
                             </li>
                         </ul>
-                    </li>
+                    </li>-->
 
                     <?php if (isset($_SESSION['admin_name'])) { ?>
 

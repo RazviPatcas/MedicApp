@@ -132,6 +132,12 @@
                             <label class="mdl-textfield__label" for="register-confirm-password">Confirmă parola  <em> *</em></label>
                             <span class="mdl-textfield__error">Parola nu se potrivește !</span>
                         </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                            <i class="fa fa-key"></i>
+                            <input class="mdl-textfield__input" type="code" name="confirmpassword" id="register-confirm-password">
+                            <label class="mdl-textfield__label" for="register-confirm-password">Cod parafă  <em> *</em></label>
+                            <span class="mdl-textfield__error">Parola nu se potrivește !</span>
+                        </div>
                         <div class="login-condition">Dând clic pe creare cont, sunteți de acord cu<br /><a href="about.php">Termenii și condițiile noastre</a></div>
                         <div class="form-submit">
                             <button type="submit" id="register-submit" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised mdl-button--raised button button-primary button-pill" name="register_doctor">Crează cont</button>
