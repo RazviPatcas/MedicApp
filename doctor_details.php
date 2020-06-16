@@ -74,7 +74,7 @@ $page_name = "<i class=\"fa fa-info-circle\"></i> Department ";
                             <?php
                             if (isset($_SESSION['patient_id'])) {
                                 ?>
-                                <button type="submit" name="submit" class="btn btn-success btn-lg btn-pill">Realizeaza o programare
+                                <button type="submit" name="submit" class="btn btn-success btn-lg btn-pill">Realizează o programare
                                 </button>
                                 <?php
                             }else

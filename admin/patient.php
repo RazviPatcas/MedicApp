@@ -20,6 +20,8 @@
 		<div class="col-5 page-menu">
 			<a id="cancel" href="patient.php" data-toggle="tooltip" data-placement="left" title="Reîncarcă"><i class="fa fa-refresh"></i></a>
 			<a style="background-color:#32C1CE" href="patient_add.php" data-toggle="tooltip" data-placement="left" title="Adaugă pacient"><i class="fa fa-plus"></i></a>
+			<a style="background-color:red;" href="generate_patientpdf.php" data-toggle="tooltip" data-placement="left" title="Generează PDF"><i class="fa fa-envelope"></i></a>
+
 		</div>
 	</div>
 </div>

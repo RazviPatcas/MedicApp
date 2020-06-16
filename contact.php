@@ -2,19 +2,16 @@
 <?php $page_name = "<i class='fa fa-phone'> </i> Contact"; ?>
 <?php include('include/nav.php');?>
 
-    <!-- Header End --><!-- Start Page Title Section -->
-<div class="page-ttl" style="height: 120px">
+<div class="page-ttl" style="height: auto;">
     <div class="layer-stretch">
         <div class="page-ttl-container">
             <div class="page-ttl-name">
-                <h1><i class="fa fa-phone" style="color: #fff"></i> Contact Us</h1>
+                <h1><i class="fa fa-phone" style="color: #fff"></i> Contactați-ne</h1>
             </div>
         </div>
     </div>
 </div>
-<!-- End Page Title Section -->
 
-<!-- Start Contact Detail Section -->
 <div class="layer-stretch animated-wrapper">
     <div class="layer-wrapper">
 
@@ -22,48 +19,45 @@
              <div class="col-md-3 contact-info-block animated animated-up">
                 <div class="contact-info-inner">
                     <i class="fa fa-plus-square-o"></i>
-                    <span>APPOINTMENT</span>
-                    <p class="paragraph-medium paragraph-black">+ 01 1122 333 333</p>
-                    <p>sales@pepdev.com </p>
+                    <span>Programare</span>
+                    <p class="paragraph-medium paragraph-black">0359821342</p>
+                    <p>medicapp@yahoo.com </p>
                 </div>
             </div>
              <div class="col-md-3 contact-info-block animated animated-up">
                 <div class="contact-info-inner">
                     <i class="fa fa-phone"></i>
-                    <span>Call Us</span>
-                    <p class="paragraph-medium paragraph-black">+ 01 1122 333 333</p>
-                    <p>+ 01 1122 333 333 </p>
+                    <span>Telefon</span>
+                    <p class="paragraph-medium paragraph-black">0359821342</p>
                 </div>
             </div>
             <div class="col-md-3 contact-info-block animated animated-up">
                 <div class="contact-info-inner">
                     <i class="fa fa-envelope"></i>
-                    <span>Email Us</span>
-                    <p class="paragraph-medium paragraph-black">sales@pepdev.com</p>
-                    <p>support@pepdev.com </p>
+                    <span>Email</span>
+                    <p class="paragraph-medium paragraph-black">medicapp@yahoo.com</p>
                 </div>
             </div>
             <div class="col-md-3 contact-info-block animated animated-up">
                 <div class="contact-info-inner">
                     <i class="fa fa-map-marker"></i>
-                    <span>Location</span>
-                    <p class="paragraph-medium paragraph-black">Street name, City, Country</p>
+                    <span>Locația</span>
+                    <p class="paragraph-medium paragraph-black">Oradea,Bihor</p>
                     <p> </p>
                 </div>
             </div>
                 </div>
     </div>
 </div>
-<!-- End Contact Detail Section -->
-<!-- Start Request Section -->
+
 <div id="contact-form">
     <div class="layer-stretch">
         <div class="layer-wrapper">
             <div class="layer-ttl">
-                <h3>Make a Request</h3>
+                <h3>Realizează o cerere</h3>
             </div>
             <div class="layer-container">
-                <form class="contact-form row" action="http://pepdev.com/theme-preview/klinikal/index.php?route=contact" method="post">
+                <form class="contact-form row" action="" method="post">
                     <input type="hidden" name="_token" value="15276e55e6cdfa6911f440f75f64501dc97cc6f4a19102dddb4c47f0c4dd1523ad639943996afef209d6a358056f3b3389a9bcb175b7413ef3547589673a2b7d">
                     <div class="col-md-4">
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
@@ -122,36 +116,10 @@
         <div class="map-icon">
             <i class="fa fa-map-marker"></i>
         </div>
-        <div class="map-address-ttl">Our Location</div>
-        <div class="paragraph-medium paragraph-black">Mirpur-2, Dhaka, Bangladesh</div>
+        <div class="map-address-ttl">Locația noastră</div>
+        <div class="paragraph-medium paragraph-black">Oradea,Bihor,Romania</div>
     </div>
 </div>
-<!-- End Google Map Section -->
-<!-- Map Block Script -->
-<!--<script>-->
-<!--    var map;-->
-<!---->
-<!--    function initMap() {-->
-<!--        var loc = {-->
-<!--           lat: 18.938936,-->
-<!--           lng: 72.824116       };-->
-<!--       var isDraggable = !('ontouchstart' in document.documentElement);-->
-<!---->
-<!--       map = new google.maps.Map(document.getElementById('map-container'), {-->
-<!--        center: loc,-->
-<!--                zoom: 14, // Map Zoom-->
-<!--                draggable: isDraggable,-->
-<!--                scrollwheel: false-->
-<!--            });-->
-<!---->
-<!--       var marker = new google.maps.Marker({-->
-<!--        position: loc,-->
-<!--        map: map-->
-<!--    });-->
-<!--   }-->
-<!--</script>-->
-<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB46LtJIWXW_IX_GZVvrR9LCNixR7FvG8A&amp;callback=initMap"></script>-->
-
 
 <!-- Start Make an Appointment Modal -->
 <?php include('include/make_appointment.php');?>

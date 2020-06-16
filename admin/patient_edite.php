@@ -89,7 +89,7 @@
                                         <p class="content-input-error-name">Telefon</p>
                                     </div>
                                 </div>
-                                <div class="content-input">
+                               <!-- <div class="content-input">
                                     <label>
                                         <text>*</text>
                                         Parolă :</label>
@@ -98,7 +98,7 @@
                                            placeholder="Parolă" required="">
                                     <p class="content-input-error-name">Please enter password (minimum 6 words)!</p>
                                     <div class="content-description"></div>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                         <div class="content-block content-block-horizantal">

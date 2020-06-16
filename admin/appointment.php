@@ -31,6 +31,8 @@
             <a style = "background-color:#32C1CE;" href="appointment_add.php?ap=add" data-toggle="tooltip" data-placement="left" title="Adaugă programare">
                 <i class="fa fa-plus"></i>
             </a>
+            <a style="background-color:red;" href="generate_appointmentpdf.php" data-toggle="tooltip" data-placement="left" title="Generează PDF"><i class="fa fa-envelope"></i></a>
+
         </div>
     </div>
     <input type="hidden" value="appointment" name="hidden-appointment">

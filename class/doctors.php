@@ -70,8 +70,8 @@ class doctors
             $gender     = trim($_REQUEST['gender']);
             $username   = trim($_REQUEST['username']);
             $password   = trim($_REQUEST['password']);
-            $paraf_code = trim($_REQUEST['paraf_code']);
-
+ //           $paraf_code = $_POST["paraf_code"];
+            
             $password   = password_hash($password,PASSWORD_BCRYPT,array('cost'=>12));
 
             $img        =   $_FILES['photo']['name'];
@@ -79,24 +79,24 @@ class doctors
 
 
             if ($this->username_exist($username)){
-                echo "<h3 class='text-center text-danger'>Please Try Another username this is already Registered</h3>";
+                echo "<h3 class='text-center text-danger'>Încercați alt nume utilizator, acesta există în baza de date !</h3>";
             }else if ($this->email_exist($mail)){
-                echo "<h3 class='text-center text-danger'>Please Try Another Email Id this is already Registered</h3>";
+                echo "<h3 class='text-center text-danger'>Încercați alt email, acesta există în baza de date !</h3>";
             }else if (!empty($degree) || !empty($hospital_id) || !empty($department_id) || !empty($username)){
 
                 move_uploaded_file($img_temp,"public/uploads/{$img}");
 
-                $sql = "INSERT INTO `doctors`(`first_name`, `last_name`, `email`, `phone`, `gender`, `username`, `password`,`photo`, `degree`, `department_id`,`experience`, `hospital_id`, `created_at`, `paraf_code`) " ;
-                $sql .= "VALUES ('$fname','$lname','$mail','$mobile','$gender','$username','$password','$img','$degree',$department_id,0,$hospital_id,now(),$paraf_code)";
+                $sql = "INSERT INTO `doctors`(`first_name`, `last_name`, `email`, `phone`, `gender`, `username`, `password`,`photo`, `degree`, `department_id`,`experience`, `hospital_id`, `created_at`) " ;
+                $sql .= "VALUES ('$fname','$lname','$mail','$mobile','$gender','$username','$password','$img','$degree',$department_id,0,$hospital_id,now())";
 
                 $result = $pdo->prepare($sql);
                 $result->execute();
 
                 if ($result){
-                    echo '<h2 class="text-center text-primary">Registration Successful !!! <a href="login.php">Login Please</a></h2>';
+                    echo '<h2 class="text-center text-primary">Înregistrare finalizată ! <a href="login.php">Autentificare</a></h2>';
                 }else
-                    echo '<h2 class="text-center text-danger">Registration failed !!! <a href="login.php">Login Please</a></h2>';
-
+                    echo '<h2 class="text-center text-danger">Înregistrare eșuată ! <a href="login.php"></a></h2>';
+            
             }
         }
     }

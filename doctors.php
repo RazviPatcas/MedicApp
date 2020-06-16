@@ -36,31 +36,29 @@
                                                          alt="<?php echo $doctor->first_name . " " . $doctor->last_name ?>">
                                                 </a>
                                             </div>
-                                            <div class="theme-block-data service-block-data">
+                                            <div class="theme-block-data service-block-data" style= "background-color:#33c1cd;">
                                                 <h3 class="text-capitalize" style="height: auto;">
                                                     <a href="doctor_details.php?id=<?php echo $doctor->id; ?>"
-                                                       style="color: #e5007a; font-size: 30px;">
+                                                       style=" color: #fff; font-size: 30px;">
                                                         <b>Dr. <?php echo $doctor->first_name . " " . $doctor->last_name . "<br>"; ?></b>
-                                                        <?php echo $doctor->degree . "<br>"; ?>
+                                                        <?php
+                                                           $id = $doctor->department_id;
+                                                           $doct->doctor_dpt($id);
+                                                            ?> <br>
                                                         <p class="text-capitalize"
                                                            style="font-family: 'Harlow Solid Italic'; color: #0b0b0b;">
 
                                                         </p>
                                                         <hr>
-                                                        <p class="text-capitalize"
-                                                           style="font-family: Rockwell; color: #050092; height: 40px;">
                                                             <?php
                                                             $hospital = new hospitals();
                                                             $hospital->find($doctor->hospital_id);
                                                             ?>
-                                                        </p>
-                                                        <p class="text-capitalize"
-                                                           style="font-family: Rockwell; height: 20px;">
-                                                            <?php
-                                                            $hospital->hptl_location($doctor->hospital_id);
 
-                                                            ?>
+                                                        <p class="text-capitalize" style="font-family: 'Harlow Solid Italic'; color: #0b0b0b;">
+
                                                         </p>
+
                                                     </a>
                                                 </h4>
                                             </div>
@@ -83,7 +81,7 @@
                                             <div class="theme-block-picture" style="height: auto">
                                                 <a href="doctor_details.php?id=<?php echo $doctor->id; ?>">
                                                     <img src="public/uploads/<?php echo $doctor->photo; ?>"
-                                                         style="height: 130px;;"
+                                                         style="height: auto;"
                                                          alt="<?php echo $doctor->first_name . " " . $doctor->last_name ?>">
                                                 </a>
                                             </div>
@@ -98,7 +96,6 @@
                                                             <?php
                                                             $id = $doctor->department_id;
                                                             $doct->doctor_dpt($id);
-                                                            echo " (Exp:" . $doctor->experience . " Y)";
 
                                                             ?>
                                                         </p>
@@ -108,13 +105,6 @@
                                                             <?php
                                                             $hospital = new hospitals();
                                                             $hospital->find($doctor->hospital_id);
-                                                            ?>
-                                                        </p>
-                                                        <p class="text-capitalize"
-                                                           style="font-family: Rockwell; height: 40px;">
-                                                            <?php
-                                                            $hospital->hptl_location($doctor->hospital_id);
-
                                                             ?>
                                                         </p>
                                                     </a>
@@ -150,15 +140,15 @@
                                                     <a href="doctor_details.php?id=<?php echo $doctor->id; ?>"
                                                        style="color: #fff;font-size: 30px;">
                                                         <b>Dr. <?php echo $doctor->first_name . " " . $doctor->last_name . "<br>"; ?></b>
-                                                        <!--?php echo $doctor->degree . "<br>"; ?>-->
+                                                        <br>
+                                                        <?php
+                                                           $id = $doctor->department_id;
+                                                           $doct->doctor_dpt($id);
+                                                            ?> 
+                                                            <br>
                                                         <p class="text-capitalize"
-                                                           style="font-family: 'Harlow Solid Italic'; color: #fff">
-                                                            <?php
-                                                            $id = $doctor->department_id;
-                                                            $doct->doctor_dpt($id);
-                                                           // echo " (Exp:" . $doctor->experience . " Y)";
+                                                           style="font-family: 'Harlow Solid Italic'; color: #0b0b0b;">
 
-                                                            ?>
                                                         </p>
                                                         <hr>
                                                         <p class="text-capitalize"
@@ -168,13 +158,7 @@
                                                             $hospital->find($doctor->hospital_id);
                                                             ?>
                                                         </p>
-                                                        <p class="text-capitalize"
-                                                           style="font-family: Rockwell; height: 40px;">
-                                                            <?php
-                                                            $hospital->hptl_location($doctor->hospital_id);
-
-                                                            ?>
-                                                        </p>
+                                                        
                                                     </a>
                                                 </h4>
                                             </div>
@@ -203,7 +187,7 @@
                     <div class="sub-ttl">Departamentele noastre</div>
                     <div class="flexslider theme-flexslider">
 
-                        <div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" style="width: 1600%; transition-duration: 0s; transform: translate3d(-391px, 0px, 0px);">
+                        <div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" style="width: 100%; transition-duration: 0s; transform: translate3d(-391px, 0px, 0px);">
 
                                 <?php
                                 $dpt = new departments();

@@ -134,9 +134,8 @@
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-key"></i>
-                            <input class="mdl-textfield__input" type="code" name="confirmpassword" id="paraf_code">
+                            <input class="mdl-textfield__input" type="paraf_code" name="username" id="register-username">
                             <label class="mdl-textfield__label" for="register-confirm-password">Cod parafă  <em> *</em></label>
-                            <!--<span class="mdl-textfield__error">Parola nu se potrivește !</span>-->
                         </div>
                         <div class="login-condition">Dând clic pe creare cont, sunteți de acord cu<br /><a href="about.php">Termenii și condițiile noastre</a></div>
                         <div class="form-submit">

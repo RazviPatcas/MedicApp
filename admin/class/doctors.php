@@ -62,23 +62,25 @@ class doctors
 
             $fname          = trim($_REQUEST['firstname']);
             $lname          = trim($_REQUEST['lastname']);
-//            $mail           = trim($_REQUEST['email']);
+            $mail           = trim($_REQUEST['email']);
             $mobile         = trim($_REQUEST['mobile']);
             $gender         = trim($_REQUEST['gender']);
-//            $age            = trim($_REQUEST['age']);
             $department_id  = trim($_REQUEST['department']);
             $hospital_id    = trim($_REQUEST['chamber']);
- //           $position       = trim($_REQUEST['position']);
-            $role_id       = trim($_REQUEST['role']);
             $degree         = trim($_REQUEST['degree']);
-//            $speciality     = trim($_REQUEST['speciality']);
             $experience     = trim($_REQUEST['experience']);
- //           $awards         = trim($_REQUEST['awards']);
             $username       = trim($_REQUEST['username']);
-            $password   = password_hash($password,PASSWORD_BCRYPT,array('cost'=>12));
-
             $start_time     = trim($_REQUEST['st']);
             $end_time       = trim($_REQUEST['et']);
+//            $age            = trim($_REQUEST['age']);
+
+ //           $position       = trim($_REQUEST['position']);
+            $role_id       = trim($_REQUEST['role']);
+//            $speciality     = trim($_REQUEST['speciality']);
+ //           $awards         = trim($_REQUEST['awards']);
+ //           $password   = password_hash($password,PASSWORD_BCRYPT,array('cost'=>12));
+
+        
  //           $slot           = trim($_REQUEST['slot']);
             $week_end       = trim($_REQUEST['week_end']);
             $status         = trim($_REQUEST['status']);
@@ -98,8 +100,8 @@ class doctors
                         $img = $doct->photo;
                     }
                 }
-                $sql  = "UPDATE `doctors` SET  `first_name`='$fname',`last_name`='$lname', `phone`='$mobile',`username`='$username', `gender`='$gender', `age`=$age, `password`='$password', `role_id`=$role_id, `photo`='$img', `degree`='$degree', `awards`='$awards', `department_id`=$department_id , ";
-                $sql .= "`position`='$position', `specialty`='$speciality', `experience`='$experience', `hospital_id`=$hospital_id, `start_appointment`='$start_time', `end_appointment`='$end_time', `time_slot`='$slot', `week_end`='$week_end', `status`=$status, `updated_at`=now() WHERE id =$id " ;
+                $sql  = "UPDATE `doctors` SET  `first_name`='$fname',`last_name`='$lname', `phone`='$mobile',`username`='$username', `gender`='$gender', `age`=$age, `password`='$password', `role_id`=$role_id, `photo`='$img', `degree`='$degree', `department_id`=$department_id , ";
+                $sql .= "`experience`='$experience', `hospital_id`=$hospital_id, `start_appointment`='$start_time', `end_appointment`='$end_time', `week_end`='$week_end', `status`=$status, `updated_at`=now() WHERE id =$id " ;
                 $result = $pdo->prepare($sql);
                 $result->execute();
 
