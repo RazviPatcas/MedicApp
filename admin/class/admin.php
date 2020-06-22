@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rzala
- * Date: 10/2/2018
- * Time: 2:16 AM
- */
 
 class admin
 {
@@ -74,9 +68,9 @@ class admin
                     $result = $pdo->prepare($sql);
                     $result->execute();
                 }else
-                    echo 'password not match!!! ';
+                    echo 'Parola nu se potrivește !  ';
             }else
-                echo 'old password not match';
+                echo 'Parola veche nu se potrivește ! ';
         }
     }
 

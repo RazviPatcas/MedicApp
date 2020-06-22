@@ -310,7 +310,7 @@
 		</div>
 		<div class="row">
             <?php
-            $sql = "SELECT * FROM doctors LIMIT 2";
+            $sql = "SELECT * FROM doctors LIMIT 4";
             $result = $pdo->prepare($sql);
             $result->execute();
             $doctors= $result->fetchAll();

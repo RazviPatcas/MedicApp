@@ -85,7 +85,7 @@ class hospitals
                 $result = $pdo->prepare($sql);
                 $result->execute();
                 if ($result){
-//                    echo '<h2 class="text-center text-primary">Successful Added Hospital !!! </h2>';
+                   echo '<h2 class="text-center text-primary">Clinică/Spital adăugat cu succes !  </h2>';
                     header('Location: hospital.php');
                 }
             }

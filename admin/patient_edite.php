@@ -184,68 +184,68 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="diabetes"
+                                                    <input type="checkbox" name="medical[]" value="Diabet"
 
                                                         <?php
                                                         foreach ($md_rpt as $item) {
 
-                                                            if ($item =='diabetes') echo 'checked';
+                                                            if ($item =='Diabet') echo 'checked';
                                                         }
                                                         ?>
 
-                                                           id="diabetes">
-                                                    <label for="diabetes"><span><i class="fa fa-check"></i></span>
+                                                           id="Diabet">
+                                                    <label for="Diabet"><span><i class="fa fa-check"></i></span>
                                                         <p>Diabet</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="high-blood-pressure"
+                                                    <input type="checkbox" name="medical[]" value="Presiune arterială"
                                                         <?php  foreach ($md_rpt as $item) {
 
-                                                            if ($item=='high-blood-pressure') echo 'checked';
+                                                            if ($item=='Presiune arterială') echo 'checked';
                                                         }
                                                         ?>
                                                            id="high-blood-pressure">
-                                                    <label for="high-blood-pressure"><span><i
+                                                    <label for="Presiune arterială"><span><i
                                                                     class="fa fa-check"></i></span>
                                                         <p>Presiune arterială</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="high-cholesterol"
+                                                    <input type="checkbox" name="medical[]" value="Colesterol"
                                                         <?php
                                                         foreach ($md_rpt as $item) {
-                                                            if ($item =='high-cholesterol') echo 'checked';
+                                                            if ($item =='Colesterol') echo 'checked';
                                                         }?>
-                                                           id="high-cholesterol">
-                                                    <label for="high-cholesterol"><span><i
+                                                           id="Colesterol">
+                                                    <label for="Colesterol"><span><i
                                                                     class="fa fa-check"></i></span>
                                                         <p>Colesterol</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="heart-problems"
+                                                    <input type="checkbox" name="medical[]" value="Probleme cardiace"
                                                         <?php
                                                         foreach ($md_rpt as $item) {
 
-                                                            if ($item=='heart-problems') echo 'checked';
+                                                            if ($item=='Probleme cardiace') echo 'checked';
                                                         }?>
-                                                           id="heart-problems">
-                                                    <label for="heart-problems"><span><i class="fa fa-check"></i></span>
+                                                           id="Probleme cardiace">
+                                                    <label for="Probleme cardiace"><span><i class="fa fa-check"></i></span>
                                                         <p>Probleme cardiace</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="asthma" id="asthma"
+                                                    <input type="checkbox" name="medical[]" value="Astm bronșic" id="Astm bronșic"
                                                     <?php
                                                     foreach ($md_rpt as $item) {
-                                                        if ($item == 'asthma') echo 'checked';
+                                                        if ($item == 'Astm bronșic') echo 'checked';
                                                     }?>>
-                                                    <label for="asthma"><span><i class="fa fa-check"></i></span>
+                                                    <label for="Astm bronșic"><span><i class="fa fa-check"></i></span>
                                                         <p>Astm</p></label>
                                                 </div>
                                             </div>

@@ -82,7 +82,7 @@
                             <div class="doctor-details">
                                 <div class="doctor-specility">
                                     <p class="text-capitalize">
-                                        <a href="doctor_details.php?id=<?php echo $doct->id;?> " class="button button-success button-hover-warning button-pill">Book Appointment </a>
+                                        <a href="doctor_details.php?id=<?php echo $doct->id;?>" class="button button-success button-hover-warning button-pill">Programare </a>
                                     </p>
                                 </div>
                             </div>

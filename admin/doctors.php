@@ -24,7 +24,9 @@
 		<div class="col-5 page-menu">
 			<a id="cancel" href="doctors.php" data-toggle="tooltip" data-placement="left" title="Reîncarcă"><i class="fa fa-refresh"></i></a>
 			<a style = "background-color:#32C1CE;" href="add_doctors.php" data-toggle="tooltip" data-placement="left" title="Adaugă doctor"><i class="fa fa-plus"></i></a>
-		</div>
+            <a style="background-color:red;" href="generate_doctorpdf.php" data-toggle="tooltip" data-placement="left" title="Generează PDF"><i class="fa fa-envelope"></i></a>
+
+        </div>
 	</div>
 </div>
 <div class="content">

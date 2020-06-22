@@ -147,86 +147,86 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="diabetes" id="diabetes">
+                                                    <input type="checkbox" name="medical[]" value="diabet" id="diabetes">
                                                     <label for="diabetes"><span><i class="fa fa-check"></i></span><p>Diabet</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="high-blood-pressure" id="high-blood-pressure">
+                                                    <input type="checkbox" name="medical[]" value="hHipertensiune arterială" id="high-blood-pressure">
                                                     <label for="high-blood-pressure"><span><i class="fa fa-check"></i></span><p>Hipertensiune arterială</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="high-cholesterol" id="high-cholesterol">
+                                                    <input type="checkbox" name="medical[]" value="Colesterol" id="high-cholesterol">
                                                     <label for="high-cholesterol"><span><i class="fa fa-check"></i></span><p>Colesterol</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="heart-problems" id="heart-problems">
+                                                    <input type="checkbox" name="medical[]" value="Probleme cardiace" id="heart-problems">
                                                     <label for="heart-problems"><span><i class="fa fa-check"></i></span><p>Probleme cardiace</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="asthma" id="asthma">
-                                                    <label for="asthma"><span><i class="fa fa-check"></i></span><p>Astm bronșic</p></label>
+                                                    <input type="checkbox" name="medical[]" value="Astm bronșic" id="Astm bronșic">
+                                                    <label for="Astm bronșic"><span><i class="fa fa-check"></i></span><p>Astm bronșic</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="kidney-disease" id="kidney-disease">
+                                                    <input type="checkbox" name="medical[]" value="Afecțiuni renale" id="kidney-disease">
                                                     <label for="kidney-disease"><span><i class="fa fa-check"></i></span><p>Afecțiuni renale</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="kidney-stones" id="kidney-stones">
+                                                    <input type="checkbox" name="medical[]" value="Afecțiuni gastrice" id="kidney-stones">
                                                     <label for="kidney-stones"><span><i class="fa fa-check"></i></span><p>Afecțiuni gastrice</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="jaundice" id="jaundice">
+                                                    <input type="checkbox" name="medical[]" value="Infarct" id="jaundice">
                                                     <label for="jaundice"><span><i class="fa fa-check"></i></span><p>Infarct</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="hepatitis" id="hepatitis">
+                                                    <input type="checkbox" name="medical[]" value="Hepatită" id="hepatitis">
                                                     <label for="hepatitis"><span><i class="fa fa-check"></i></span><p>Hepatită</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="rheumatic-fever" id="rheumatic-fever">
+                                                    <input type="checkbox" name="medical[]" value="Afecțiuni reumatice" id="rheumatic-fever">
                                                     <label for="rheumatic-fever"><span><i class="fa fa-check"></i></span><p>Afecțiuni reumatice</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="cancer" id="cancer">
+                                                    <input type="checkbox" name="medical[]" value="Cancer" id="cancer">
                                                     <label for="cancer"><span><i class="fa fa-check"></i></span><p>Cancer</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="hiv" id="hiv">
+                                                    <input type="checkbox" name="medical[]" value="HIV/AIDS" id="hiv">
                                                     <label for="hiv"><span><i class="fa fa-check"></i></span><p>HIV/AIDS</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="epilepsy" id="epilepsy">
+                                                    <input type="checkbox" name="medical[]" value="Epilepsie" id="epilepsy">
                                                     <label for="epilepsy"><span><i class="fa fa-check"></i></span><p>Epilepsie</p></label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-4 content-radio-container">
                                                 <div>
-                                                    <input type="checkbox" name="medical[]" value="blood-thinners" id="blood-thinners">
-                                                    <label for="blood-thinners"><span><i class="fa fa-check"></i></span><p>Blood thinners</p></label>
+                                                    <input type="checkbox" name="medical[]" value="Boli sangvine" id="blood-thinners">
+                                                    <label for="blood-thinners"><span><i class="fa fa-check"></i></span><p>Boli sangvine</p></label>
                                                 </div>
                                             </div>
                                         </div>

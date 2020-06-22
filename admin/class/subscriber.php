@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rzala
- * Date: 10/5/2018
- * Time: 3:38 PM
- */
-
 class subscriber
 {
     function all(){

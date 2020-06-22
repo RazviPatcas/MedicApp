@@ -1,13 +1,12 @@
 
 
 <body onload="startTime()">
-<!-- Media Modal -->
 <div id="media-upload" class="modal" role="dialog">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <div class="media-hdr">
-                    <p>Media <span>(Click On Image To Select)</span></p>
+                    <p>Media <span></span></p>
                 </div>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
@@ -38,11 +37,9 @@
         <div id="menu-menu">
             <div id="logo">
                 <div class="tbl-cell logo-icon">
-                 <!--  <a href="#"><img src="public/images/favicon.png" alt=""></a>-->
                     
                 </div>
                 <div class="tbl-cell">
-<!--                    <a href="../index.php"><img src="public/images/logo.png"></a>-->
                     <a href="../index.php"><h2 class="text-info" style="backgroud-color:#00263b;"><b>Medic App</b></h2></a>
                 </div>
             </div>
@@ -71,7 +68,7 @@
 </div>
 <ul>
     <li id="dashboard-li">
-        <a href="index.php"><i style="color:white;font-size:15px;" class="icon-screen-desktop"></i><span style="color:white;font-size:15px;">Dashboard</span></a>
+        <a href="index.php"><i style="color:white;font-size:15px;" class="icon-screen-desktop"></i><span style="color:white;font-size:15px;">Panou de control</span></a>
     </li>
 
     <li id="patient-li">

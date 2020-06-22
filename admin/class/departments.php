@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rzala
- * Date: 9/25/2018
- * Time: 1:29 AM
- */
-
 class departments
 {
 
@@ -52,7 +45,7 @@ class departments
                 $result = $pdo->prepare($sql);
                 $result->execute();
                 if ($result){
-                    echo '<h2 class="text-center text-primary">Successful Added Department !!! </h2>';
+                    echo '<h2 class="text-center text-primary"> Departament adăugat cu succes !  </h2>';
                     header('Location: department.php');
                 }
             }

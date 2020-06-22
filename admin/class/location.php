@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rzala
- * Date: 10/1/2018
- * Time: 7:23 PM
- */
 
 class location
 {
@@ -24,7 +18,7 @@ class location
             $result = $pdo->prepare($sql);
             $result->execute();
             if ($result){
-//                echo '<h2 class="text-center text-primary">Location Added Successfully !!! </h2>';
+                echo '<h2 class="text-center text-primary">Locație adăugată cu succes ! </h2>';
                 header('Location: locations.php');
 
             }
@@ -40,7 +34,7 @@ class location
             $result = $pdo->prepare($sql);
             $result->execute([$id]);
             if ($result){
-//                echo '<h2 class="text-center text-primary">Location update Successfully !!! </h2>';
+                echo '<h2 class="text-center text-primary">Locație Actualizată cu succes !</h2>';
                 header('Location: locations.php');
             }
         }

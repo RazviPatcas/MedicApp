@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rzala
- * Date: 9/25/2018
- * Time: 2:12 AM
- */
 
 class patients
 {
@@ -64,9 +58,9 @@ class patients
             }
 
             if ($this->username_exist($username)){
-                echo "<h3 class='text-center text-danger text-capitalize'>Please Try Another username this is already Registered</h3>";
+                echo "<h3 class='text-center text-danger text-capitalize'>Încearcă alt nume utilizator, acesta există în baza de date</h3>";
             }else if ($this->email_exist($email)){
-                echo "<h3 class='text-center text-danger text-capitalize'>Please Try Another Email Id this is already Registered</h3>";
+                echo "<h3 class='text-center text-danger text-capitalize'>Încearcă alt email, acesta există în baza de date</h3>";
             }else if (!empty($username)) {
 
                 $sql = "INSERT INTO `patients` (`first_name`, `last_name`, `user_name`, `password`, `email`, `dob`, `blood_group`, `gender`, `phone`, `location_id`, `role_id`, `created_at`,`medical_history`) ";
@@ -115,7 +109,7 @@ class patients
                 $result->execute();
 
                 if ($result) {
-                    echo '<script>alert("<h3>Patient Updated Successful !!! </h3>")</script>';
+                    echo '<script>alert("<h3>Pacient actualizat cu succes !  </h3>")</script>';
                     header('Location: patient.php');
 
                 }else

@@ -42,6 +42,7 @@ class patients
             return true;
         }else{ return false;}
     }
+
     function add(){
         global $pdo;
         if (isset($_REQUEST['register_patient'])){
@@ -52,16 +53,14 @@ class patients
             $mobile     = trim($_REQUEST['mobile']);
             $gender     = trim($_REQUEST['gender']);
             $username   = trim($_REQUEST['username']);
-          //  $password   = trim($_REQUEST['password']);
             $blood_group = trim($_REQUEST['blood']) ;
             $location    = trim($_REQUEST['location']) ;
-
-         $password   = hash('sha512',$password);
+            $password   = hash('sha512',$password);
 
             if ($this->username_exist($username)){
-                echo "<h2 class='text-center text-danger text-capitalize'>Please Try Another username this is already Registered</h2>";
+                echo "<h2 class='text-center text-danger text-capitalize'> Încearcă alt nume utilizator, acesta există în baza de date </h2>";
             }else if ($this->email_exist($mail)){
-                echo "<h2 class='text-center text-danger text-capitalize'>Please Try Another Email Id this is already Registered</h2>";
+                echo "<h2 class='text-center text-danger text-capitalize'> Încearcă alt email, acesta există în baza de date </h2>";
             }else if (!empty($username)){
 
 

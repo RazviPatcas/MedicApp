@@ -134,9 +134,19 @@
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-key"></i>
-                            <input class="mdl-textfield__input" type="paraf_code" name="username" id="register-username">
+                            <input class="mdl-textfield__input" type="paraf_code" name="paraf_code" id="register-username">
                             <label class="mdl-textfield__label" for="register-confirm-password">Cod parafă  <em> *</em></label>
                         </div>
+ <!--                       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                    <label>Oră început:</label>
+                                    <input type="time" name="st" value="" placeholder="">
+                                    <p class="content-input-error-name"></p>
+                            </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                    <label>Oră sfârșit:</label>
+                                    <input type="time" name="et" value="" placeholder="">
+                                    <p class="content-input-error-name"></p>
+                            </div>-->
                         <div class="login-condition">Dând clic pe creare cont, sunteți de acord cu<br /><a href="about.php">Termenii și condițiile noastre</a></div>
                         <div class="form-submit">
                             <button type="submit" id="register-submit" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised mdl-button--raised button button-primary button-pill" name="register_doctor">Crează cont</button>

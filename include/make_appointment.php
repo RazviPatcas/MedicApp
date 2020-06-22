@@ -1,5 +1,8 @@
 
 
+<?php include('db.php');?>
+<?php include('header.php');?>
+
 <div id="appointment" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
