@@ -12,7 +12,7 @@ if (isset($_GET['id'])){
         $result = $pdo->prepare($sql);
         $result->execute();
         if ($result){
-            echo "<script>alert('admin added successful!!')</script>";
+            echo "<script>alert('Administrator adăugat cu succes !')</script>";
             header('Location: ../doctors.php');
 
         }

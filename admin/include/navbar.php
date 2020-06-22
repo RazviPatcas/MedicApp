@@ -61,7 +61,7 @@
     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-user-drop">
         <li><a href="../index.php" target="_blank"><i class="icon-link"></i>Website</a></li>
         <li><a href="profile.php"><i class="icon-user"></i>Profil</a></li>
-        <li><a href="include/logout.php"><i class="icon-logout"></i> Logout</a></li>
+        <li><a href="include/logout.php"><i class="icon-logout"></i> Ieșire</a></li>
     </ul>
 </div>
 </div>
@@ -89,11 +89,6 @@
                     <i class="icon-user-follow"></i><span>Adaugă pacient</span>
                 </a>
             </li>
-<!--          <li>
-                <a href="request.php">
-                    <i class="icon-envelope-open"></i><span>Cereri</span>
-                </a>
-            </li>-->
         </ul>
     </li>
     <li id="appointment-li">
