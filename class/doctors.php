@@ -71,6 +71,8 @@ class doctors
             $username   = trim($_REQUEST['username']);
             $password   = trim($_REQUEST['password']);
             $paraf_code = trim($_REQUEST['paraf_code']);
+ //           $start_appointment = strval(trim($_REQUEST['st']));
+ //           $end_appointment = strval(trim($_REQUEST['et']));
             
             $password   = password_hash($password,PASSWORD_BCRYPT,array('cost'=>12));
 

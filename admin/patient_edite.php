@@ -489,25 +489,25 @@
                                             }
  ?>
                                             <div class="col-sm-6 appointment-time text-center">
-                                                <div class="appointment-date"><i class="fa fa-calendar"></i><span>19 Sep 2018</span>
+                                                <div class="appointment-date"><i class="fa fa-calendar"></i><span></span>
                                                 </div>
-                                                <div><i class="fa fa-hourglass-o"></i><span>At 12:12</span></div>
+                                                <div><i class="fa fa-hourglass-o"></i><span></span></div>
                                             </div>
                                         </div>
                                         <div class="row card-ftr">
                                             <div class="col-8 text-left">
-                                                <span class="badge badge-default badge-sm">New</span>
+                                                <span class="badge badge-default badge-sm"></span>
                                             </div>
                                             <div class="card-action">
                                                 <a href="invoice.php"
                                                    class="btn btn-outline btn-warning btn-outline-1x btn-circle"
                                                    data-toggle="tooltip" title="" target="_blank"
-                                                   data-original-title="Create Invoice"><i
+                                                   data-original-title="Factură"><i
                                                             class="fa fa-credit-card"></i></a>
-                                                <a href="index.php?route=appointment/edit&amp;id=1023"
+                                                <a href="appointment.php"
                                                    class="btn btn-outline btn-info btn-outline-1x btn-circle"
-                                                   data-toggle="tooltip" title="" target="_blank"
-                                                   data-original-title="Edit"><i class="fa fa-pencil-square-o"></i></a>
+                                                   data-toggle="tooltip" title="" target=""
+                                                   data-original-title="Editează"><i class="fa fa-pencil-square-o"></i></a>
                                             </div>
                                         </div>
 
@@ -519,7 +519,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Închide</button>
                     </div>
                 </div>
             </div>

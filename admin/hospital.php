@@ -75,8 +75,8 @@
                     ?>
                 </td>
                 <td class="table-action">
-                    <a href="update_hospital.php?id=<?php echo $hospital->id; ?>" class="btn btn-outline btn-info btn-outline-1x btn-circle" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil-square-o"></i></a>
-                    <a href="hospital.php?delete=<?php echo $hospital->id; ?>" class="btn btn-outline btn-danger btn-outline-1x btn-circle table-delete" data-toggle="tooltip" title="Delete" onclick="return confirm('Are you sure you want to delete this item?');">
+                    <a href="update_hospital.php?id=<?php echo $hospital->id; ?>" class="btn btn-outline btn-info btn-outline-1x btn-circle" data-toggle="tooltip" title="Editează"><i class="fa fa-pencil-square-o"></i></a>
+                    <a href="hospital.php?delete=<?php echo $hospital->id; ?>" class="btn btn-outline btn-danger btn-outline-1x btn-circle table-delete" data-toggle="tooltip" title="Șterge" onclick="return confirm('Stergi acest element ?');">
                         <i class="fa fa-trash-o"></i>
                     </a>
                 </td>

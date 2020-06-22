@@ -39,7 +39,7 @@
                                             <div class="theme-block-data service-block-data" style= "background-color:#33c1cd;">
                                                 <h3 class="text-capitalize" style="height: auto;">
                                                     <a href="doctor_details.php?id=<?php echo $doctor->id; ?>"
-                                                       style=" color: #fff; font-size: 30px;">
+                                                       style=" color: #fff; font-size: 20px;">
                                                         <b>Dr. <?php echo $doctor->first_name . " " . $doctor->last_name . "<br>"; ?></b>
                                                         <?php
                                                            $id = $doctor->department_id;
@@ -49,13 +49,13 @@
                                                            style="font-family: 'Harlow Solid Italic'; color: #0b0b0b;">
 
                                                         </p>
-                                                        <hr>
+                                                        <hr style="color:#fff;">
                                                             <?php
                                                             $hospital = new hospitals();
                                                             $hospital->find($doctor->hospital_id);
                                                             ?>
 
-                                                        <p class="text-capitalize" style="font-family: 'Harlow Solid Italic'; color: #0b0b0b;">
+                                                        <p class="text-capitalize" style="font-family: 'Harlow Solid Italic'; color: #0b0b0b; ">
 
                                                         </p>
 
@@ -88,7 +88,7 @@
                                             <div class="doctor-name">
                                                 <h4 class="text-capitalize" style="height: auto;">
                                                     <a href="doctor_details.php?id=<?php echo $doctor->id; ?>"
-                                                       style="color: #fff;font-size: 30px;">
+                                                       style="color: #fff;font-size: 20px;">
                                                         <b>Dr. <?php echo $doctor->first_name . " " . $doctor->last_name . "<br>"; ?></b>
                                                         <?php echo $doctor->degree . "<br>"; ?>
                                                         <p class="text-capitalize"
@@ -99,9 +99,9 @@
 
                                                             ?>
                                                         </p>
-                                                        <hr>
+                                                        <hr style="color:#fff;">
                                                         <p class="text-capitalize"
-                                                           style="font-family: Rockwell; color: #050092;height: 40px;">
+                                                           style="font-family: Rockwell; color: #050092;height: 30px;">
                                                             <?php
                                                             $hospital = new hospitals();
                                                             $hospital->find($doctor->hospital_id);
@@ -138,7 +138,7 @@
                                             <div class="doctor-name">
                                                 <h4 class="text-capitalize" style="height: auto;">
                                                     <a href="doctor_details.php?id=<?php echo $doctor->id; ?>"
-                                                       style="color: #fff;font-size: 30px;">
+                                                       style="color: #fff;font-size: 20px;">
                                                         <b>Dr. <?php echo $doctor->first_name . " " . $doctor->last_name . "<br>"; ?></b>
                                                         <br>
                                                         <?php
@@ -150,9 +150,9 @@
                                                            style="font-family: 'Harlow Solid Italic'; color: #0b0b0b;">
 
                                                         </p>
-                                                        <hr>
+                                                        <hr style="color:#fff;">
                                                         <p class="text-capitalize"
-                                                           style="font-family: Rockwell; color: #ffff;height: 40px;">
+                                                           style="font-family: Rockwell; color: #ffff;height: 30px;">
                                                             <?php
                                                             $hospital = new hospitals();
                                                             $hospital->find($doctor->hospital_id);

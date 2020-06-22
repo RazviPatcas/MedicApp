@@ -39,7 +39,7 @@ function headerTable()
     $this ->Cell(40,20,'ID Programare',1,0,'C');
     $this ->Cell(40,20,'Pacient',1,0,'C');
     $this ->Cell(40,20,'Departament',1,0,'C');
-    $this ->Cell(100,20,'Adresa programarii',1,0,'C');
+    $this ->Cell(120,20,'Adresa programarii',1,0,'C');
 
    
     $this ->Ln();
@@ -54,7 +54,7 @@ function viewTable($db){
         $this ->Cell(40,20,$data->id,1,0,'C');
         $this ->Cell(40,20,$data->first_name . ' ' . $data->last_name,1,0,'C');
         $this ->Cell(40,20,$data->name,1,0,'C');
-        $this ->Cell(100,20,$data->address,1,0,'C');
+        $this ->Cell(120,20,$data->address,1,0,'C');
         $this-> Ln();
     }
 
@@ -70,7 +70,7 @@ $pdf = new PDF();
 //header
 $pdf->AliasNbPages();
 $pdf->AddPage('L','A4',0);
-$pdf->SetLeftMargin(15);
+$pdf->SetLeftMargin(20);
 $pdf->headerTable();
 $pdf->viewTable($db);
 $pdf->Output();

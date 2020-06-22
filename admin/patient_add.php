@@ -82,7 +82,7 @@
                                 <div class="row content-input">
                                     <div class="col-sm-6">
                                         <label>Data nașterii : </label>
-                                        <input type="date" name="dob" id="user-dob" value="" placeholder="Date of Birth (DD/MM/YY)" class="hasDatepicker">
+                                        <input type="date" name="dob" id="user-dob" value="" placeholder="Data" class="hasDatepicker">
                                     </div>
                                     <div class="col-sm-6">
                                     </div>

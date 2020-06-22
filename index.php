@@ -56,14 +56,7 @@
 						<li><a href="doctors.php" id="menu-doctor" class="mdl-button mdl-js-button mdl-js-ripple-effect">Doctori</a></li>
                         <li><a href="hospital.php" id="menu-hospital" class="mdl-button mdl-js-button mdl-js-ripple-effect">Spitale</a></li>
                         <li><a href="department.php" id="menu-department" class="mdl-button mdl-js-button mdl-js-ripple-effect">Departamente</a></li>
-                        <li>
-                            <a id="menu-pages" class="mdl-button mdl-js-button mdl-js-ripple-effect">Despre <i class="fa fa-chevron-down"></i></a>
-                            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-pages">
-                                <li class="mdl-menu__item"><a href="contact.php">Contact</a></li>
-                                <li class="mdl-menu__item"><a href="service.php">Serviciile noastre</a></li>
-                           
-                            </ul>
-                        </li>
+                        <li><a href="contact.php" id="menu-department" class="mdl-button mdl-js-button mdl-js-ripple-effect">Contact</a></li>
 					</ul>
 
 					<ul class="col menu ">
@@ -181,7 +174,7 @@
 			<li>
 				<div class="slider-info">
 					<h1 class="animated fadeInDown">Medic App</h1>
-					<p class="animated fadeInDown">Viitorul programărilor medicale online</p>
+					<p  class="animated fadeInDown"><b>Viitorul programărilor medicale online</b></p>
 
                 </div>
                 <div class="slider-backgroung-image" style="background-image: url(public/uploads/slider.jpg); "></div>
@@ -310,7 +303,7 @@
 		</div>
 		<div class="row">
             <?php
-            $sql = "SELECT * FROM doctors LIMIT 4";
+            $sql = "SELECT * FROM doctors ORDER BY ID desc LIMIT 4";
             $result = $pdo->prepare($sql);
             $result->execute();
             $doctors= $result->fetchAll();

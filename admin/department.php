@@ -12,14 +12,14 @@
 <div class="page-hdr">
 	<div class="row">
 		<div class="col-4 page-name">
-			<h1><i class="fa fa-hospital-o"></i>Departments</h1>
+			<h1><i class="fa fa-hospital-o"></i>Departamente</h1>
 		</div>
         <div class="page-name col-3 text-right">
             <h1 id="time">Time</h1>
         </div>
 		<div class="col-5 page-menu">
-			<a id="cancel" href="" data-toggle="tooltip" data-placement="left" title="Reload"><i class="fa fa-refresh"></i></a>
-			<a href="department_add.php" data-toggle="tooltip" data-placement="left" title="Add Department"><i class="fa fa-plus"></i></a>
+			<a id="cancel" href="" data-toggle="tooltip" data-placement="left" title="Reîncarcă"><i class="fa fa-refresh"></i></a>
+			<a style = "background-color:#32C1CE;" href="department_add.php" data-toggle="tooltip" data-placement="left" title="Adaugă departament"><i class="fa fa-plus"></i></a>
 		</div>
 	</div>
 </div>
@@ -29,10 +29,10 @@
 			<thead>
 				<tr class="table-heading">
 					<th>ID#</th>
-					<th>Name</th>
-					<th>Description</th>
-					<th>Doctors</th>
-					<th class="table-action">Action</th>
+					<th>Nume</th>
+					<th>Descrierie</th>
+					<th>Doctori</th>
+					<th class="table-action">Acțiuni</th>
 				</tr>
 			</thead>
 			<tbody>

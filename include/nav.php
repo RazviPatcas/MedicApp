@@ -128,8 +128,6 @@
                     <li id="doctor"><a href="doctors.php?id=<?php if (isset($_SESSION['patient_id'])){ echo $_SESSION['location_id']; }?>" id="menu-doctor" class="mdl-button mdl-js-button mdl-js-ripple-effect ">Doctori</a></li>
                     <li id="hospital"><a href="hospital.php" id="menu-doctor" class="mdl-button mdl-js-button mdl-js-ripple-effect ">Spitale</a></li>
                     <li id="department"><a href="department.php" id="menu-doctor" class="mdl-button mdl-js-button mdl-js-ripple-effect ">Departamente</a></li>
-
-                    <li id="service"><a href="service.php" id="menu-service" class="mdl-button mdl-js-button mdl-js-ripple-effect">Serviciul nostru</a></li>
                     <li id="service"><a href="contact.php" id="menu-service" class="mdl-button mdl-js-button mdl-js-ripple-effect">Contact</a></li>
          
                   
