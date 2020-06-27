@@ -116,9 +116,7 @@ $page_name = "<i class=\"fa fa-hospital-o\"> </i> Hospitals ";
 </div>
 
 
-<!-- Start Make an Appointment Modal -->
 <?php include('include/make_appointment.php');?>
-<!-- End Make an Appointment Section -->
 <?php include('include/footer.php');?>
 <script>
 

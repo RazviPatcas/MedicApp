@@ -43,7 +43,6 @@ $page_name = "<i class=\"fa fa-building-o\"> </i> Departments ";
                                             <span>
                                                 <?php echo $department->details;?>
                                             </span>
-                                            <!--                                            <a href="">(Read More)</a>-->
                                         </p>
                                     </div>
 
@@ -104,12 +103,10 @@ $page_name = "<i class=\"fa fa-building-o\"> </i> Departments ";
             </div>
         </div>
     </div>
-</div><!-- End Service List Section -->
+</div>
 
 
-<!-- Start Make an Appointment Modal -->
 <?php include('include/make_appointment.php');?>
-<!-- End Make an Appointment Section -->
 <?php include('include/footer.php');?>
 <script>
 

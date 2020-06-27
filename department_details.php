@@ -40,7 +40,6 @@ foreach ($dpts
             </div>
         </div>
     </div>
-<!-- Start Doctor Section -->
     <div class="layer-stretch animated-wrapper">
         <div class="layer-wrapper layer-bottom-0">
             <div class="layer-ttl">
@@ -96,10 +95,9 @@ foreach ($dpts
         <?php
         }
     }
-?><!-- End About Page  -->
+?>
 
 
-<!-- Start Testimonial Section -->
 <div id="testimonial" class="colored-background" style = "background-color: #219aa5;">
 	<div class="layer-stretch">
 		<div class="layer-wrapper layer-bottom-0 animated-wrapper" >
@@ -143,9 +141,9 @@ foreach ($dpts
 			</div>
 		</div>
 	</div>
-</div><!-- End Testimonial Section -->
+</div>
 
-	<!-- Start Make an Appointment Modal -->
+	
 
 <?php include('include/make_appointment.php');?>
 <?php include('include/footer.php');?>

@@ -1,6 +1,3 @@
-/************************************************
-[ 1.0 - BASIC CSS ] ***********************
-*************************************************/
 html 
 { 
   height: 100% !important; }
@@ -142,9 +139,7 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 .alert { font-size: 13px; letter-spacing: .5px; text-align: left; }
 
-/*************************************************
-[2.0] Default Class ******************************
-**************************************************/
+
 .layer-wrapper, .button-icon span, .button-icon .fa, .theme-block-hover, .theme-block-picture img, .theme-block-picture::before, .theme-block-hidden, .slider-appointment a, .feature-icon, .feature-icon .fa, .blog-list-picture img, .blog-full-img img, .contact-info-inner, .blog-picture, .hm-service-block .fa, .hm-about-icon .fa, .theme-dropdown li::after, .theme-img img, .theme-img::before, .hm-doctor { -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out; }
 
 .tbl { display: table; width: 100%; }
@@ -176,7 +171,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 .sidebar { padding: 10px; margin: 0 0 30px 0; border: 1px solid #CCC; border-top: 2px solid #CCC; }
 
-/* DEFAULT FONT SIZE CLASSESS */
 .font-12 { font-size: 12px !important; }
 
 .font-13 { font-size: 13px !important; }
@@ -197,7 +191,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 .font-36 { font-size: 36px !important; }
 
-/* DEFAULT COLOR CODE CLASSESS */
 .primary-color { color: #32C1CE !important; }
 
 .color-white { color: #FFF !important; }
@@ -214,7 +207,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 .color-light-black { color: #777 !important; }
 
-/* DEFAULT PARAGRAPH CLASSESS */
 .paragraph-medium { font-size: 16px; font-family: "Montserrat", sans-serif; line-height: 1.6; letter-spacing: .5px; margin: 0 0 10px 0; }
 
 .paragraph-small { font-size: 12px; line-height: 1.6; font-family: "Montserrat", sans-serif; letter-spacing: .5px; }
@@ -234,7 +226,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 .hm-testimonial-picture { background-image: url(../images/testimonial-background.jpg); }
 
-/* DEFAULT BUTTON CLASSESS */
 .btn { height: auto; line-height: normal; padding: 10px 20px; font-weight: 400; color: #FFF; font-family: "Montserrat", sans-serif; border-radius: 2px; cursor: pointer; }
 .btn.disabled { cursor: not-allowed; }
 .btn:focus, .btn:active { box-shadow: none !important; }
@@ -500,7 +491,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .button-iconfill-purple span { color: #A675D4; }
 .button-iconfill-purple .fa { background: #A675D4; }
 
-/* Color and Background CLASSESS */
 .badge { padding: 0.4em .8em; font-size: 100%; letter-spacing: .5px; vertical-align: baseline; font-weight: 500; }
 
 .badge-primary { background-color: #32C1CE; }
@@ -565,7 +555,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 .text-muted { color: #8d9ea7 !important; }
 
-/* THEME BLOCK CSS START */
 .theme-block { 
     position: relative; 
     width: 100%; 
@@ -603,7 +592,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .theme-owl-dot .owl-dots .owl-dot span:hover { background: #32C1CE; }
 .theme-owl-dot .owl-dots .owl-dot.active span { width: 15px; height: 15px; background: #32C1CE; }
 
-/* THEME ACCORDION CSS START */
 .theme-accordion-container { text-align: left; margin: 0 10px 30px 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
 
 .theme-accordion { background: #FFF; border-bottom: 1px solid #f4f4f4; }
@@ -620,7 +608,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .theme-accordian-img { padding: 0; }
 .theme-accordian-img img { width: 200px; }
 
-/* THEME DROPCAP CSS START */
 .theme-dropcap { font-size: 60px; float: left; color: #32C1CE; line-height: 60px; padding: 0 10px; margin-right: 10px; }
 
 .category-list { padding: 0; }
@@ -675,7 +662,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .theme-flexslider-container p { font-size: 14px; color: #999; letter-spacing: .5px; margin: 0; }
 .theme-flexslider-container img { width: 100%; }
 
-/* SOCIAL LIST CSS START */
 .social-list { margin: 0; padding: 0; }
 .social-list li { display: inline-block; vertical-align: middle; list-style: none; margin: 5px 0; }
 .social-list li a { display: inline-block; width: 32px; height: 32px; line-height: 32px; text-align: center; margin: 0 5px; font-size: 20px; color: #777; }
@@ -750,7 +736,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .theme-quote-colored { color: #FFF; background: #32C1CE; border-color: #333; }
 .theme-quote-colored .fa { color: #FFF; }
 
-/* NOT FOUND CSS START */
 .notfound-wrapper { width: 100%; height: 100%; text-align: center; padding: 50px 0 0 0; }
 
 .notfound-ttl { font-size: 150px; text-transform: uppercase; color: #F09E71; letter-spacing: 2px; font-weight: bold; display: block; margin: 10px 0; }
@@ -766,7 +751,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .notfound-social li { margin: 10px; }
 .notfound-social li a { font-size: 24px; }
 
-/* PAGE TITLE CSS START */
 .page-ttl::before, .parallax-background::before { background: rgba(0, 0, 0, 0.8); background: linear-gradient(-90deg, rgba(2, 167, 182, 0.8), rgba(1, 82, 89, 0.8)); }
 
 .page-ttl { position: relative; width: 100%; padding: 40px 0 40px 0; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url(../images/background-1.jpg); }
@@ -801,9 +785,7 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 .sidecolor-purple { background-color: #a675d4; }
 
-/**************************************************
-[ 3.0 HEADER CSS START ] **************************
-***************************************************/
+
 #header { position: relative; background-color: #FFF; z-index: 11; }
 
 #hdr-top-wrapper { position: relative; padding: 5px 0; border-bottom: 1px solid #EEE; }
@@ -847,9 +829,7 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 #appointment-button .mdl-tooltip { font-size: 12px; }
 #appointment-button .mdl-button--fab.mdl-button--colored { background: #00c292; }
 
-/**************************************************
-[ 4.0 HEADER 2 CSS START ] ************************
-***************************************************/
+
 #header-1 { position: absolute; top: 0; left: 0; width: 100%; z-index: 99; background-color: rgba(51, 51, 51, 0.6); }
 #header-1 .menu a { color: #FFF; }
 #header-1 .menu ul li a { color: #333; }
@@ -885,7 +865,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 .header-transparent-menu { width: 100%; background: rgba(51, 51, 51, 0.6); }
 
-/* Appointment Pop Up */
 .appointment-hdr-back { display: none; position: absolute; top: 15px; left: 10px; }
 .appointment-hdr-back .fa { vertical-align: middle; font-size: 16px; color: #555; padding: 10px; cursor: pointer; }
 
@@ -951,9 +930,7 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .appointment-option .appointment-option-department { display: none; }
 .appointment-option .appointment-option-doctor { display: none; }
 
-/************************************************
-[ 5.0 - HOME PAGE CSS START ] *******************
-*************************************************/
+
 /* Image Slider Section */
 .slider-wrapper .slides li { position: relative; }
 .slider-wrapper .slides li::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); 
@@ -989,7 +966,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 .slider-2 .slider-info { top: 35%; }
 
-/* Home Service */
 .hm-service-left { text-align: center; }
 .hm-service-left img { position: relative; width: 100%; border: 4px solid #32C1CE; border-radius: 2px; }
 
@@ -1005,7 +981,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .hm-service-block .fa::after { content: ''; position: absolute; top: -15%; left: -15%; width: 130%; height: 130%; border: 2px solid #32C1CE; border-radius: 2px; z-index: 1; -webkit-transition: all .2s; transition: all .2s; }
 .hm-service-block span { display: block; font-size: 14px; color: #555; padding: 20px 0 0 0; line-height: 22px; letter-spacing: 1px; }
 
-/* Home About */
 .hm-about-left { display: inline-block; vertical-align: top; width: 60%; }
 
 .hm-about-block { display: inline-block; vertical-align: top; min-width: 280px; padding: 0 10px; margin: 30px 0; }
@@ -1024,7 +999,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .hm-about-paragraph { padding: 20px 0 0 0; }
 .hm-about-paragraph p { color: #EEE; }
 
-/* Home Doctor */
 #hm-doctor-slider { text-align: center; }
 #hm-doctor-slider.owl-theme .owl-controls .owl-page span { background: transparent; border: 2px solid #32C1CE; border-radius: 4px; }
 #hm-doctor-slider.owl-theme .owl-controls .owl-page.active span { background: #32C1CE; }
@@ -1036,7 +1010,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .hm-doctor h6 { color: #333; margin: 20px 0 10px 0; letter-spacing: .5px; font-size: 20px; font-weight: 400; }
 .hm-doctor p { font-size: 14px; color: #777; letter-spacing: .5px; margin: 0; }
 
-/* Home Feature */
 #hm-feature { text-align: center; }
 #hm-feature .col-md-4 { padding-bottom: 20px; }
 
@@ -1053,14 +1026,12 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .hm-feature-block-1 span { display: block; font-size: 16px; color: #555; padding: 20px 5px 10px 5px; }
 .hm-feature-block-1 p { text-align: center; color: #999; padding: 0 10px; }
 
-/* Home Testimonial */
 .testimonial-block { width: 100%; text-align: center; }
 .testimonial-block img { width: 150px !important; height: 150px; margin: 0 auto; }
 .testimonial-block a { display: inline-block; font-size: 24px; color: #EEE; padding: 10px 0 0 0; }
 .testimonial-block .paragraph-medium { text-align: center; }
 .testimonial-block .fa { color: #32C1CE; font-size: 32px; }
 
-/* Home Blog */
 .blog-card-date { position: absolute; top: 0; left: 0; width: 75px; font-size: 16px; color: #015259; padding: 10px 20px; background: #EBFCFD; border-bottom-right-radius: 50%; z-index: 1; }
 
 .blog-card-ttl { padding: 10px; border-bottom: 1px solid #DDD; }
@@ -1073,10 +1044,7 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .blog-card-details p:nth-last-child(1) { border-right: 0; }
 .blog-card-details a { display: inline-block; font-size: 14px; font-family: "Montserrat", sans-serif; font-weight: 400; color: #32C1CE; height: auto; padding: 8px 15px; border: 2px solid transparent; line-height: normal; }
 
-/**************************************************
-[ 6.0 Service Page CSS START ] ********************
-***************************************************/
-/* Service Page 1 */
+
 .service-block-data h4 { padding: 40px 0 5px 0; }
 
 .service-description { min-height: 155px; margin: 0; text-align: left; }
@@ -1084,13 +1052,11 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .service-icon { position: absolute; top: -45px; left: 0; width: 100%; text-align: center; }
 .service-icon .fa { display: inline-block; width: 90px; height: 90px; line-height: 80px; text-align: center; font-size: 36px; color: #FFF; background: #32C1CE; border: 5px solid #FFF; border-radius: 50%; z-index: 1; }
 
-/* Service Page 2 */
 .service-hidden-block { padding: 15px; }
 .service-hidden-block .fa { width: 80px; height: 80px; line-height: 80px; text-align: center; font-size: 42px; color: #FFF; background: #32C1CE; border-radius: 4px; }
 .service-hidden-block h4 { font-size: 20px; color: #555; margin: 0; padding: 10px 0; }
 .service-hidden-block p a { float: right; color: #32C1CE; }
 
-/* Feature Section */
 .feature-block { display: inline-block; vertical-align: top; width: 33%; padding: 20px 20px 30px 20px; text-align: center; }
 .feature-block:hover .feature-icon { -webkit-box-shadow: inset 0 0 100px #32C1CE; -moz-box-shadow: inset 0 0 100px #32C1CE; box-shadow: inset 0 0 100px #32C1CE; }
 .feature-block:hover .feature-icon .fa { color: #FFF; border-radius: 2px; -webkit-box-shadow: inset 0 0 140px #32C1CE; -moz-box-shadow: inset 0 0 140px #32C1CE; box-shadow: inset 0 0 140px #32C1CE; }
@@ -1100,9 +1066,7 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .feature-icon { width: 105px; height: 105px; line-height: 130px; margin: 0 auto; border: 2px solid #32C1CE; border-radius: 4px; }
 .feature-icon .fa { position: relative; width: 80px; height: 80px; line-height: 80px; font-size: 42px; color: #DDD; border: 2px solid #32C1CE; border-radius: 50%; }
 
-/**************************************************
-[ 7.0 DOCTOR PAGE CSS START ] *********************
-***************************************************/
+
 .doctor-name h4 { font-size: 16px; color: #333; padding: 8px 0; margin: 0; letter-spacing: 1px; background: #32C1CE; }
 .doctor-name h4 a { color: #FFF; letter-spacing: 1px; }
 
@@ -1116,14 +1080,12 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 .doctor-social { position: absolute; bottom: 5px; right: 0; left: 0; }
 
-/* Doctor theme 2 */
 .doctor-details-extra-3 { text-align: left; padding: 0 10px; }
 .doctor-details-extra-3 p { width: auto; display: block; font-size: 14px; padding: 2px 5px; }
 .doctor-details-extra-3 p .fa { display: inline-block; vertical-align: middle; width: 30px; font-size: 16px; padding: 0 10px 0 0; }
 .doctor-details-extra-3 p:nth-child(1) { color: #55acee; }
 .doctor-details-extra-3 p:nth-child(3) { color: #dc4a38; }
 
-/* Department Section */
 .department-block { display: inline-block; vertical-align: top; width: 33.33%; padding: 0 15px 30px 15px; }
 
 .department-icon { vertical-align: top; }
@@ -1133,17 +1095,12 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .department-detail a { font-size: 20px; color: #FFF; text-transform: uppercase; letter-spacing: .5px; }
 .department-detail p { margin: 0; }
 
-/**************************************************
-[ 8.0 ABOUT PAGE CSS START ] **********************
-***************************************************/
+
 .about-mission-vission > div { padding: 20px; }
 .about-mission-vission span { position: relative; display: block; padding: 10px 0; margin: 0 0 10px 0; font-size: 28px; color: #FFF; }
 .about-mission-vission span::after { content: ''; position: absolute; bottom: 5px; left: 50%; margin-left: -40px; width: 80px; height: 1px; background: #32C1CE; }
 .about-mission-vission p { text-align: center; }
 
-/**************************************************
-[ 9.0 CONTACT PAGE CSS START ] ********************
-***************************************************/
 .contact-info-inner { min-height: 260px; padding: 20px; border: 1px solid #CCC; border-top: 4px solid #CCC; border-radius: 2px; }
 .contact-info-inner .fa { width: 80px; height: 80px; line-height: 80px; text-align: center; font-size: 36px; color: #FFF; background: #AAA; border-radius: 4px; }
 .contact-info-inner span { position: relative; display: block; font-size: 20px; color: #333; padding: 20px 0; text-transform: uppercase; }
@@ -1156,7 +1113,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .contact-form .form-input, .contact-form .form-input-icon { margin: 12px 0; }
 .contact-form .form-input textarea, .contact-form .form-input-icon textarea { height: 120px; }
 
-/* MAP CSS START */
 #map { position: relative; width: 100%; background: #DDD; }
 
 .map-wrapper { width: 100%; height: 400px; }
@@ -1172,9 +1128,7 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 #map-container { width: 100%; height: 400px; }
 
-/**************************************************
-[ 10.0 LOGIN PAGE CSS START ] *********************
-***************************************************/
+
 .login-condition { font-size: 12px; color: #AAA; padding: 0 30px; }
 
 .or-using { position: relative; width: 70%; height: 1px; margin: 30px auto; background: #DDD; text-align: center; }
@@ -1195,9 +1149,7 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 .forgot-pass { position: absolute; bottom: 0; right: 0; font-size: 12px; color: #32C1CE; cursor: pointer; }
 
-/**************************************************
-[ 11.0 FORM INPUT CSS START ] *********************
-***************************************************/
+
 .form-container { max-width: 400px; padding: 20px; margin: 0 auto; text-align: center; background: #FFF; -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
 .form-container .paragraph-small { text-align: center; }
 .form-container label em { color: #cc5151; }
@@ -1237,9 +1189,7 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 .profile-data-value { display: inline-block; vertical-align: middle; width: 80%; font-size: 14px; color: #777; }
 
-/**************************************************
-[ 12.0 MYAPPOINTMENT PAGE CSS START ] *************
-***************************************************/
+
 .myappointment-text { font-size: 14px; color: #333; padding: 5px 0; }
 .myappointment-text .fa { vertical-align: middle; width: 30px; height: 20px; line-height: 20px; font-size: 16px; text-align: center; color: #777; }
 .myappointment-text span { display: inline-block; vertical-align: middle; max-width: 85%; margin: 0; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
@@ -1309,9 +1259,7 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .inv-template-item .total p { font-size: 16px; color: #333; }
 .inv-template-item .balance-due { background: #f8f8f8; }
 
-/**************************************************
-[ 13.0 GALLERY PAGE CSS START ] *******************
-***************************************************/
+
 .gallery-container { text-align: center; }
 .gallery-container ul { position: relative; width: 100%; font-size: 0; padding: 0; overflow: hidden; }
 .gallery-container ul li { position: relative; min-height: 1px; width: 25%;  font-size: 0; display: inline-block; position: relative; overflow: hidden; padding: 25% 15px 0 15px; cursor: pointer; }
@@ -1326,9 +1274,7 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .gallery-layer-dark p { position: absolute; top: 49%; left: 0; margin-top: -44px; right: 0; display: table-cell; color: #32C1CE; font-size: 36px; z-index: 1; }
 .gallery-layer-dark p .fa { width: 80px; height: 80px; line-height: 80px; text-align: center; background: rgba(255, 255, 255, 0.9); border-radius: 4px; }
 
-/**************************************************
-[ 14.0 BLOG LIST PAGE CSS START ] *****************
-***************************************************/
+
 .blog-list-block { display: inline-block; vertical-align: top; width: 50%; padding: 20px; text-align: center; }
 
 .blog-list-picture { width: 330px; margin: 0 auto; }
@@ -1353,9 +1299,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .blog-full-author { font-size: 14px; color: #333; letter-spacing: .5px; }
 .blog-full-author .fa { font-size: 16px; color: #32C1CE; margin: 0 5px 0 0; }
 
-/**************************************************
-[ 15.0 BLOG DETAIL PAGE CSS START ] ***************
-***************************************************/
 .blog-container { width: 100%; margin: 0 auto; }
 
 .blog-picture { display: block; width: 60%; margin: 0 auto; }
@@ -1398,7 +1341,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .blog-author-details a { display: block; font-size: 12px; margin: 0 0 5px 0; color: #32C1CE; }
 .blog-author-details p { font-size: 13px; color: #555; line-height: 24px; letter-spacing: .5px; margin: 0; }
 
-/* Comment CSS Start */
 .comment-list { margin: 0; padding: 0; }
 .comment-list > li { position: relative; list-style: none; margin: 0 0 20px 0; padding: 0 0 10px 0; border-bottom: 1px solid #EEE; }
 .comment-list > li:nth-last-child(1) { margin: 0; padding: 0; border-bottom: 0; }
@@ -1426,10 +1368,7 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .comment-review span:hover::before, .comment-review span.active::before { content: "\2605"; position: absolute; color: #32C1CE; left: 0px; }
 .comment-review span:hover ~ span::before, .comment-review span.active ~ span::before { content: "\2605"; position: absolute; color: #32C1CE; left: 0px; }
 
-/**************************************************
-[ 16.0 FOOTER CSS START ] *************************
-***************************************************/
-/* Time Table */
+
 .tt-block { position: relative; margin: 0 0 20px 0; -webkit-transition: all .7s ease-in-out; transition: all .7s ease-in-out; }
 .tt-block::before { content: ""; position: absolute; left: 0; right: 0; bottom: 19px; top: 0; border-bottom: 1px dotted #d3d3d3; z-index: 0; -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out; }
 .tt-block p { position: relative; display: inline-block; vertical-align: middle; width: 33.33%; margin: 0; }
@@ -1445,7 +1384,6 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 .tt-block:hover p button { color: #32C1CE; background: #FFF; border: 2px solid #32C1CE; }
 .tt-block:hover p button:hover { color: #FFF; background: #32C1CE; }
 
-/* Emergency Block */
 #emergency { width: 100%; text-align: center; background: #EEE; }
 #emergency .paragraph-medium { padding: 0 30px; text-align: center; }
 
@@ -1486,13 +1424,10 @@ td.ui-datepicker-unselectable .ui-state-default { background: #DDD; }
 
 .footer-social { padding: 20px 0px 0 0; }
 
-/* Copyright */
 #copyright { width: 100%; padding: 5px 0; text-align: center; background: #0A1415; }
 #copyright .paragraph-medium { margin: 0; letter-spacing: .5px; text-align: center; text-transform: uppercase; }
 
-/**************************************************
-[ 17.0 MEDIA QUERIES START ] **********************
-***************************************************/
+
 /* FROM 1200px TO 1400px */
 /* FROM 1200px TO 1400px */
 /* FROM 0PX TO 992PX */

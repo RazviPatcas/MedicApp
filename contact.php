@@ -103,9 +103,7 @@
         </div>
     </div>
 </div>
-<!-- End Request Section -->
 
-<!-- Start Google Map Section -->
 <div id="map" class="animated-wrapper">
     <div class="map-wrapper">
         <div id="map-container">
@@ -121,9 +119,7 @@
     </div>
 </div>
 
-<!-- Start Make an Appointment Modal -->
 <?php include('include/make_appointment.php');?>
-<!-- End Make an Appointment Section -->
     <?php include('include/footer.php');?>
 <script>
 

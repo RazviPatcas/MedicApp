@@ -219,9 +219,7 @@
         </div>
     </div>
 </div>
-<!-- End Doctor List Section -->
 
-<!-- Start Department div -->
 <div class="colored-background" style = "background-color: #219aa5;">
 	<div class="layer-stretch">
 		<div class="layer-wrapper layer-bottom-0 animated-wrapper">
@@ -255,11 +253,11 @@
             </div>
 		</div>
 	</div>
-</div><!-- End Department List Section -->
+</div>
 
-	<!-- Start Make an Appointment Modal -->
+
 <?php include('include/make_appointment.php');?>
-<!-- End Make an Appointment Section -->
+
 <?php include('include/footer.php');?>
 <script>
 

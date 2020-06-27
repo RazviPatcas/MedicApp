@@ -21,16 +21,17 @@
 				<img class="animated animated-up" src="public/uploads/about.jpg" alt="">
 			</div>
 			<div class="col-md-7 hm-service-right animated animated-up">
-				<div class="paragraph-medium paragraph-black"><div style="text-align: justify;">A hospital is an institution for healthcare typically providing specialized treatment for inpatient (or overnight) stays. Some hospitals primarily admit patients suffering from a specific disease or affection, or are reserved for the diagnosis and treatment of conditions affecting a specific age group. Others have a mandate that expands beyond offering dominantly curative and rehabilitative care services to include promotional, preventive and educational roles as part of a primary healthcare approach. Today, hospitals are usually funded by the state, health organizations (for profit or non-profit), by health insurances or by charities and by donations. Historically, however, they were often founded and funded by religious orders or charitable individuals and leaders. Hospitals are nowadays staffed by professionally trained doctors, nurses, paramedical clinicians, etc., whereas historically, this work was usually done by the founding religious orders or by volunteers.<span style="background-color: rgb(255, 255, 255);"><br></span><div style="text-align: justify;"><span style="background-color: rgb(252, 252, 252); color: rgb(85, 85, 85); font-size: 14px; letter-spacing: 0.5px; text-align: left;"><br>&nbsp;</span><b>A walk-in clinic</b>&nbsp;describes a very broad category of medical facilities only loosely defined as those that accept patients on a walk-in basis and with no appointment required. A number of healthcare service providers fall under the walk-in clinic umbrella including urgent care centers, retail clinics and even many free clinics or community health clinics. Walk-in clinics offer the advantages of being accessible and often inexpensive.</div><div style="text-align: left;"><br></div></div><ul><li style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, nostrum</li><li style="text-align: left;">Expedita autem, ea, inventore eligendi debitis nihil obcaecati consequatur quo</li><li style="text-align: left;">Dolores, voluptatem vel eligendi asperiores totam deserunt exercitationem</li><li style="text-align: left;">Pariatur iusto corporis facilis corrupti dolorem exercitationem ipsam quisquam<br></li></ul></div>
+				<div class="paragraph-medium paragraph-black"><div style="text-align: justify;">Un spital este o instituție pentru asistența medicală, care oferă în mod obișnuit tratament specializat pentru ședere în spital (sau peste noapte). Unele spitale admit în primul rând pacienții care suferă de o boală sau afecțiune specifică sau sunt rezervați pentru diagnosticul și tratamentul afecțiunilor care afectează o anumită grupă de vârstă. Alții au un mandat care se extinde dincolo de oferirea de servicii de îngrijire curative și de reabilitare dominant, pentru a include roluri promoționale, preventive și educaționale, ca parte a unei abordări de asistență medicală primară. Astăzi, spitalele sunt, de regulă, finanțate de către stat, organizații de sănătate (pentru profit sau non-profit), de asigurări de sănătate sau de organizații de caritate și de donații. Cu toate acestea, istoric, acestea au fost adesea fondate și finanțate de ordine religioase sau persoane caritate și lideri. Spitalele sunt în prezent angajați de medici pregătiți profesional, asistenți medicali, clinicieni paramedici etc., în timp ce istoric, această lucrare a fost realizată de obicei de ordinele religioase fondatoare sau de voluntari.
+                <span style="background-color: rgb(255, 255, 255);"><br></span><div style="text-align: justify;"><span style="background-color: rgb(252, 252, 252); color: rgb(85, 85, 85); font-size: 14px; letter-spacing: 0.5px; text-align: left;"><br>&nbsp;</span><b>O clinică walk-in</b>&nbsp;descrie o categorie foarte largă de facilități medicale definite doar ca fiind cele care acceptă pacienții în regim de intrare și fără o programare necesară. O serie de furnizori de servicii de asistență medicală se încadrează în umbrela clinicii, inclusiv centre de asistență urgentă, clinici de vânzare cu amănuntul și chiar multe clinici gratuite sau clinici comunitare de sănătate. Clinicile walk-in oferă avantajele de a fi accesibile și de multe ori ieftin.</div><div style="text-align: left;"><br></div></div><ul><li style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, nostrum</li><li style="text-align: left;">Expedita autem, ea, inventore eligendi debitis nihil obcaecati consequatur quo</li><li style="text-align: left;">Dolores, voluptatem vel eligendi asperiores totam deserunt exercitationem</li><li style="text-align: left;">Pariatur iusto corporis facilis corrupti dolorem exercitationem ipsam quisquam<br></li></ul></div>
 			</div>
 		</div>
 	</div>
-</div><!-- End About Page  -->
+</div>
 <div class="colored-background" style="background:#229AA5;">
 	<div class="layer-stretch">
 		<div class="layer-wrapper layer-bottom-0 animated-wrapper">
 			<div class="layer-ttl layer-ttl-white">
-				<h3 class=" animated animated-down" style="background-color: #00263b;">Who We Are?</h3>
+				<h3 class=" animated animated-down" style="background-color: #00263b;">Cine suntem ?</h3>
 			</div>
 			<div class="row">
 				<div class="col-md-7">
@@ -45,7 +46,7 @@
                                 echo $doctor->count();
                                 ?>
                             </span>
-                                <p>Doctor(s)</p>
+                                <p>Doctor(i)</p>
                             </div>
                         </a>
                     </div>
@@ -59,7 +60,7 @@
                                 echo $hos->count();
                                 ?>
                             </span>
-                                <p>Hospital(s)</p>
+                                <p>Spitale/Clinici</p>
                             </div>
                         </a>
                     </div>
@@ -73,7 +74,7 @@
                                 echo $patient->count();
                                 ?>
                             </span>
-                            <p>Patients</p>
+                            <p>Pacienți</p>
                         </div>
                     </div>
                     <div class="hm-about-block">
@@ -87,7 +88,7 @@
                                 echo $dpt->count();
                                 ?>
                             </span>
-                                <p>Department(s)</p>
+                                <p>Departamente</p>
                             </div>
                         </a>
                     </div>
@@ -97,11 +98,11 @@
 				</div>
 				<div class="row about-mission-vission text-center">
 					<div class="col-md-6 about-mission animated animated-up ">
-						<span>Our Mission</span>
+						<span>Misiunea noastră</span>
 						<p class="paragraph-medium paragraph-white text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eligendi perferendis ducimus sed aliquid natus enim, beatae velit reiciendis, inventore molestiae, neque sapiente temporibus architecto dicta, vero quaerat sequi quos. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
 					</div>
 					<div class="col-md-6 about-vission animated animated-up ">
-						<span>Our Vission</span>
+						<span>Viziunea noastră</span>
 						<p class="paragraph-medium paragraph-white text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eligendi perferendis ducimus sed aliquid natus enim, beatae velit reiciendis, inventore molestiae, neque sapiente temporibus architecto dicta, vero quaerat sequi quos. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
 					</div>
 				</div>
@@ -109,11 +110,11 @@
 		</div>
 	</div>
 </div>
-<!-- Start Doctor Section -->
+
 <div class="layer-stretch animated-wrapper">
 	<div class="layer-wrapper layer-bottom-0">
 		<div class="layer-ttl">
-			<h3 class="animated animated-down">Doctors</h3>
+			<h3 class="animated animated-down">Doctori</h3>
 		</div>
 		<div class="row">
             <?php
@@ -152,13 +153,13 @@
 
         </div>
 	</div>
-</div><!-- End About Page  -->
-<!-- Start Testimonial Section -->
+</div>
+
 <div id="testimonial" class="colored-background" style="background-color: #229AA5;">
 	<div class="layer-stretch">
 		<div class="layer-wrapper layer-bottom-0 animated-wrapper" >
 			<div class="layer-ttl layer-ttl-white" >
-				<h3 class="animated animated-down"  style="background-color: #00263b;">What People Say?</h3>
+				<h3 class="animated animated-down"  style="background-color: #00263b;">Părerea pacineților</h3>
 			</div>
 			<div id="testimonial-slider" class="owl-carousel owl-theme theme-owl-dot">
 								<div class="testimonial-block animated animated-right">
@@ -197,9 +198,7 @@
 							</div>
 		</div>
 	</div>
-</div><!-- End Testimonial Section -->
-
-	<!-- Start Make an Appointment Modal -->
+</div>
 
 <?php include('include/make_appointment.php');?>
 <?php include('include/footer.php');?>

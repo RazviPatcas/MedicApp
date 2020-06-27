@@ -164,8 +164,7 @@
 
         </div>
     </div>
-    <!-- End Register Section -->
-    <!-- Start Make an Appointment Modal -->
+
     <div id="appointment" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -267,5 +266,5 @@
                 </div>
             </div>
         </div>
-    </div><!-- End Make an Appointment Section -->
+    </div>
 <?php include('include/footer.php');?>

@@ -57,7 +57,7 @@
                                     <td><?php echo "Activ" ?></td>
                                     <td class="text-center">
 
-                                            <a href="my_appointment.php?delete=<?php echo $appointment->id; ?>" onclick="return confirm('Are you sure you want to delete this item?');"><i class="fa fa-trash-o"></i</a>
+                                            <a href="my_appointment.php?delete=<?php echo $appointment->id; ?>" onclick="return confirm('Doriți să ștergeți această programare?');"><i class="fa fa-trash-o"></i</a>
 
                                     </td>
                                 </tr>

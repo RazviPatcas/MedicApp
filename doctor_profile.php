@@ -132,8 +132,6 @@
         </div>
     </div>
 </div>
-<!-- End Profile Section -->
 
-<!-- Start Make an Appointment Modal -->
-<?php include('include/make_appointment.php');?><!-- End Make an Appointment Section -->
+<?php include('include/make_appointment.php');?>
 <?php include('include/footer.php');?>

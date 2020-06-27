@@ -99,15 +99,13 @@ $page_name = "<i class=\"fa fa-info-circle\"></i> Department ";
         </div>
     </div>
 
-<!-- Start Doctor Section -->
     <div class="layer-stretch animated-wrapper">
 
     </div>
 <?php
 }
 
-?><!-- End About Page  -->
-<!-- Start Testimonial Section -->
+?>
 <div id="testimonial" class="colored-background" style="background:#229AA5;">
     <div class="layer-stretch">
 
@@ -152,9 +150,8 @@ $page_name = "<i class=\"fa fa-info-circle\"></i> Department ";
             </div>
         </div>
     </div>
-</div><!-- End Testimonial Section 
+</div>
 
-<!-- Start Make an Appointment Modal -->
 
 <?php include('include/make_appointment.php');?>
 <?php include('include/footer.php');?>

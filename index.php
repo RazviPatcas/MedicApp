@@ -203,7 +203,6 @@
             </div>
 	</div>
 </div>
-<!-- Start Home Service Section -->
 <div id="" class="">
 	<div class="layer-stretch">
 		<div class="" style="height: 25px">
@@ -211,7 +210,6 @@
 		</div>
 	</div>
 </div>
-<!-- Start Home About Section -->
 <div class="colored-background" style="background:#229AA5;">
 	<div class="layer-stretch">
 		<div class="layer-wrapper layer-bottom-0 animated-wrapper">
@@ -295,7 +293,6 @@
 		</div>
 	</div>
 </div>
-<!-- Start Doctor Section -->
 <div class="layer-stretch animated-wrapper">
 	<div class="layer-wrapper layer-bottom-0">
 		<div class="layer-ttl">
@@ -338,14 +335,12 @@
 
         </div>
 	</div>
-</div><!-- End About Page  -->
-<!-- Start Home Facility Section -->
+</div>
 <?php
 
     $result = $dpt->all();
     $departments  = $result->fetchAll();
     ?>
-<!-- Start Make an Appointment Modal -->
  <?php
     if (isset($_SESSION['patient_email'])) {
         include('include/make_appointment.php');
