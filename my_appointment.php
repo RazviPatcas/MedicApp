@@ -82,9 +82,7 @@
             </div>
         </div>
     </div>
-</div><!-- End My Appointment Section -->
+</div>
 
-<!-- Start Make an Appointment Modal -->
-<?php include('include/make_appointment.php');?><!-- End Make an Appointment Section -->
-<!-- Start of Time Table Section -->
+<?php include('include/make_appointment.php');?>
 <?php include ('include/footer.php');?>

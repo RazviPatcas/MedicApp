@@ -78,8 +78,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="profile-data-block">
-                            <div class="profile-data-label">About</div>
+                     <!--   <div class="profile-data-block">
+                            <div class="profile-data-label">Despre</div>
                             <div class="profile-data-value"><?php
                                 foreach ($medical_h as $key => $item) {
 
@@ -88,7 +88,7 @@
                                     }
                                 }
                                 ?></div>
-                        </div>
+                        </div>-->
                         <div class="profile-data-block">
                             <div class="profile-data-label">Raport medical </div>
                             <div class="profile-data-value"><?php echo $_SESSION['medical_report']; ?></div>
