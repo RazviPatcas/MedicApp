@@ -4,7 +4,6 @@
 <?php
     require ('class/doctors.php');
     require ('class/departments.php');
-//    require ('class/hospitals.php'); its declared in to doctors class
 ?>
 
 <div class="page-container"><script>
@@ -163,7 +162,7 @@
                             </div>
                             <div class="content-input">
                                 <label><text>*</text>Parolă : </label>
-                                <input type="text" name="password" value="" placeholder="Parolă">
+                                <input type="password" name="password" value="" placeholder="Parolă">
                             </div>
                         </div>
                     </div>
@@ -189,11 +188,6 @@
                         </div>
                     </div>
 
-                    <!--<div class="content-input">
-                        <label>Time Slot :<br>( in Minutes)</label>
-                        <input type="number" name="slot" value="" placeholder="Slot">
-                        <p class="content-input-error-name">Please enter time slot!</p>
-                    </div>-->
                     <div class="content-input weekly-container">
                         <label>Zile libere : </label>
                         <select name="week_end" id="doctor-list" multiple="multiple">

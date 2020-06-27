@@ -39,10 +39,10 @@ if (isset($_POST['doctor_id'])){
                 <?php
             } else
 
-                echo '<br><br>Doctor is not Available !!!!<br>Please Select another Day';
+                echo '<br><br>Doctorul nu este disponibil ! <br>Selectați o altă zi !';
 
         }else
-            echo '<p class="text-danger">You Select Wrong Date!!!!<br>Please Select Correct date!!</p>';
+            echo '<p class="text-danger">Ați selectat o dată greșită<br></p>';
 
     }?>
     </div>

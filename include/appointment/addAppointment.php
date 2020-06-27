@@ -18,6 +18,6 @@ if (isset($_POST['dpt_id'])){
             echo 'Programarea s-a realizat cu succes ! ';
         }
     }else
-        echo 'Data și ora nu pot fi goale !';
+    echo 'Data și ora nu pot fi goale ! ';
 
 }

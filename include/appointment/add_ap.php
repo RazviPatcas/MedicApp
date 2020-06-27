@@ -20,7 +20,7 @@ if (isset($_POST['dpt_id'])){
 
         }
     }else
-        echo 'Data și ora nu pot fi goale ! ';
+        echo 'Data și ora nu pot fi goaleeee ! ';
 
 }
 

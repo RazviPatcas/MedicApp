@@ -152,7 +152,7 @@
                                     <em>ID Programare :</em> <span><?php echo $appointment->id;?></span>
                                 </div>
                             </div>
-                            <div class="row card-bdy">
+                            <div  class="row card-bdy">
                                 <?php
 
                                 $doctor = new doctors();
@@ -160,11 +160,11 @@
                                 $doctors = $result->fetchAll();
                                 foreach ($doctors as $doctor) {
                                 ?>
-                                <div class="col-4 text-left">
+                                <div  class="col-4 text-left">
                                     <div class="card-img">
                                         <img class="img-thumbnail" src="../public/uploads/<?php echo $doctor->photo;?>" alt="">
                                     </div>
-                                    <div class="card-info ">
+                                    <div  class="card-info ">
                                         <a href="doctors.php" class="card-name" ><?php echo $doctor->first_name." ".$doctor->last_name;?></a>
                                         <div class="card-text">
                                             <?php

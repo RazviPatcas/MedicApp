@@ -24,17 +24,17 @@ if (isset($_SESSION['admin_email'])) {header("Location: admin/appointment_add.ph
 
 
 <div id="appointment">
-    <div class="container" style="background-color: #229AA5; height:700px">
+    <div class="container" style="background-color: #229AA5; height:700px;">
         <div class="layer-wrapper">
             <div class="col-12">
-                <div style="height: 80px">
-                    <h1 class="text-center text-white text-uppercase" id="head"><b>Realizează programarea</b></h1>
+                <div style="height: 80px;">
+                    <h1 class="text-center text-white text-uppercase" id="head"><b>Realizează programarea</b> <i class="fa fa-calendar"></i></h1>
                 </div>
-                <form class="form-container col-8" action="" method="post" enctype="multipart/form-data">
+                <form class="form-container col-6" action="" method="post" enctype="multipart/form-data">
 
                     <div class="text-center mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                         <i class="fa fa-building"></i>
-                        <select name="ap_dpt" id="ap_dpt">
+                        <select style="padding-top:7px;" name="ap_dpt" id="ap_dpt">
                             <option value="">Alege departamentul </option>
                             <?php
                             foreach ($departments as $key=>$department) {

@@ -63,40 +63,40 @@
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-user"></i>
                             <input id="contact-name" class="mdl-textfield__input" type="text" name="name" pattern="[A-Z,a-z, ]*" value="">
-                            <label class="mdl-textfield__label" for="contact-name">Name</label>
-                            <span class="mdl-textfield__error">Please Enter Valid Name!</span>
+                            <label class="mdl-textfield__label" for="contact-name">Nume</label>
+                            <span class="mdl-textfield__error"></span>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-envelope-o"></i>
                             <input class="mdl-textfield__input" type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="contact-email">
-                            <label class="mdl-textfield__label" for="contact-email">Email Address</label>
-                            <span class="mdl-textfield__error">Please Enter Valid Email Address!</span>
+                            <label class="mdl-textfield__label" for="contact-email">Email</label>
+                            <span class="mdl-textfield__error"></span>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-phone"></i>
                             <input class="mdl-textfield__input" type="text" name="mobile" pattern="[0-9]*" id="contact-mobile">
-                            <label class="mdl-textfield__label" for="contact-mobile">Mobile Number</label>
-                            <span class="mdl-textfield__error">Please Enter Valid Mobile Number!</span>
+                            <label class="mdl-textfield__label" for="contact-mobile">Telefon</label>
+                            <span class="mdl-textfield__error"></span>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-rocket"></i>
                             <input class="mdl-textfield__input" type="text" name="subject" id="contact-subject">
-                            <label class="mdl-textfield__label" for="contact-subject">Subject</label>
-                            <span class="mdl-textfield__error">Please Enter Subject Related to Your Query!</span>
+                            <label class="mdl-textfield__label" for="contact-subject">Subiect</label>
+                            <span class="mdl-textfield__error"></span>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-paper-plane"></i>
                             <textarea class="mdl-textfield__input" type="text" name="message" id="contact-message"></textarea>
-                            <label class="mdl-textfield__label" for="contact-message">Message</label>
-                            <span class="mdl-textfield__error">Please Enter Your Query!</span>
+                            <label class="mdl-textfield__label" for="contact-message">Mesaj</label>
+                            <span class="mdl-textfield__error"></span>
                         </div>
                     </div>
                     <div class="col-12 text-center">
-                        <button id="contact-submit" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised mdl-button--raised button button-primary button-pill" name="make-request">Submit</button>
+                        <button id="contact-submit" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised mdl-button--raised button button-primary button-pill" name="make-request">Înregistrare</button>
                     </div>
                 </form>
             </div>
